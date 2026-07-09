@@ -1,0 +1,1614 @@
+{
+  "categorias": [{
+      "id": "cat-monitores",
+      "nombre": "Monitores"
+    },
+    {
+      "id": "cat-pc-armadas",
+      "nombre": "PC Armadas"
+    },
+    {
+      "id": "cat-placas",
+      "nombre": "Placas de Video"
+    },
+    {
+      "id": "cat-memorias-ram",
+      "nombre": "Memorias RAM"
+    },
+    {
+      "id": "cat-procesadores",
+      "nombre": "Procesadores"
+    },
+    {
+      "id": "cat-notebooks",
+      "nombre": "Notebooks"
+    },
+    {
+      "id": "cat-motherboards",
+      "nombre": "Motherboards"
+    },
+    {
+      "id": "cat-otros",
+      "nombre": "Otros"
+    },
+    {
+      "id": "cat-sillas",
+      "nombre": "Sillas Gamer"
+    }
+  ],
+
+
+  "productos": [
+
+
+    {
+      "id": "PROD-001",
+      "nombre": "Monitor Gamer 24 Samsung Curvo Full Hd 100Hz LS24D366GALX",
+      "stock": 4,
+      "precioLista": 197999.00,
+      "precioSinImpuestos": 163636.00,
+      "precioCuotas": 269280.00,
+      "cuotas": {
+        "cantidad": 12,
+        "precioPorCuota": 22440.00
+      },
+      "categoriasIds": ["cat-monitores"],
+      "imagenes": [
+        "../assets/images/products/cat-monitores/monitor-samsung-24-curvo-1.jpeg",
+        "../assets/images/products/cat-monitores/monitor-samsung-24-curvo-2.jpeg",
+        "../assets/images/products/cat-monitores/monitor-samsung-24-curvo-3.jpeg"
+      ],
+      "especificaciones": [
+  "Pantalla de 24 pulgadas Full HD (1920x1080)",
+  "Curvatura óptima de 1800R para mayor inmersión",
+  "Tasa de refresco de 100Hz ideal para gaming",
+  "Tecnología AMD FreeSync integrada",
+  "Puertos: 1x HDMI, 1x DisplayPort"
+]
+    },
+    {
+    "id": "PROD-002",
+    "nombre": "Monitor Gamer 25 X-Micro Ips Full Hd 240Hz 1Ms Hdmi X25F-S03E",
+    "stock": 4,
+    "precioLista": 194489.00,
+    "precioSinImpuestos": 160735.00,
+    "precioCuotas": 264504.00,
+    "cuotas": {
+      "cantidad": 12,
+      "precioPorCuota": 22042.66
+    },
+    "categoriasIds": ["cat-monitores"],
+    "imagenes": [
+      "../assets/images/products/cat-monitores/monitor-ms-hdmi-x25f-1.jpeg",
+      "../assets/images/products/cat-monitores/monitor-ms-hdmi-x25f-2.jpeg",
+      "../assets/images/products/cat-monitores/monitor-ms-hdmi-x25f-3.jpeg"
+    ],
+    "especificaciones": [
+      "Pantalla de 25 pulgadas con tecnología IPS para colores más vivos",
+      "Resolución Full HD (1920x1080) ideal para gaming competitivo",
+      "Frecuencia de actualización extrema de 240Hz",
+      "Tiempo de respuesta ultra rápido de 1ms",
+      "Modelo: X25F-S03E con conectividad HDMI avanzada"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-003",
+    "nombre": "Monitor Gamer 34 LG QHD Ultrawide Curvo 160Hz 1Ms 34GP63A",
+    "stock": 4,
+    "precioLista": 925549.00,
+    "precioSinImpuestos": 764917.00,
+    "precioCuotas": 1099998.00,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 366666.00
+    },
+    "categoriasIds": ["cat-monitores"],
+    "imagenes": [
+      "../assets/images/products/cat-monitores/monitor-lg-ultrawide-1.jpeg",
+      "../assets/images/products/cat-monitores/monitor-lg-ultrawide-2.jpeg",
+      "../assets/images/products/cat-monitores/monitor-lg-ultrawide-3.jpeg"
+    ],
+    "especificaciones": [
+      "Pantalla expansiva UltraWide de 34 pulgadas (relación de aspecto 21:9)",
+      "Resolución QHD para una definición y claridad de imagen superior",
+      "Diseño curvo ergonómico para mayor inmersión en juegos y productividad",
+      "Tasa de refresco fluida de 160Hz y 1ms de tiempo de respuesta",
+      "Modelo gaming premium: LG UltraGear 34GP63A"
+    ]
+  },
+  {
+    "id": "PROD-004",
+    "nombre": "Monitor Gamer 55 Samsung Curvo Odyssey 4K 165Hz 1Ms ARK 2 LS55CG97WNLX",
+    "stock": 4,
+    "precioLista": 2621589.00,
+    "precioSinImpuestos": 2166602.00,
+    "precioCuotas": 3115800.00,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 1038600.00
+    },
+    "categoriasIds": ["cat-monitores"],
+    "imagenes": [
+      "../assets/images/products/cat-monitores/monitor-ls55cg97-1.jpeg",
+      "../assets/images/products/cat-monitores/monitor-ls55cg97-2.jpeg",
+      "../assets/images/products/cat-monitores/monitor-ls55cg97-3.jpeg"
+    ],
+    "especificaciones": [
+      "Pantalla gigante de 55 pulgadas con curvatura extrema de 1000R",
+      "Resolución nativa de nivel superior 4K Ultra HD",
+      "Frecuencia de actualización de 165Hz y 1ms de respuesta",
+      "Línea exclusiva Samsung Odyssey ARK Segunda Generación (ARK 2)",
+      "Soporte con modo cabina (Cockpit Mode) para rotación vertical de pantalla"
+    ]
+  },
+  {
+    "id": "PROD-005",
+    "nombre": "Monitor Led 19 X-Micro Hdmi Vga 75Hz 5Ms X19KN",
+    "stock": 4,
+    "precioLista": 118500.00,
+    "precioSinImpuestos": 97934.00,
+    "precioCuotas": 142200.00,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 47400.00
+    },
+    "categoriasIds": ["cat-monitores"],
+    "imagenes": [
+      "../assets/images/products/cat-monitores/monitor-vga-49731-1.jpeg",
+      "../assets/images/products/cat-monitores/monitor-vga-49731-2.jpeg",
+      "../assets/images/products/cat-monitores/monitor-vga-49731-3.jpeg"
+    ],
+    "especificaciones": [
+      "Pantalla compacta de 19 pulgadas con retroiluminación LED",
+      "Tasa de refresco de 75Hz optimizada para tareas de oficina y multimedia",
+      "Tiempo de respuesta estándar de 5ms",
+      "Doble conectividad clásica: Puertos HDMI y VGA integrados",
+      "Modelo ideal para espacios reducidos: X-Micro X19KN"
+    ]
+  },
+  {
+    "id": "PROD-006",
+    "nombre": "Monitor Led 22 LG 22U401A Full Hd 100Hz",
+    "stock": 4,
+    "precioLista": 148500.00,
+    "precioSinImpuestos": 122727.00,
+    "precioCuotas": 178200.00,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 59400.00
+    },
+    "categoriasIds": ["cat-monitores"],
+    "imagenes": [
+      "../assets/images/products/cat-monitores/monitor-lg-22u401a-1.jpeg",
+      "../assets/images/products/cat-monitores/monitor-lg-22u401a-2.jpeg",
+      "../assets/images/products/cat-monitores/monitor-lg-22u401a-3.jpeg"
+    ],
+    "especificaciones": [
+      "Pantalla versátil de 22 pulgadas con panel LED",
+      "Resolución nítida Full HD (1920x1080) para uso diario y entretenimiento",
+      "Frecuencia de actualización de 100Hz para transiciones muy suaves",
+      "Tecnología y respaldo de la marca LG",
+      "Modelo exacto de referencia: 22U401A"
+    ]
+  },
+  {
+    "id": "PROD-007",
+    "nombre": "Pc Ryzen 7 5700g A520 32gb 1tb",
+    "stock": 2,
+    "precioLista": 680000,
+    "precioSinImpuestos": 561983,
+    "precioCuotas": 816000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 272000
+    },
+    "categoriasIds": ["cat-pc-armadas"],
+    "imagenes": [
+      "../assets/images/products/cat-pc-armadas/pc-ryzen7-a520-32gb-1.jpeg"
+    ],
+    "especificaciones": [
+      "Procesador potente AMD Ryzen 7 5700G con gráficos integrados Radeon Vega",
+      "Placa madre chipset AMD A520 de excelente estabilidad",
+      "Memoria RAM masiva de 32GB ideal para multitasking exigente y edición",
+      "Almacenamiento de alta velocidad SSD de 1TB NVMe / SATA",
+      "Gabinete optimizado y listo para usar (Plug and Play)"
+    ]
+  },
+  {
+    "id": "PROD-008",
+    "nombre": "Pc Ryzen 5 5600gt A520 16gb 1tb Rtx3050",
+    "stock": 2,
+    "precioLista": 890000,
+    "precioSinImpuestos": 735537,
+    "precioCuotas": 1068000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 356000
+    },
+    "categoriasIds": ["cat-pc-armadas"],
+    "imagenes": [
+      "../assets/images/products/cat-pc-armadas/pc-ryzen5-rtx3050-1.jpeg"
+    ],
+    "especificaciones": [
+      "Procesador ágil AMD Ryzen 5 5600GT",
+      "Placa de video dedicada NVIDIA GeForce RTX 3050 para gaming con Ray Tracing",
+      "Motherboard con chipset AMD A520 estable y compacto",
+      "Memoria RAM de 16GB de alta velocidad en Dual Channel",
+      "Almacenamiento veloz en disco sólido SSD de 1TB"
+    ]
+  },
+  {
+    "id": "PROD-009",
+    "nombre": "Pc Amd Ryzen 5 5600gt 16gb 1tb Rx 5600 12gb",
+    "stock": 2,
+    "precioLista": 950000,
+    "precioSinImpuestos": 785124,
+    "precioCuotas": 1140000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 380000
+    },
+    "categoriasIds": ["cat-pc-armadas"],
+    "imagenes": [
+      "../assets/images/products/cat-pc-armadas/pc-ryzen5-rx5600-1.jpeg"
+    ],
+    "especificaciones": [
+      "Procesador para gaming y diseño AMD Ryzen 5 5600GT",
+      "Placa de video dedicada AMD Radeon RX 5600 de 12GB VRAM",
+      "Memoria RAM de 16GB optimizada para alto rendimiento",
+      "Disco sólido de almacenamiento SSD de 1TB de gran capacidad",
+      "Equipo configurado ideal para streaming y alta tasa de cuadros en juegos"
+    ]
+  },
+  {
+    "id": "PROD-010",
+    "nombre": "Pc Intel Core I7 12700 B760 16gb 960gb 240gb",
+    "stock": 2,
+    "precioLista": 1150000,
+    "precioSinImpuestos": 950413,
+    "precioCuotas": 1380000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 460000
+    },
+    "categoriasIds": ["cat-pc-armadas"],
+    "imagenes": [
+      "../assets/images/products/cat-pc-armadas/pc-intel-i7-b760-1.jpeg"
+    ],
+    "especificaciones": [
+      "Procesador de alto rendimiento Intel Core i7 12700 (12ª generación)",
+      "Motherboard de arquitectura moderna chipset Intel B760",
+      "Memoria RAM integrada de 16GB de alta velocidad",
+      "Configuración de doble unidad SSD sólida: 960GB principales + 240GB secundarios",
+      "Excelente rendimiento garantizado para arquitectura, renderizado y gaming pesado"
+    ]
+  },
+  {
+    "id": "PROD-011",
+    "nombre": "Pc Amd Ryzen 7 5700g A520 8gb 480gb",
+    "stock": 2,
+    "precioLista": 520000,
+    "precioSinImpuestos": 429752,
+    "precioCuotas": 624000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 208000
+    },
+    "categoriasIds": ["cat-pc-armadas"],
+    "imagenes": [
+      "../assets/images/products/cat-pc-armadas/pc-ryzen7-a520-8gb-1.jpeg"
+    ],
+    "especificaciones": [
+      "Procesador potente AMD Ryzen 7 5700G con gráfica Radeon integrada",
+      "Placa base equilibrada chipset AMD A520",
+      "Memoria RAM inicial de 8GB expansible",
+      "Unidad de almacenamiento sólido SSD de 480GB para encendido ultra veloz",
+      "Configuración económica e ideal con excelente margen de actualización futura"
+    ]
+  },
+  {
+    "id": "PROD-012",
+    "nombre": "Pc Amd Ryzen 7 5700g B450 16gb 2tb Gab Rgb X 3",
+    "stock": 2,
+    "precioLista": 740000,
+    "precioSinImpuestos": 611570,
+    "precioCuotas": 888000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 296000
+    },
+    "categoriasIds": ["cat-pc-armadas"],
+    "imagenes": [
+      "../assets/images/products/cat-pc-armadas/pc-ryzen7-b450-16gb-1.jpeg"
+    ],
+    "especificaciones": [
+      "Microprocesador de 8 núcleos AMD Ryzen 7 5700G",
+      "Placa madre chipset AMD B450 compatible con Overclocking moderado",
+      "Memoria RAM balanceada de 16GB lista para juegos",
+      "Espacio masivo de almacenamiento SSD / HDD de 2TB totales",
+      "Estética gamer con Gabinete equipado con 3 coolers RGB instalados"
+    ]
+  },
+  {
+    "id": "PROD-013",
+    "nombre": "Motherboard Am5 Msi Pro B840m B",
+    "stock": 3,
+    "precioLista": 145000,
+    "precioSinImpuestos": 119835,
+    "precioCuotas": 174000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 58000
+    },
+    "categoriasIds": ["cat-motherboards"],
+    "imagenes": [
+      "../assets/images/products/cat-motherboards/mother-msi-b840m-1.jpeg",
+      "../assets/images/products/cat-motherboards/mother-msi-b840m-2.jpeg",
+      "../assets/images/products/cat-motherboards/mother-msi-b840m-3.jpeg"
+    ],
+    "especificaciones": [
+      "Zócalo Socket AM5 compatible con la serie de procesadores AMD Ryzen",
+      "Chipset avanzado de nueva generación AMD B840",
+      "Factor de forma compacto Micro-ATX (B840M) ideal para armados prolijos",
+      "Construcción premium de la línea MSI PRO enfocada en estabilidad comercial y profesional",
+      "Soporte nativo para tecnologías de memoria DDR5 de última generación"
+    ]
+  },
+  {
+    "id": "PROD-014",
+    "nombre": "Motherboard Am5 Msi B850 Gaming Plus Wifi",
+    "stock": 3,
+    "precioLista": 220000,
+    "precioSinImpuestos": 181818,
+    "precioCuotas": 264000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 88000
+    },
+    "categoriasIds": ["cat-motherboards"],
+    "imagenes": [
+      "../assets/images/products/cat-motherboards/mother-msi-b850-gaming-1.jpeg",
+      "../assets/images/products/cat-motherboards/mother-msi-b850-gaming-2.jpeg",
+      "../assets/images/products/cat-motherboards/mother-msi-b850-gaming-3.jpeg"
+    ],
+    "especificaciones": [
+      "Zócalo de última generación Socket AM5 para procesadores AMD",
+      "Chipset gamer de alto rendimiento AMD B850",
+      "Factor de forma completo ATX con disipación pasiva extendida para VRM",
+      "Conectividad inalámbrica integrada Wi-Fi de alta velocidad",
+      "Diseño y estética MSI Gaming Plus optimizada para perfiles de overclock y RGB"
+    ]
+  },
+  {
+    "id": "PROD-015",
+    "nombre": "Motherboard Am5 Msi B850m Gaming Pro Wifi6e",
+    "stock": 3,
+    "precioLista": 195000,
+    "precioSinImpuestos": 161157,
+    "precioCuotas": 234000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 78000
+    },
+    "categoriasIds": ["cat-motherboards"],
+    "imagenes": [
+      "../assets/images/products/cat-motherboards/mother-msi-b850m-pro-1.jpeg",
+      "../assets/images/products/cat-motherboards/mother-msi-b850m-pro-2.jpeg",
+      "../assets/images/products/cat-motherboards/mother-msi-b850m-pro-3.jpeg"
+    ],
+    "especificaciones": [
+      "Socket AM5 compatible con arquitectura AMD Ryzen",
+      "Chipset de alto rango AMD B850 en formato compacto Micro-ATX",
+      "Conexión inalámbrica premium integrada Wi-Fi 6E de ultra baja latencia",
+      "Diseño MSI Gaming Pro con puertos reforzados Steel Armor para placas de video pesadas",
+      "Preparada para almacenamiento ultra rápido M.2 PCIe Gen 5"
+    ]
+  },
+  {
+    "id": "PROD-016",
+    "nombre": "Motherboard Am5 Gigabyte B850m Eagle Wifi6e",
+    "stock": 3,
+    "precioLista": 210000,
+    "precioSinImpuestos": 173554,
+    "precioCuotas": 252000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 84000
+    },
+    "categoriasIds": ["cat-motherboards"],
+    "imagenes": [
+      "../assets/images/products/cat-motherboards/mother-giga-b850m-eagle-1.jpeg",
+      "../assets/images/products/cat-motherboards/mother-giga-b850m-eagle-2.jpeg",
+      "../assets/images/products/cat-motherboards/mother-giga-b850m-eagle-3.jpeg"
+    ],
+    "especificaciones": [
+      "Zócalo AM5 compatible con los procesadores más recientes de AMD",
+      "Equipada con el potente chipset AMD B850 en tamaño mATX",
+      "Módulo integrado Wi-Fi 6E y antenas externas incluidas",
+      "Línea exclusiva Gigabyte Eagle con fases de poder digitales estables",
+      "Soporte para memorias RAM DDR5 y perfiles EXPO de overclock automático"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-017",
+    "nombre": "Motherboard Am5 Asus Tuf A620am Plus Wifi",
+    "stock": 3,
+    "precioLista": 185000,
+    "precioSinImpuestos": 152893,
+    "precioCuotas": 222000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 74000
+    },
+    "categoriasIds": ["cat-motherboards"],
+    "imagenes": [
+      "../assets/images/products/cat-motherboards/mother-asus-tuf-a620-1.jpeg",
+      "../assets/images/products/cat-motherboards/mother-asus-tuf-a620-2.jpeg",
+      "../assets/images/products/cat-motherboards/mother-asus-tuf-a620-3.jpeg"
+    ],
+    "especificaciones": [
+      "Socket AM5 compatible con procesadores Ryzen serie 7000/8000/9000",
+      "Chipset de entrada robusto AMD A620 (Variante A620AM Plus)",
+      "Componentes con certificación militar de la serie ASUS TUF Gaming",
+      "Antena y placa Wi-Fi incorporadas de fábrica",
+      "Protección reforzada contra sobretensiones (TUF ESD Guards y SafeSlot Core+)"
+    ]
+  },
+  {
+    "id": "PROD-018",
+    "nombre": "Motherboard 1700 14 Gen Gigabyte Ga Z790m Aorus Elite Ax Ddr5",
+    "stock": 3,
+    "precioLista": 320000,
+    "precioSinImpuestos": 264463,
+    "precioCuotas": 384000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 128000
+    },
+    "categoriasIds": ["cat-motherboards"],
+    "imagenes": [
+      "../assets/images/products/cat-motherboards/mother-giga-z790m-aorus-1.jpeg",
+      "../assets/images/products/cat-motherboards/mother-giga-z790m-aorus-2.jpeg",
+      "../assets/images/products/cat-motherboards/mother-giga-z790m-aorus-3.jpeg"
+    ],
+    "especificaciones": [
+      "Socket Intel LGA 1700 nativo para procesadores de 12ª, 13ª y 14ª Generación",
+      "Chipset entusiasta tope de gama Intel Z790 en formato compacto Micro-ATX",
+      "Línea de alto rendimiento AORUS Elite AX con Wi-Fi integrado",
+      "Soporte exclusivo para las memorias RAM de última tecnología DDR5",
+      "Diseño térmico avanzado con disipadores M.2 Thermal Guard para evitar estrangulamiento"
+    ]
+  },
+  {
+    "id": "PROD-019",
+    "nombre": "Memoria Ram Ddr4 8gb 3200 Mhz Aimerican Telekinesis Value",
+    "stock": 6,
+    "precioLista": 22000,
+    "precioSinImpuestos": 18182,
+    "precioCuotas": 26400,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 8800
+    },
+    "categoriasIds": ["cat-memorias-ram"],
+    "imagenes": [
+      "../assets/images/products/cat-memorias-ram/ram-aimerican-8gb-1.jpeg"
+    ],
+    "especificaciones": [
+      "Capacidad de almacenamiento: módulo individual de 8GB",
+      "Tecnología de memoria clásica DDR4 SDRAM",
+      "Velocidad de frecuencia de reloj estable de 3200 MHz",
+      "Línea de diseño Value sin disipador térmico, ideal para ensambles estándar y setups de oficina",
+      "Marca: Aimerican Telekinesis"
+    ]
+  },
+  {
+    "id": "PROD-020",
+    "nombre": "Memoria Ram Ddr4 8gb 3200 Mhz Kingston Fury Beast Rgb",
+    "stock": 6,
+    "precioLista": 29000,
+    "precioSinImpuestos": 23967,
+    "precioCuotas": 34800,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 11600
+    },
+    "categoriasIds": ["cat-memorias-ram"],
+    "imagenes": [
+      "../assets/images/products/cat-memorias-ram/ram-fury-8gb-rgb-1.jpeg"
+    ],
+    "especificaciones": [
+      "Capacidad del componente: 8GB",
+      "Tecnología DDR4 optimizada para chipsets Intel y AMD",
+      "Velocidad de frecuencia de 3200 MHz",
+      "Diseño entusiasta Kingston Fury Beast equipado con disipador de aluminio negro",
+      "Iluminación LED RGB personalizable y compatible con softwares de placas madre"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-021",
+    "nombre": "Memoria Ram Ddr4 8gb 3200 Mhz Corsair Vengeance Rs Rgb Negro",
+    "stock": 6,
+    "precioLista": 34000,
+    "precioSinImpuestos": 28099,
+    "precioCuotas": 40800,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 13600
+    },
+    "categoriasIds": ["cat-memorias-ram"],
+    "imagenes": [
+      "../assets/images/products/cat-memorias-ram/ram-corsair-8gb-black-1.jpeg"
+    ],
+    "especificaciones": [
+      "Capacidad del módulo: 8GB DDR4",
+      "Frecuencia testeada de alta velocidad a 3200 MHz",
+      "Disipador térmico de aluminio anodizado Corsair Vengeance RS en color negro",
+      "Iluminación dinámica RGB direccionable zona por zona",
+      "Componentes seleccionados a mano para un alto margen de overclocking seguro"
+    ]
+  },
+  {
+    "id": "PROD-022",
+    "nombre": "Memoria Ram Ddr4 16gb 3200 Mhz Hiksemi Future",
+    "stock": 6,
+    "precioLista": 42000,
+    "precioSinImpuestos": 34711,
+    "precioCuotas": 50400,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 16800
+    },
+    "categoriasIds": ["cat-memorias-ram"],
+    "imagenes": [
+      "../assets/images/products/cat-memorias-ram/ram-hiksemi-16gb-1.jpeg"
+    ],
+    "especificaciones": [
+      "Gran capacidad en un solo slot: módulo de 16GB",
+      "Estándar DDR4 con frecuencia de reloj de 3200 MHz",
+      "Línea Hiksemi Future con un excelente balance entre costo y rendimiento gamer",
+      "Ideal para actualizar PCs y eliminar cuellos de botella en multitarea",
+      "Equipada con blindaje o disipador de diseño moderno integrado"
+    ]
+  },
+  {
+    "id": "PROD-023",
+    "nombre": "Memoria Ram Ddr5 16gb 5200 Mhz Kingston Fury Beast Rgb",
+    "stock": 6,
+    "precioLista": 78000,
+    "precioSinImpuestos": 64463,
+    "precioCuotas": 93600,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 31200
+    },
+    "categoriasIds": ["cat-memorias-ram"],
+    "imagenes": [
+      "../assets/images/products/cat-memorias-ram/ram-fury-ddr5-16gb-1.jpeg"
+    ],
+    "especificaciones": [
+      "Módulo de arquitectura avanzada de nueva generación DDR5",
+      "Alta capacidad de almacenamiento de 16GB",
+      "Frecuencia de velocidad base súper veloz de 5200 MHz",
+      "Diseño de vanguardia Kingston Fury Beast con disipador térmico eficiente",
+      "Barra luminosa RGB integrada de impacto estético fluido"
+    ]
+  },
+  {
+    "id": "PROD-024",
+    "nombre": "Memoria Ram Ddr5 16gb 5600 Mhz Kingston Value",
+    "stock": 6,
+    "precioLista": 65000,
+    "precioSinImpuestos": 53719,
+    "precioCuotas": 78000,
+    "cuotas": {
+      "cantidad": 6,
+      "precioPorCuota": 26000
+    },
+    "categoriasIds": ["cat-memorias-ram"],
+    "imagenes": [
+      "../assets/images/products/cat-memorias-ram/ram-kingston-ddr5-value-1.jpeg"
+    ],
+    "especificaciones": [
+      "Módulo individual de 16GB con tecnología DDR5",
+      "Frecuencia extrema de reloj de 5600 MHz para transferencia de datos ultra rápida",
+      "Línea Kingston Value enfocada en la máxima compatibilidad de placas madre y estabilidad técnica",
+      "Eficiencia energética mejorada respecto a las generaciones previas de memorias",
+      "Ideal para setups profesionales y estaciones de trabajo que exigen velocidad pura"
+    ]
+  },
+
+{
+    "id": "PROD-025",
+    "nombre": "Procesador Amd Ryzen 5 5600gt 4.6 Ghz Am4 Oem + Cooler",
+    "stock": 4,
+    "precioLista": 185000,
+    "precioSinImpuestos": 152893,
+    "precioCuotas": 222000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 74000
+    },
+    "categoriasIds": ["cat-procesadores"],
+    "imagenes": [
+      "../assets/images/products/cat-procesadores/proc-ryzen5-5600gt-1.jpeg",
+      "../assets/images/products/cat-procesadores/proc-ryzen5-5600gt-2.jpeg"
+    ],
+    "especificaciones": [
+      "Socket AM4 con arquitectura Zen 3 optimizada",
+      "6 núcleos físicos y 12 hilos de ejecución multitarea",
+      "Frecuencia base de 3.6 GHz con aumento máximo de hasta 4.6 GHz",
+      "Gráficos integrados Radeon Graphics listos para multimedia y gaming ligero",
+      "Presentación OEM (incluye solución de enfriamiento Wraith Stealth)"
+    ]
+  },
+  {
+    "id": "PROD-026",
+    "nombre": "Procesador Amd Ryzen 5 9600x 5.4 Ghz Am5 Sin Cooler Con Gpu",
+    "stock": 4,
+    "precioLista": 360000,
+    "precioSinImpuestos": 297521,
+    "precioCuotas": 432000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 144000
+    },
+    "categoriasIds": ["cat-procesadores"],
+    "imagenes": [
+      "../assets/images/products/cat-procesadores/proc-ryzen5-9600x-1.jpeg"
+    ],
+    "especificaciones": [
+      "Socket AM5 de última generación con soporte para memorias DDR5 y PCIe 5.0",
+      "Arquitectura de vanguardia Zen 5 de alta eficiencia",
+      "Velocidad de reloj sorprendente con Turbo Boost de hasta 5.4 GHz",
+      "Unidad de Procesamiento Gráfico (GPU) integrada de arquitectura nativa",
+      "Edición para entusiastas (no incluye cooler de fábrica; requiere refrigeración dedicada)"
+    ]
+  },
+  {
+    "id": "PROD-027",
+    "nombre": "Procesador Amd Ryzen 9 9900x3d 5.5 Ghz Am5 Con Gpu (sin Cooler)",
+    "stock": 4,
+    "precioLista": 690000,
+    "precioSinImpuestos": 570248,
+    "precioCuotas": 828000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 276000
+    },
+    "categoriasIds": ["cat-procesadores"],
+    "imagenes": [
+      "../assets/images/products/cat-procesadores/proc-ryzen9-9900x3d-1.jpeg"
+    ],
+    "especificaciones": [
+      "Zócalo Socket AM5 diseñado para plataformas gaming tope de gama",
+      "Tecnología AMD 3D V-Cache que eleva drásticamente el rendimiento en simuladores y juegos",
+      "Frecuencia de ráfaga extrema de hasta 5.5 GHz",
+      "Gráficos integrados de última generación para asistencia de video",
+      "Procesador de perfil premium (no incluye cooler; se recomienda refrigeración líquida)"
+    ]
+  },
+  {
+    "id": "PROD-028",
+    "nombre": "Procesador Amd Ryzen 9 7900x 5.6 Ghz Am5 (sin Cooler)",
+    "stock": 4,
+    "precioLista": 540000,
+    "precioSinImpuestos": 446281,
+    "precioCuotas": 648000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 216000
+    },
+    "categoriasIds": ["cat-procesadores"],
+    "imagenes": [
+      "../assets/images/products/cat-procesadores/proc-ryzen9-7900x-1.jpeg",
+      "../assets/images/products/cat-procesadores/proc-ryzen9-7900x-2.jpeg"
+    ],
+    "especificaciones": [
+      "Socket AM5 de alto rendimiento multicapa",
+      "12 núcleos de potencia pura y 24 hilos ideales para renders y streaming pesado",
+      "Frecuencia de velocidad increíble con picos de 5.6 GHz",
+      "Desbloqueado para Overclocking mediante AMD Ryzen Master",
+      "Línea de alto consumo térmico (requiere disipador de alto rendimiento por separado)"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-029",
+    "nombre": "Procesador Intel Core I5 12400 4.4 Ghz Alder Lake 1700 Sin Cooler Oem",
+    "stock": 4,
+    "precioLista": 210000,
+    "precioSinImpuestos": 173554,
+    "precioCuotas": 252000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 84000
+    },
+    "categoriasIds": ["cat-procesadores"],
+    "imagenes": [
+      "../assets/images/products/cat-procesadores/proc-intel-i5-12400-1.jpeg"
+    ],
+    "especificaciones": [
+      "Socket LGA 1700 compatible con placas madre Intel series 600 y 700",
+      "Arquitectura Alder Lake (12ª Generación) eficiente y equilibrada",
+      "6 núcleos enfocados en rendimiento (P-cores) con picos de 4.4 GHz",
+      "Gráficos integrados de fábrica Intel UHD Graphics 730",
+      "Distribución OEM optimizada para costos competitivos (no incluye cooler)"
+    ]
+  },
+  {
+    "id": "PROD-030",
+    "nombre": "Procesador Intel Core I7 14700 5.4 Ghz Raptor Lake 1700",
+    "stock": 4,
+    "precioLista": 490000,
+    "precioSinImpuestos": 404959,
+    "precioCuotas": 588000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 196000
+    },
+    "categoriasIds": ["cat-procesadores"],
+    "imagenes": [
+      "../assets/images/products/cat-procesadores/proc-intel-i7-14700-1.jpeg"
+    ],
+    "especificaciones": [
+      "Socket LGA 1700 de gran versatilidad para arquitectura híbrida",
+      "Línea Raptor Lake Refresh (14ª Generación) con más núcleos de eficiencia",
+      "Frecuencia Max Turbo impresionante de hasta 5.4 GHz con Intel Turbo Boost",
+      "20 núcleos en total (8 de rendimiento + 12 eficientes) y 28 hilos de ejecución",
+      "Excelente rendimiento nativo para entornos multitarea masivos y diseño 3D avanzado"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-031",
+    "nombre": "Procesador Intel Core I9 12900k 5.2 Ghz Alder Lake 1700 Sin Cooler",
+    "stock": 4,
+    "precioLista": 610000,
+    "precioSinImpuestos": 504132,
+    "precioCuotas": 732000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 244000
+    },
+    "categoriasIds": ["cat-procesadores"],
+    "imagenes": [
+      "../assets/images/products/cat-procesadores/proc-intel-i9-12900k-1.jpeg"
+    ],
+    "especificaciones": [
+      "Socket LGA 1700 de nivel entusiasta",
+      "Arquitectura Alder Lake de 12ª Generación (Gama K: Multiplicador Desbloqueado)",
+      "Alcanza velocidades tope de 5.2 GHz para máxima respuesta de un solo hilo",
+      "Configuración masiva de 16 núcleos (8 Performance + 8 Efficient)",
+      "Preparado para Overclock extremo (no incluye cooler; requiere refrigeración líquida robusta)"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-032",
+    "nombre": "Procesador Intel Core Ultra 7 265k 5.5 Ghz",
+    "stock": 4,
+    "precioLista": 580000,
+    "precioSinImpuestos": 479339,
+    "precioCuotas": 696000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 232000
+    },
+    "categoriasIds": ["cat-procesadores"],
+    "imagenes": [
+      "../assets/images/products/cat-procesadores/proc-intel-ultra7-265k-1.jpeg",
+      "../assets/images/products/cat-intel-ultra7-265k-2.jpeg"
+    ],
+    "especificaciones": [
+      "Nueva arquitectura revolucionaria Intel Core Ultra para computación de escritorio",
+      "Velocidad de reloj de ráfaga avanzada que alcanza los 5.5 GHz",
+      "NPU dedicada integrada de fábrica para aceleración de Inteligencia Artificial de forma local",
+      "Línea K con capacidades de overclocking y eficiencia energética optimizada",
+      "Compatibilidad exclusiva con los chipsets y placas de última generación de la marca"
+    ]
+  },
+  {
+    "id": "PROD-033",
+    "nombre": "Notebook Nsx Alkon Core I5 8gb Smd 256gb 14 Win11",
+    "stock": 2,
+    "precioLista": 620000,
+    "precioSinImpuestos": 512397,
+    "precioCuotas": 744000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 248000
+    },
+    "categoriasIds": ["cat-notebooks"],
+    "imagenes": [
+      "../assets/images/products/cat-notebooks/note-nsx-alkon-1.jpeg",
+      "../assets/images/products/cat-notebooks/note-nsx-alkon-2.jpeg"
+    ],
+    "especificaciones": [
+      "Pantalla compacta y portable de 14 pulgadas con resolución nítida",
+      "Procesador confiable Intel Core i5 ideal para oficina, estudio y multitarea",
+      "Memoria RAM integrada de 8GB para un flujo de trabajo cómodo",
+      "Almacenamiento ultra veloz SSD de 256gb de encendido inmediato",
+      "Sistema operativo de fábrica: Windows 11 Home original"
+    ]
+  },
+  {
+    "id": "PROD-034",
+    "nombre": "Notebook Cx Core I5 12450h 8gb Smd 256gb 15.6",
+    "stock": 2,
+    "precioLista": 690000,
+    "precioSinImpuestos": 570248,
+    "precioCuotas": 828000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 276000
+    },
+    "categoriasIds": ["cat-notebooks"],
+    "imagenes": [
+      "../assets/images/products/cat-notebooks/note-cx-i5-1.jpeg",
+      "../assets/images/products/cat-notebooks/note-cx-i5-2.jpeg"
+    ],
+    "especificaciones": [
+      "Pantalla amplia de 15.6 pulgadas ideal para hojas de cálculo y películas",
+      "Procesador de alto rendimiento para portátiles Intel Core i5-12450H (Serie H)",
+      "Memoria RAM de 8GB de respuesta ágil",
+      "Unidad de estado sólido SSD de 256GB de alta velocidad de lectura/escritura",
+      "Diseño elegante, liviano y con teclado numérico extendido integrado"
+    ]
+  },
+  {
+    "id": "PROD-035",
+    "nombre": "Notebook X View Novabook V3 Celeron N4020 4gb Smd 128gb 14 Win11",
+    "stock": 2,
+    "precioLista": 380000,
+    "precioSinImpuestos": 314050,
+    "precioCuotas": 456000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 152000
+    },
+    "categoriasIds": ["cat-notebooks"],
+    "imagenes": [
+      "../assets/images/products/cat-notebooks/note-xview-novabook-1.jpeg",
+      "../assets/images/products/cat-notebooks/note-xview-novabook-2.jpeg",
+      "../assets/images/products/cat-notebooks/note-xview-novabook-3.jpeg"
+    ],
+    "especificaciones": [
+      "Pantalla de 14 pulgadas ideal para llevar a todos lados sin esfuerzo",
+      "Procesador de bajo consumo de energía Intel Celeron N4020",
+      "Memoria RAM de 4GB optimizada para navegación web y tareas escolares",
+      "Almacenamiento sólido SSD de 128GB de arranque fluido",
+      "Equipada con Windows 11 original en modo eficiente"
+    ]
+  },
+  {
+    "id": "PROD-036",
+    "nombre": "Notebook Hp Victus Core I5 13420h 16gb 512gb Rtx4050 15.6 Us W11",
+    "stock": 2,
+    "precioLista": 1350000,
+    "precioSinImpuestos": 1115702,
+    "precioCuotas": 1620000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 540000
+    },
+    "categoriasIds": ["cat-notebooks"],
+    "imagenes": [
+      "../assets/images/products/cat-notebooks/note-hp-victus-1.jpeg",
+      "../assets/images/products/cat-notebooks/note-hp-victus-2.jpeg",
+      "../assets/images/products/cat-notebooks/note-hp-victus-3.jpeg"
+    ],
+    "especificaciones": [
+      "Pantalla Gamer de 15.6 pulgadas con alta tasa de refresco fluida",
+      "Microprocesador Intel Core i5-13420H de 13ª Generación de alto calibre",
+      "Memoria RAM masiva de 16GB lista para gaming moderno y diseño profesional",
+      "Placa de video dedicada NVIDIA GeForce RTX 4050 con DLSS 3.0",
+      "Unidad SSD de 512GB NVMe M.2 de máxima velocidad y sistema Windows 11"
+    ]
+  },
+  {
+    "id": "PROD-037",
+    "nombre": "Notebook Lenovo Ideapad Slim 3 Ryzen 7 8840hs 16gb Smd 512gb 15 Win11",
+    "stock": 2,
+    "precioLista": 980000,
+    "precioSinImpuestos": 809917,
+    "precioCuotas": 1176000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 392000
+    },
+    "categoriasIds": ["cat-notebooks"],
+    "imagenes": [
+      "../assets/images/products/cat-notebooks/note-lenovo-slim3-1.jpeg",
+      "../assets/images/products/cat-notebooks/note-lenovo-slim3-2.jpeg",
+      "../assets/images/products/cat-notebooks/note-lenovo-slim3-3.jpeg"
+    ],
+    "especificaciones": [
+      "Pantalla antirreflejo de 15 pulgadas para máxima comodidad visual",
+      "Procesador avanzado AMD Ryzen 7 8840HS con aceleración por Inteligencia Artificial",
+      "Memoria RAM de 16GB de alta velocidad en placa",
+      "Espacio de almacenamiento en disco sólido ultra veloz SSD de 512GB",
+      "Diseño de chasis ultra delgado (Slim 3) y liviano con Windows 11 Home"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-038",
+    "nombre": "Notebook Acer Aspire Go Ryzen 7 7730u 16gb Smd 512gb 15.6 Win11",
+    "stock": 2,
+    "precioLista": 890000,
+    "precioSinImpuestos": 735537,
+    "precioCuotas": 1068000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 356000
+    },
+    "categoriasIds": ["cat-notebooks"],
+    "imagenes": [
+      "../assets/images/products/cat-notebooks/note-acer-aspire-1.jpeg",
+      "../assets/images/products/cat-notebooks/note-acer-aspire-2.jpeg",
+      "../assets/images/products/cat-notebooks/note-acer-aspire-3.jpeg"
+    ],
+    "especificaciones": [
+      "Pantalla de marco fino de 15.6 pulgadas con resolución Full HD",
+      "Procesador eficiente de 8 núcleos AMD Ryzen 7 7730U de gran autonomía de batería",
+      "Memoria RAM de 16GB ideal para desarrollo, diseño y multitarea fluida",
+      "Almacenamiento sólido SSD NVMe de 512GB",
+      "Línea Acer Aspire Go enfocada en productividad móvil y Windows 11"
+    ]
+  },
+  {
+    "id": "PROD-039",
+    "nombre": "Placa De Video Geforce Gt 1030 2gb Asus Oc",
+    "stock": 2,
+    "precioLista": 115000,
+    "precioSinImpuestos": 95041,
+    "precioCuotas": 138000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 46000
+    },
+    "categoriasIds": ["cat-placas"],
+    "imagenes": [
+      "../assets/images/products/cat-placas/video-gt1030-asus-1.jpeg",
+      "../assets/images/products/cat-placas/video-gt1030-asus-2.jpeg"
+    ],
+    "especificaciones": [
+      "Motor Gráfico dedicado NVIDIA GeForce GT 1030",
+      "Memoria de video integrada de 2GB GDDR5",
+      "Edición Overclocked (OC) de fábrica por ASUS para un rendimiento extra",
+      "Diseño térmico compacto pasivo o de ventilador silencioso de bajo perfil",
+      "Salidas de video digitales de alta definición ideales para armados multimedia"
+    ]
+  },
+  {
+    "id": "PROD-040",
+    "nombre": "Placa De Video Geforce Rtx 5060 Ti 8gb Gigabyte Eagle Oc",
+    "stock": 2,
+    "precioLista": 580000,
+    "precioSinImpuestos": 479339,
+    "precioCuotas": 696000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 232000
+    },
+    "categoriasIds": ["cat-placas"],
+    "imagenes": [
+      "../assets/images/products/cat-placas/video-rtx5060ti-giga-1.jpeg",
+      "../assets/images/products/cat-placas/video-rtx5060ti-giga-2.jpeg",
+      "../assets/images/products/cat-placas/video-rtx5060ti-giga-3.jpeg"
+    ],
+    "especificaciones": [
+      "Chipset de última arquitectura NVIDIA GeForce RTX de Serie 50 (5060 Ti)",
+      "Memoria VRAM de alta velocidad de 8GB GDDR7 / GDDR6X",
+      "Modelo Gigabyte Eagle con sintonización Overclock de alto rendimiento",
+      "Sistema de refrigeración patentado WINDFORCE de 3 ventiladores con giro alternado",
+      "Soporte completo para DLSS de nueva generación y Ray Tracing en tiempo real"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-041",
+    "nombre": "Placa De Video Geforce Rtx 5060 Ti 8gb Asus Prime Oc",
+    "stock": 2,
+    "precioLista": 595000,
+    "precioSinImpuestos": 491736,
+    "precioCuotas": 714000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 238000
+    },
+    "categoriasIds": ["cat-placas"],
+    "imagenes": [
+      "../assets/images/products/cat-placas/video-rtx5060ti-asus-prime-1.jpeg",
+      "../assets/images/products/cat-placas/video-rtx5060ti-asus-prime-2.jpeg"
+    ],
+    "especificaciones": [
+      "GPU de alto impacto competitivo NVIDIA GeForce RTX 5060 Ti",
+      "8GB de memoria de video dedicados para texturas en Ultra y resoluciones exigentes",
+      "Línea de diseño ASUS Prime OC optimizada para ensamble estético elegante y sobrio",
+      "Estructura compacta de doble ventilador de alta presión estática Axial-tech",
+      "Compatibilidad total con software ASUS GPU Tweak para perfiles de juego y monitoreo"
+    ]
+  },
+
+
+
+{
+    "id": "PROD-042",
+    "nombre": "Placa De Video Geforce Rtx 5060 Ti 8gb Asus Tuf Gaming Oc",
+    "stock": 2,
+    "precioLista": 640000,
+    "precioSinImpuestos": 528926,
+    "precioCuotas": 768000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 256000
+    },
+    "categoriasIds": ["cat-placas"],
+    "imagenes": [
+      "../assets/images/products/cat-placas/video-rtx5060ti-asus-tuf-1.jpeg",
+      "../assets/images/products/cat-placas/video-rtx5060ti-asus-tuf-2.jpeg"
+    ],
+    "especificaciones": [
+      "GPU NVIDIA GeForce RTX 5060 Ti de última generación",
+      "8GB de memoria dedicada para un rendimiento óptimo en altas resoluciones",
+      "Construcción Tuf Gaming con componentes de grado militar para máxima durabilidad",
+      "Edición Overclock (OC) de fábrica para un extra de potencia en gaming",
+      "Sistema de refrigeración triple fan con rodamientos de doble bola"
+    ]
+  },
+  {
+    "id": "PROD-043",
+    "nombre": "Placa De Video Geforce Rtx 5070 12gb Gigabyte Aero Oc",
+    "stock": 2,
+    "precioLista": 890000,
+    "precioSinImpuestos": 735537,
+    "precioCuotas": 1068000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 356000
+    },
+    "categoriasIds": ["cat-placas"],
+    "imagenes": [
+      "../assets/images/products/cat-placas/video-rtx5070-giga-aero-1.jpeg",
+      "../assets/images/products/cat-placas/video-rtx5070-giga-aero-2.jpeg"
+    ],
+    "especificaciones": [
+      "Poderosa arquitectura NVIDIA GeForce RTX 5070",
+      "Memoria VRAM de 12GB ideal para texturas Ultra y creación de contenido en 4K",
+      "Estética exclusiva Aero en color blanco, perfecta para setups minimalistas",
+      "Sistema de enfriamiento avanzado Windforce con ventiladores alternados",
+      "Placa trasera de metal ventilada para disipación térmica optimizada"
+    ]
+  },
+  {
+    "id": "PROD-044",
+    "nombre": "Placa De Video Radeon Rx 9070 Xt 16gb Power Color Reaper",
+    "stock": 2,
+    "precioLista": 950000,
+    "precioSinImpuestos": 785124,
+    "precioCuotas": 1140000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 380000
+    },
+    "categoriasIds": ["cat-placas"],
+    "imagenes": [
+      "../assets/images/products/cat-placas/video-radeon-rx9070-powercolor-1.jpeg"
+    ],
+    "especificaciones": [
+      "Chipset de gama alta AMD Radeon RX 9070 XT",
+      "Capacidad masiva de 16GB de memoria de video dedicación extrema",
+      "Edición Reaper personalizada por PowerColor con frecuencias optimizadas",
+      "Preparada para trazado de rayos (Ray Tracing) y tecnologías AMD FidelityFX",
+      "Diseño robusto de triple ranura con iluminación sutil integrada"
+    ]
+  },
+  {
+    "id": "PROD-045",
+    "nombre": "Teclado Logitech Pebble Keys 2 K380s Inalambrico Blanco",
+    "stock": 8,
+    "precioLista": 45000,
+    "precioSinImpuestos": 37190,
+    "precioCuotas": 54000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 18000
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/teclado-pebble-blanco-1.jpeg",
+      "../assets/images/products/cat-otros/teclado-pebble-blanco-2.jpeg",
+      "../assets/images/products/cat-otros/teclado-pebble-blanco-3.jpeg"
+    ],
+    "especificaciones": [
+      "Diseño ultra delgado, ligero y portátil en color blanco puro",
+      "Conectividad inalámbrica dual mediante Bluetooth y receptor Logi Bolt",
+      "Emparejamiento multidispositivo con cambio rápido entre 3 terminales",
+      "Teclas redondas de perfil bajo para una escritura silenciosa y cómoda",
+      "Batería de larga duración con administración de energía eficiente"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-046",
+    "nombre": "Teclado Logitech K860 Ergo Inalambrico For Business",
+    "stock": 8,
+    "precioLista": 125000,
+    "precioSinImpuestos": 103306,
+    "precioCuotas": 150000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 50000
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/teclado-k860-ergo-1.jpeg",
+      "../assets/images/products/cat-otros/teclado-k860-ergo-2.jpeg",
+      "../assets/images/products/cat-otros/teclado-k860-ergo-3.jpeg"
+    ],
+    "especificaciones": [
+      "Estructura curva ergonómica partida que reduce la tensión muscular",
+      "Reposamuñecas acolchado de tres capas incorporado para máxima comodidad",
+      "Conexión inalámbrica segura optimizada para entornos corporativos (For Business)",
+      "Teclas con distribución cóncava que se adaptan a la forma de los dedos",
+      "Compatible con flujos de trabajo multidispositivo mediante tecnología Logitech Flow"
+    ]
+  },
+  {
+    "id": "PROD-047",
+    "nombre": "Teclado Logitech K950 Ergo Slim Negro",
+    "stock": 8,
+    "precioLista": 98000,
+    "precioSinImpuestos": 80992,
+    "precioCuotas": 117600,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 39200
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/teclado-k950-negro-1.jpeg",
+      "../assets/images/products/cat-otros/teclado-k950-negro-2.jpeg"
+    ],
+    "especificaciones": [
+      "Línea Ergo Slim que combina ergonomía avanzada y perfil elegante",
+      "Distribución de tamaño completo con teclado numérico integrado en color negro",
+      "Escritura fluida y de muy bajo ruido ideal para largas jornadas de oficina",
+      "Conectividad inalámbrica por Bluetooth de alta fidelidad",
+      "Teclas de acceso rápido multimedia personalizables mediante software"
+    ]
+  },
+  {
+    "id": "PROD-048",
+    "nombre": "Teclado Logitech Mx Keys Mini Inalambrico Rosa",
+    "stock": 8,
+    "precioLista": 110000,
+    "precioSinImpuestos": 90909,
+    "precioCuotas": 132000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 44000
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/teclado-mxmini-rosa-1.jpeg",
+      "../assets/images/products/cat-otros/teclado-mxmini-rosa-2.jpeg"
+    ],
+    "especificaciones": [
+      "Formato compacto minimalista (sin pad numérico) en color rosa pastel",
+      "Teclas inteligentes Perfect Stroke con pulsaciones perfectas y esféricas",
+      "Retroiluminación inteligente automática con sensores de proximidad manual",
+      "Carga rápida mediante puerto USB-C de última generación",
+      "Teclas dedicadas para dictado de voz, silenciar micrófono y selector de emojis"
+    ]
+  },
+  {
+    "id": "PROD-049",
+    "nombre": "Mouse Gamer Razer Cobra Pro Lightweight RGB Inalambrico",
+    "stock": 8,
+    "precioLista": 145000,
+    "precioSinImpuestos": 119835,
+    "precioCuotas": 174000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 58000
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/mouse-razer-cobra-1.jpeg",
+      "../assets/images/products/cat-otros/mouse-razer-cobra-2.jpeg",
+      "../assets/images/products/cat-otros/mouse-razer-cobra-3.jpeg"
+    ],
+    "especificaciones": [
+      "Diseño ultraligero (Lightweight) optimizado para movimientos rápidos y precisos",
+      "Tecnología inalámbrica Razer HyperSpeed con latencia prácticamente nula",
+      "Sensor óptico Razer de altísima precisión y DPI totalmente configurables",
+      "Iluminación RGB Chroma con múltiples zonas de personalización de color",
+      "Interruptores ópticos para mouse con durabilidad extrema y respuesta inmediata"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-050",
+    "nombre": "Mouse Logitech M170 Inalambrico Azul Gris",
+    "stock": 8,
+    "precioLista": 19500,
+    "precioSinImpuestos": 16116,
+    "precioCuotas": 23400,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 7800
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/mouse-m170-azul-1.jpeg",
+      "../assets/images/products/cat-otros/mouse-m170-azul-2.jpeg",
+      "../assets/images/products/cat-otros/mouse-m170-azul-3.jpeg"
+    ],
+    "especificaciones": [
+      "Conexión inalámbrica estable de 2.4 GHz mediante nano receptor USB",
+      "Diseño ambidiestro cómodo y compacto en combinación azul y gris",
+      "Seguimiento óptico suave con gran capacidad de respuesta",
+      "Duración de batería de hasta 12 meses con una sola pila AA",
+      "Compatibilidad plug and play instantánea sin necesidad de software"
+    ]
+  },
+  {
+    "id": "PROD-051",
+    "nombre": "Mouse Logitech Mx Master 4 Bluetooth Negro",
+    "stock": 8,
+    "precioLista": 160000,
+    "precioSinImpuestos": 132231,
+    "precioCuotas": 192000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 64000
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/mouse-mxmaster4-1.jpeg",
+      "../assets/images/products/cat-otros/mouse-mxmaster4-2.jpeg",
+      "../assets/images/products/cat-otros/mouse-mxmaster4-3.jpeg"
+    ],
+    "especificaciones": [
+      "Mouse premium ergonómico para productividad avanzada en color negro",
+      "Rueda de desplazamiento inteligente MagSpeed electromagnética ultra veloz",
+      "Sensor de alta precisión capaz de realizar seguimiento sobre cualquier superficie (incluso vidrio)",
+      "Botón de pulgar y rueda lateral secundaria para gestos y navegación horizontal",
+      "Conectividad Bluetooth avanzada con soporte para software Logitech Options+"
+    ]
+  },
+  {
+    "id": "PROD-052",
+    "nombre": "Mouse Logitech Mx Vertical Inalambrico",
+    "stock": 8,
+    "precioLista": 135000,
+    "precioSinImpuestos": 111570,
+    "precioCuotas": 162000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 54000
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/mouse-mxvertical-1.jpeg",
+      "../assets/images/products/cat-otros/mouse-mxvertical-2.jpeg",
+      "../assets/images/products/cat-otros/mouse-mxvertical-3.jpeg"
+    ],
+    "especificaciones": [
+      "Ángulo vertical único de 57° que reduce la presión en la muñeca y antebrazo",
+      "Sensor de alta precisión de 4000 DPI que disminuye el movimiento de la mano",
+      "Superficie de goma texturizada que ofrece un agarre firme y natural",
+      "Batería recargable USB-C con autonomía excepcional",
+      "Triple conectividad: Bluetooth, receptor USB y cable de carga"
+    ]
+  },
+  {
+    "id": "PROD-053",
+    "nombre": "Pad Mouse Redragon P006 Kunlun Large",
+    "stock": 10,
+    "precioLista": 15000,
+    "precioSinImpuestos": 12397,
+    "precioCuotas": 18000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 6000
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/pad-kunlun-1.jpeg",
+      "../assets/images/products/cat-otros/pad-kunlun-2.jpeg"
+    ],
+    "especificaciones": [
+      "Tamaño extendido Large ideal para mouse y teclado juntos",
+      "Superficie de tela entrelazada optimizada para un deslizamiento fluido y preciso",
+      "Bordes cosidos reforzados de doble costura que evitan el deshilachado",
+      "Base de goma antideslizante texturizada que asegura el pad al escritorio",
+      "Material impermeable y lavable resistente a salpicaduras"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-054",
+    "nombre": "Pad Mouse Logitech G Studio Series Rosa",
+    "stock": 10,
+    "precioLista": 24000,
+    "precioSinImpuestos": 19835,
+    "precioCuotas": 28800,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 9600
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/pad-logitech-rosa-1.jpeg",
+      "../assets/images/products/cat-otros/pad-logitech-rosa-2.jpeg"
+    ],
+    "especificaciones": [
+      "Diseño estilizado de la línea Studio Series en un hermoso acabado rosa",
+      "Superficie de microtejido suave que optimiza el rendimiento de sensores ópticos",
+      "Base con recubrimiento de caucho natural para evitar desplazamientos molestos",
+      "Materiales de alta calidad con revestimiento resistente a las manchas",
+      "Perfil delgado y flexible, fácil de enrollar y transportar"
+    ]
+  },
+  {
+    "id": "PROD-055",
+    "nombre": "Auricular Inalambrico Quantum JBL Tws Air Negro",
+    "stock": 4,
+    "precioLista": 135000,
+    "precioSinImpuestos": 111570,
+    "precioCuotas": 162000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 54000
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/auri-quantum-jbl-1.jpeg",
+      "../assets/images/products/cat-otros/auri-quantum-jbl-2.jpeg",
+      "../assets/images/products/cat-otros/auri-quantum-jbl-3.jpeg"
+    ],
+    "especificaciones": [
+      "Formato True Wireless Stereo (TWS) ultra compacto para gaming móvil y PC",
+      "Tecnología de sonido JBL QuantumSURROUND para una inmersión envolvente",
+      "Conexión inalámbrica dual de baja latencia mediante dongle USB-C y Bluetooth",
+      "Micrófonos integrados con tecnología de formación de haces para un chat claro",
+      "Estuche de carga inteligente con autonomía combinada de larga duración"
+    ]
+  },
+  {
+    "id": "PROD-056",
+    "nombre": "Auricular Chat Logitech Zone Vibe 100 Negro",
+    "stock": 4,
+    "precioLista": 168000,
+    "precioSinImpuestos": 138843,
+    "precioCuotas": 201600,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 67200
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/auri-logitech-zone-1.jpeg",
+      "../assets/images/products/cat-otros/auri-logitech-zone-2.jpeg",
+      "../assets/images/products/cat-otros/auri-logitech-zone-3.jpeg"
+    ],
+    "especificaciones": [
+      "Diseño de diadema Over-ear ultra ligero con almohadillas de tejido transpirable",
+      "Ideal para videollamadas, conferencias y entretenimiento diario en color negro",
+      "Micrófono con cancelación de ruido integrado que se voltea para silenciar",
+      "Conectividad Bluetooth estable con alcance inalámbrico mejorado",
+      "Controles multimedia intuitivos directamente integrados en la copa del auricular"
+    ]
+  },
+  {
+    "id": "PROD-057",
+    "nombre": "Auricular Gamer Level Up Anubis 3 En 1 RGB Ps5 Ps4 Pc",
+    "stock": 4,
+    "precioLista": 54000,
+    "precioSinImpuestos": 44628,
+    "precioCuotas": 64800,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 21600
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/auri-levelup-anubis-1.jpeg",
+      "../assets/images/products/cat-otros/auri-levelup-anubis-2.jpeg",
+      "../assets/images/products/cat-otros/auri-levelup-anubis-3.jpeg"
+    ],
+    "especificaciones": [
+      "Conectividad versátil 3 en 1 (Inalámbrico 2.4 GHz, Bluetooth y Cable Jack 3.5mm)",
+      "Compatibilidad multiplataforma garantizada para PS5, PS4, PC y dispositivos móviles",
+      "Iluminación estética RGB dinámica en las copas laterales",
+      "Micrófono flexible y desmontable con recepción de audio cristalina",
+      "Diadema acolchada ajustable diseñada para largas sesiones de juego"
+    ]
+  },
+  {
+    "id": "PROD-058",
+    "nombre": "Auricular Gamer Redragon Hylas H260",
+    "stock": 4,
+    "precioLista": 19500,
+    "precioSinImpuestos": 16116,
+    "precioCuotas": 23400,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 7800
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/auri-redragon-hylas-1.jpeg",
+      "../assets/images/products/cat-otros/auri-redragon-hylas-2.jpeg",
+      "../assets/images/products/cat-otros/auri-redragon-hylas-3.jpeg"
+    ],
+    "especificaciones": [
+      "Sonido estéreo de alta calidad con diafragmas de neodimio de 50mm",
+      "Iluminación RGB brillante con efectos de transición automática",
+      "Micrófono omnidireccional fijo con brazo flexible y reducción de ruido",
+      "Cables conectores reforzados con ficha unificada y adaptador split incluido",
+      "Control de volumen integrado de acceso rápido en la estructura de la copa"
+    ]
+  },
+  {
+    "id": "PROD-059",
+    "nombre": "Auricular Gamer Redragon Lamia 2 RGB H320",
+    "stock": 4,
+    "precioLista": 36000,
+    "precioSinImpuestos": 29752,
+    "precioCuotas": 43200,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 14400
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/auri-redragon-lamia-1.jpeg",
+      "../assets/images/products/cat-otros/auri-redragon-lamia-2.jpeg",
+      "../assets/images/products/cat-otros/auri-redragon-lamia-3.jpeg"
+    ],
+    "especificaciones": [
+      "Sonido envolvente virtual envolvente de 7.1 canales mediante conexión USB nítida",
+      "Anillo de iluminación RGB elegante en ambas copas",
+      "Estructura con diadema de suspensión autoajustable de metal ligero",
+      "Incluye un soporte universal de fábrica para colocar los auriculares en el escritorio",
+      "Micrófono integrado flexible con tecnología de aislamiento de voz ambiente"
+    ],
+    "esDestacado": true
+  },
+  {
+    "id": "PROD-060",
+    "nombre": "Auricular Gamer Redragon Zeus X H510p RGB Rosa",
+    "stock": 4,
+    "precioLista": 65000,
+    "precioSinImpuestos": 53719,
+    "precioCuotas": 78000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 26000
+    },
+    "categoriasIds": ["cat-otros"],
+    "imagenes": [
+      "../assets/images/products/cat-otros/auri-redragon-zeus-rosa-1.jpeg",
+      "../assets/images/products/cat-otros/auri-redragon-zeus-rosa-2.jpeg",
+      "../assets/images/products/cat-otros/auri-redragon-zeus-rosa-3.jpeg"
+    ],
+    "especificaciones": [
+      "Sonido envolvente 7.1 de nivel profesional con controladores de 53mm",
+      "Edición estética de diseño exclusivo en color rosa pastel",
+      "Iluminación RGB dinámica integrada con control de efectos mediante software",
+      "Almohadillas de espuma viscoelástica premium con memoria de forma",
+      "Micrófono con cancelación de ruidos avanzada, totalmente desmontable"
+    ]
+  },
+  {
+    "id": "PROD-061",
+    "nombre": "Silla Gamer Formula V Line Vc3 Racerpu Azul",
+    "stock": 2,
+    "precioLista": 235000,
+    "precioSinImpuestos": 194215,
+    "precioCuotas": 282000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 94000
+    },
+    "categoriasIds": ["cat-sillas"],
+    "imagenes": [
+      "../assets/images/products/cat-sillas/silla-formula-azul-1.jpeg",
+      "../assets/images/products/cat-sillas/silla-formula-azul-2.jpeg",
+      "../assets/images/products/cat-sillas/silla-formula-azul-3.jpeg"
+    ],
+    "especificaciones": [
+      "Tapizado elegante en cuero sintético Racer PU de alta resistencia con detalles azules",
+      "Estructura ergonómica con soporte lumbar y cervical acolchado",
+      "Mecanismo de regulación de altura mediante pistón de gas de Clase 3",
+      "Base de estrella reforzada con ruedas de nailon de suave deslizamiento",
+      "Apoyabrazos fijos acolchados para una postura de descanso ideal"
+    ]
+  },
+  {
+    "id": "PROD-062",
+    "nombre": "Silla Gamer Formula V Line Vc3 Racerpu Blanco",
+    "stock": 2,
+    "precioLista": 310000,
+    "precioSinImpuestos": 256198,
+    "precioCuotas": 372000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 124000
+    },
+    "categoriasIds": ["cat-sillas"],
+    "imagenes": [
+      "../assets/images/products/cat-sillas/silla-formula-blanco-1.jpeg",
+      "../assets/images/products/cat-sillas/silla-formula-blanco-2.jpeg",
+      "../assets/images/products/cat-sillas/silla-formula-blanco-3.jpeg"
+    ],
+    "especificaciones": [
+      "Diseño deportivo de alta gama tapizado en cuero sintético premium blanco y negro",
+      "Ergonomía optimizada con almohadillas ajustables para la zona lumbar",
+      "Respaldo con capacidad de inclinación ajustable para momentos de relax",
+      "Sistema de elevación suave por pistón hidráulico reforzado",
+      "Ruedas dobles de alta durabilidad aptas para todo tipo de pisos"
+    ]
+  },
+  {
+    "id": "PROD-063",
+    "nombre": "Silla Gamer X Micro Xm B98bu Negro Y Azul",
+    "stock": 2,
+    "precioLista": 445000,
+    "precioSinImpuestos": 367769,
+    "precioCuotas": 534000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 178000
+    },
+    "categoriasIds": ["cat-sillas"],
+    "imagenes": [
+      "../assets/images/products/cat-sillas/silla-xmicro-azul-1.jpeg",
+      "../assets/images/products/cat-sillas/silla-xmicro-azul-2.jpeg",
+      "../assets/images/products/cat-sillas/silla-xmicro-azul-3.jpeg"
+    ],
+    "especificaciones": [
+      "Estructura metálica interna de alta resistencia para máxima estabilidad",
+      "Tapizado microperforado transpirable en diseño deportivo negro y azul",
+      "Respaldo reclinable hasta 135 grados con sistema de bloqueo de posición",
+      "Apoyabrazos regulables en altura para adaptarse a cualquier tipo de escritorio",
+      "Espuma de alta densidad moldeada en frío que no pierde su forma con el uso"
+    ]
+  },
+  {
+    "id": "PROD-064",
+    "nombre": "Silla Gamer X Micro Xm B98wh Negro Y Blanco",
+    "stock": 2,
+    "precioLista": 580000,
+    "precioSinImpuestos": 479339,
+    "precioCuotas": 696000,
+    "cuotas": {
+      "cantidad": 3,
+      "precioPorCuota": 232000
+    },
+    "categoriasIds": ["cat-sillas"],
+    "imagenes": [
+      "../assets/images/products/cat-sillas/silla-xmicro-blanco-1.jpeg",
+      "../assets/images/products/cat-sillas/silla-xmicro-blanco-2.jpeg",
+      "../assets/images/products/cat-sillas/silla-xmicro-blanco-3.jpeg"
+    ],
+    "especificaciones": [
+      "Diseño premium de vanguardia en la clásica combinación simétrica blanco y negro",
+      "Mecanismo basculante avanzado con control de tensión de la inclinación",
+      "Apoyabrazos con ajuste multidireccional ergonómico superior",
+      "Pistón neumático de alta seguridad Clase 4 que soporta un mayor peso",
+      "Acabados de costuras finas reforzadas con almohadones premium de descanso"
+    ]
+  }
+
+
+  ]
+}
