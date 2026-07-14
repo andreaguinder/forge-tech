@@ -71,47 +71,47 @@ function Home() {
         <h2 className='titleCarrusel'>Productos Destacados</h2>
 
         {cargando ? (
-  <div className="waveLoader">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+          <div className="waveLoader">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-        ) : ( 
-        <SwiperCarrusel
-          containerClassName="carruselProductos"
-          modules={[Navigation, Autoplay]}
-          items={productosDestacados}
-          settings={{
-            spaceBetween: 24,
-            breakpoints: { 768: { slidesPerView: 5 } },
-            autoplay: { delay: 4000 },
-            loop: true,
-            style: {
-              maxWidth: '1140px',
-              width: '100%',
-              overflow: 'hidden',
-              padding: "20px 5px"
-            },
-          }}
-          renderItem={(prod) => (
-            <Card
-              nombre={prod.nombre}
-              imagenes={prod.imagenes}
-              precioLista={prod.precioLista}
-              verFichaTecnica={() => console.log("Ver ficha", prod.id)}
-            />
-          )}
-        />)}
+        ) : (
+          <SwiperCarrusel
+            containerClassName="carruselProductos"
+            modules={[Navigation, Autoplay]}
+            items={productosDestacados}
+            settings={{
+              spaceBetween: 24,
+              breakpoints: { 768: { slidesPerView: 5 } },
+              autoplay: { delay: 4000 },
+              loop: true,
+              style: {
+                maxWidth: '1140px',
+                width: '100%',
+                overflow: 'hidden',
+                padding: "20px 5px"
+              },
+            }}
+            renderItem={(prod) => (
+              <Card
+                id={prod.id}
+                nombre={prod.nombre}
+                imagenes={prod.imagenes}
+                precioLista={prod.precioLista}
+              />
+            )}
+          />)}
       </section>
 
       {/* Banner publi PC Armadas */}
 
       <section>
         <Banners
-        containerClassName="bannerPublicitario"
-        items={bannersPublicidadElegi}
-         renderItem={(banner) => (
+          containerClassName="bannerPublicitario"
+          items={bannersPublicidadElegi}
+          renderItem={(banner) => (
             <picture>
               <source media="(max-width: 767px)" srcSet={banner.mobile} />
               <img src={banner.desktop} alt="Banner" className='banner' />
@@ -126,56 +126,59 @@ function Home() {
       <section className='productosEnCarrusel'>
         <h2 className='titleCarrusel'>PC armadas</h2>
 
-                {cargando ? (
-  <div className="waveLoader">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+        {cargando ? (
+          <div className="waveLoader">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-        ) : ( 
+        ) : (
 
-        <SwiperCarrusel
-          containerClassName="carruselProductos"
-          modules={[Navigation, Autoplay]}
-          items={pcArmadas}
-          settings={{
-            spaceBetween: 24,
-            breakpoints: { 768: { slidesPerView: 5 } },
-            autoplay: { delay: 4000 },
-            loop: true,
-            style: {
-              maxWidth: '1140px',
-              width: '100%',
-              overflow: 'hidden',
-              padding: "20px 5px"
-            },
-            onInit: (swiper) => {
-    setTimeout(() => {
+          <SwiperCarrusel
+            containerClassName="carruselProductos"
+            modules={[Navigation, Autoplay]}
+            items={pcArmadas}
+            settings={{
+              spaceBetween: 24,
+              breakpoints: { 768: { slidesPerView: 5 } },
+              autoplay: { delay: 4000 },
+              loop: true,
+              style: {
+                maxWidth: '1140px',
+                width: '100%',
+                overflow: 'hidden',
+                padding: "20px 5px"
+              },
+onInit: (swiper) => {
+  setTimeout(() => {
+    // Verificamos que swiper.autoplay exista
+    if (swiper.autoplay && typeof swiper.autoplay.start === 'function') {
       swiper.autoplay.start();
-    }, 1500); // Esto hace que el segundo carrusel espere 2 segundos antes de empezar
-  },
-          }}
-          renderItem={(prod) => (
-            <Card
-              nombre={prod.nombre}
-              imagenes={prod.imagenes}
-              precioLista={prod.precioLista}
-              verFichaTecnica={() => console.log("Ver ficha", prod.id)}
-            />
-          )}
-        />)}
+    }
+  }, 1500);
+},
+            }}
+            renderItem={(prod) => (
+              <Card
+                id={prod.id}
+                nombre={prod.nombre}
+                imagenes={prod.imagenes}
+                precioLista={prod.precioLista}
+              />
+            )}
+          />)}
       </section>
 
 
 
-            {/* Banner publi Arma tu pc */}
+      {/* Banner publi Arma tu pc */}
 
       <section>
         <Banners
-        containerClassName="bannerPublicitario"
-        items={bannersPublicidadArma}
-         renderItem={(banner) => (
+          containerClassName="bannerPublicitario"
+          items={bannersPublicidadArma}
+          renderItem={(banner) => (
             <picture>
               <source media="(max-width: 767px)" srcSet={banner.mobile} />
               <img src={banner.desktop} alt="Banner" className='banner' />

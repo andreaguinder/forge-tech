@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useProducts } from "../hooks/useProducts";
 import Card from "../components/Cards/Card";
-import ProductDetail from "./ProductDetail";
 import { Tabs } from "../components/Tabs/Tabs";
-import { getProducts } from "../services/products";
 
 const categoriasTabs = [
   { id: "todas", label: "Todos los productos" },
@@ -18,87 +18,37 @@ const categoriasTabs = [
 ];
 
 function Products() {
-  const [productos, setProducts] = useState([]);
-
-  const [cargando, setCargando] = useState(true);
-
-  const [message, setMessage] = useState();
-
-  let [productoSeleccionado, setProductoSeleccionado] = useState(null);
-
+  const navigate = useNavigate();
+  const { productos, cargando, error } = useProducts();
   const [categoriaActiva, setCategoriaActiva] = useState("todas");
 
-  useEffect(() => {
-    getProducts()
-      .then((rta) => {
-        if (rta.success) {
-          setProducts(rta.data);
-        }
-      })
-      .catch((error) => {
-        setMessage(error.message);
-      })
-      .finally(() => {
-        setCargando(false);
-      });
-  }, []);
+  // Filtramos los productos según la categoría seleccionada
+  const productosFiltrados = categoriaActiva === "todas"
+    ? productos
+    : productos.filter((prod) => prod.categoriasIds?.includes(categoriaActiva));
 
-  const productosFiltrados =
-    categoriaActiva === "todas"
-      ? productos
-      : productos.filter((prod) =>
-          prod.categoriasIds.includes(categoriaActiva),
-        );
-
-  const handleVerFichaTecnica = (id) => {
-    const encontrado = productos.find((prod) => prod.id === id);
-    setProductoSeleccionado(encontrado);
-  };
-
-  const handleVolverALaLista = () => {
-    setProductoSeleccionado(null);
-  };
-
-  if (cargando) {
-    return <h2>Cargando productos...</h2>;
-  }
-
-  if (message) {
-    return <h2>{message}</h2>;
-  }
+  if (cargando) return <h2>Cargando productos...</h2>;
+  if (error) return <h2>{error}</h2>;
 
   return (
     <>
       <h1>Productos - Forge Tech</h1>
-
-      {productoSeleccionado === null ? (
-        <>
-          <Tabs
-            categories={categoriasTabs}
-            onCategoryChange={(catId) => setCategoriaActiva(catId)}
-          >
-
-          <section className="contenedor-cards">
-            {productosFiltrados.map((prod) => (
-              <Card
-                key={prod.id}
-                imagenes={prod.imagenes}
-                nombre={prod.nombre}
-                precioLista={prod.precioLista}
-                verFichaTecnica={() => handleVerFichaTecnica(prod.id)}
-              />
-            ))}
-          </section>
-          </Tabs>
-        </>
-      ) : (
-        <section>
-          <ProductDetail
-            productos={productoSeleccionado}
-            onVolver={handleVolverALaLista}
-          />
+      
+      {/* Pasamos la función que actualiza el estado de esta página */}
+      <Tabs categories={categoriasTabs} onCategoryChange={setCategoriaActiva}>
+        <section className="contenedor-cards">
+          {productosFiltrados.map((prod) => (
+            <Card
+              key={prod.id}
+              id={prod.id}
+              imagenes={prod.imagenes}
+              nombre={prod.nombre}
+              precioLista={prod.precioLista}
+              verFichaTecnica={() => navigate(`/producto/${prod.id}`)}
+            />
+          ))}
         </section>
-      )}
+      </Tabs>
     </>
   );
 }

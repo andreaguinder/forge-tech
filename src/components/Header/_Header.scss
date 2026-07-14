@@ -18,9 +18,9 @@
     span { color: $color-accent; }
   }
 
-  // --- LOGICA MOBILE (Por defecto) ---
+
   &__hamburguesa {
-    display: block; // Visible en mobile
+    display: block;
     font-size: 1.8rem;
     cursor: pointer;
     color: $color-text-white;
@@ -30,7 +30,7 @@
   &__nav {
     position: fixed;
     top: 0;
-    right: -100%; // Escondido en mobile
+    right: -100%;
     width: 50%;
     height: 100vh;
     background-color: $color-surface;
@@ -52,32 +52,33 @@
     font-weight: 500;
     transition: color 0.3s ease;
     color: $color-text-white;
-    margin: 1rem 0; // Separación para el menú vertical
+    margin: 1rem 0; 
 
     &:hover { color: $color-legend; }
   }
 
-  // --- LOGICA DESKTOP (A partir de 768px) ---
+ 
   @media (min-width: 768px) {
     &__hamburguesa {
-      display: none; // Oculto en escritorio
+      display: none; 
     }
 
     &__nav {
-      position: static; // Vuelve al flujo normal
+      position: static; 
       width: auto;
       height: auto;
       background-color: transparent;
-      flex-direction: row; // Menú horizontal
+      flex-direction: row; 
       padding-top: 0;
       border-left: none;
       box-shadow: none;
       gap: 2rem;
-      right: 0; // Asegura que se vea
+      right: 0; 
+              align-items: center;
     }
 
     &__link {
-      margin: 0; // Quita la separación vertical
+      margin: 0; 
     }
   }
 }

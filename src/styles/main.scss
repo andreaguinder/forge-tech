@@ -27,7 +27,7 @@ a {
   @include flexCenter(row);
   gap: 16px;
   font-size: 16px;
-  color: $color-text-black;
+  color: $color-text-white;
 }
 
 %btn {
@@ -70,7 +70,7 @@ a {
   cursor: pointer;
 
   i {
-    color: $color-text-black;
+    color: $color-text-white;
     font-size: 24px;
   }
 }
@@ -125,39 +125,42 @@ background-color: $color-surface;
   }
 
   @include flexCenter(column);
-  background-color: $color-text-white;
+  background-color: $color-surface;
   border-radius: 8px;
   padding: 16px;
 
   .container-img {
     img {
       width: 100%;
+      max-width: 280px;
+      border-radius: 4px;
+      margin: 16px auto 32px;
     }
   }
 
   .container-info {
     @include flexCenter(column);
-    gap: 8px;
+    gap: 16px;
     align-items: flex-start;
 
     h1 {
-      color: $color-text-black;
+      color: $color-legend;
       font-size: 18px;
     }
 
     h2 {
-      color: $color-primary;
+      color: $color-text-white;
       font-size: 24px;
     }
 
     .cucarda {
-      @include flexCenter(column);
+      @include flexCenter(row);
       font-size: 14px;
-      color: $color-text-black;
+      color: $color-text-white;
       gap: 16px;
 
       span {
-        color: $color-secondary;
+        color: $color-primary;
         font-weight: 500;
       }
 
@@ -175,7 +178,7 @@ background-color: $color-surface;
     ul {
       @include flexCenter(column);
             justify-content: flex-start;
-      gap: 8px;
+      gap: 16px;
           align-items: flex-start;
     }
   }
@@ -389,10 +392,10 @@ img {
   .btn-volver-atras {
     width: 48px;
     height: 48px;
-    margin: 24px 0px;
+    margin: 24px 30px;
 
     i {
-      color: $color-text-black;
+      color: $color-text-white;
       font-size: 48px;
     }
   }
@@ -421,10 +424,11 @@ img {
 
   .contenedor-product-detail {
     flex-direction: column;
-    border-radius: 16px;
+    border-radius: 8px;
     width: 100%;
     max-width: 1200px;
     margin: 0px auto 32px;
+            padding-top: 32px;
 
   .container-superior {
     flex-direction: row;
@@ -437,14 +441,17 @@ img {
 
     .container-img {
       img {
-        width: 100%;
-        padding: 32px;
+        width: 90%;
+                margin: auto;
+        border-radius: 8px;
+        display: flex;
+        max-width: 580px;
       }
     }
 
     .container-info {
       gap: 24px;
-      padding: 32px;
+              padding: 0px 32px 32px 32px;
 
       h1 {
         font-weight: 700;
@@ -458,7 +465,6 @@ img {
       .cucarda {
         flex-direction: row;
         font-size: 22px;
-        color: $color-text-black;
         gap: 32px;
 
         span {
@@ -469,7 +475,6 @@ img {
       }
 
       .sin-impuestos {
-        color: $color-text-muted;
         font-size: 18px;
       }
     }
@@ -494,5 +499,6 @@ img {
 
   .contenedor-cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
   }
 }

@@ -1,34 +1,31 @@
+import { Button } from "../Button";
+// Ya no necesitamos importar 'useState' ni la data harcodeada acá
 
-import { useState } from "react";
-import { Button } from "../Button"
-import { productos } from '../../data/productos.json'
+export const Counter = ({ minValue = 1, stock = 1, value, onChange }) => {
 
-export const Counter = ({ minValue = 0, stock = 1 }) => {
+  const sumar = () => {
+    // Si ya llegamos al límite del stock, no hace nada
+    if (value >= stock) return;
+    onChange(value + 1); // Avisamos al componente padre que sume uno
+  };
 
-    const [value, setValue] = useState(minValue)
+  const restar = () => {
+    if (value <= minValue) return;
+    onChange(value - 1); // Avisamos al componente padre que reste uno
+  };
 
-    const sumar = () => {
-        if(value >= stock) return
-        setValue(value + 1)
-    }
-
-    const restar = () => {
-        if(value <= minValue) return
-        setValue(value - 1)
-    }
-
-    return (
-
-        <div className="contador">
-            <Button className="btn-mas-menos" onClick={restar}>
-                - 
-            </Button>
-            { value }
-            <Button className="btn-mas-menos" onClick={sumar}>
-                + 
-            </Button>
-        </div>
-
-    )
-
-}
+  return (
+    <div className="contador">
+      <Button className="btn-mas-menos" onClick={restar} disabled={value <= minValue}>
+        - 
+      </Button>
+      
+      {/* Mostramos el valor controlado por el padre */}
+      <span>{ value }</span>
+      
+      <Button className="btn-mas-menos" onClick={sumar} disabled={value >= stock}>
+        + 
+      </Button>
+    </div>
+  );
+};

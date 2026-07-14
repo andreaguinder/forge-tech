@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+import { CartWidget } from '../CartWidget/CartWidget';
+import { CartContext } from '../../context/CartContext';
 
 export function Header() {
   const [menuAbierto, setMenuAbierto] = useState(false);
@@ -10,20 +13,18 @@ export function Header() {
         <Link to="/">FORGE <span>TECH</span></Link>
       </div>
 
-      {/* Botón hamburguesa (solo se ve en mobile por CSS) */}
       <div className="header__hamburguesa" onClick={() => setMenuAbierto(!menuAbierto)}>
-        <i className={`fa-solid ${menuAbierto ? 'fa-xmark' : 'fa-bars'}`}></i>
+        {menuAbierto ? <X size={28} /> : <Menu size={28} />}
       </div>
 
-      {/* Menú: Clase condicional para abrir/cerrar */}
       <nav className={`header__nav ${menuAbierto ? 'header__nav--abierto' : ''}`}>
         <Link to="/" className="header__link" onClick={() => setMenuAbierto(false)}>Inicio</Link>
         <Link to="/productos" className="header__link" onClick={() => setMenuAbierto(false)}>Productos</Link>
-        <Link to="/carrito" className="header__link" onClick={() => setMenuAbierto(false)}><i className="fa-solid fa-cart-shopping"></i></Link>
+
+        <Link to="/carrito" className="header__link header__link--cart" onClick={() => setMenuAbierto(false)}>
+          <CartWidget />
+        </Link>
       </nav>
     </header>
   );
-
 }
-
-
