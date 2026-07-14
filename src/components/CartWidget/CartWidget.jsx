@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Button } from '../Button'; 
 import { ShoppingCart } from 'lucide-react';
-import styles from './CartWidget.module.scss'; // Importamos el módulo de SASS
 import { CartContext } from '../../context/CartContext';
 
 export function CartWidget() {
@@ -15,13 +14,12 @@ export function CartWidget() {
 return (
     <Button 
       onClick={() => console.log("Abriendo carrito...")}
-      className={styles.cartButton} 
-      disabled={totalQuantity === 0} 
+      className="cartButton" 
     >
       <ShoppingCart size={24} fill="currentColor"/>
       
       {totalQuantity > 0 && (
-        <span className={styles.badge}> 
+        <span className="badge"> 
           {totalQuantity > 99 ? '99+' : totalQuantity}
         </span>
       )}

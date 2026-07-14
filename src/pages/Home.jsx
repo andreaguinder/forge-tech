@@ -24,6 +24,8 @@ import bannerArmaDesk from '../assets/images/banners/arma-tu-pc-desk.png';
 import bannerElegiMob from '../assets/images/banners/elegi-tu-pc-mob.png';
 import bannerArmaMob from '../assets/images/banners/arma-tu-pc-mob.png';
 
+import  Loader  from '../components/Loader/Loader';
+
 function Home() {
 
   const { productos, cargando } = useProducts();
@@ -71,11 +73,7 @@ function Home() {
         <h2 className='titleCarrusel'>Productos Destacados</h2>
 
         {cargando ? (
-          <div className="waveLoader">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <Loader/>
 
         ) : (
           <SwiperCarrusel
@@ -127,11 +125,7 @@ function Home() {
         <h2 className='titleCarrusel'>PC armadas</h2>
 
         {cargando ? (
-          <div className="waveLoader">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+                    <Loader/>
 
         ) : (
 

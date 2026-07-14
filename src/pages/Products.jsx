@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useProducts } from "../hooks/useProducts";
 import Card from "../components/Cards/Card";
 import { Tabs } from "../components/Tabs/Tabs";
+import Loader from '../components/Loader/Loader'
+
 
 const categoriasTabs = [
   { id: "todas", label: "Todos los productos" },
@@ -27,13 +29,12 @@ function Products() {
     ? productos
     : productos.filter((prod) => prod.categoriasIds?.includes(categoriaActiva));
 
-  if (cargando) return <h2>Cargando productos...</h2>;
+  if (cargando) return <Loader/>;
   if (error) return <h2>{error}</h2>;
 
   return (
     <>
-      <h1>Productos - Forge Tech</h1>
-      
+
       {/* Pasamos la función que actualiza el estado de esta página */}
       <Tabs categories={categoriasTabs} onCategoryChange={setCategoriaActiva}>
         <section className="contenedor-cards">

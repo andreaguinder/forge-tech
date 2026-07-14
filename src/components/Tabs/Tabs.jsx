@@ -1,6 +1,7 @@
 // Tabs.jsx
 import React, { useState } from "react";
 import { Button } from "../Button";
+import { ChevronUp, ChevronDown } from 'lucide-react';
 
 export const Tabs = ({ categories, onCategoryChange, children }) => {
   const [activeTab, setActiveTab] = useState("todas");
@@ -37,7 +38,7 @@ export const Tabs = ({ categories, onCategoryChange, children }) => {
           
           <div className="custom-select-trigger" onClick={() => setIsOpen(!isOpen)}>
             <span>{activeLabel}</span>
-            <i className={`fa-solid ${isOpen ? "fa-angle-up" : "fa-angle-down"}`}></i>
+            {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
           </div>
 
           {isOpen && (

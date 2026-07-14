@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Button } from "../components/Button";
 import { Counter } from "../components/Cards/Counter";
 import { CartContext } from '../context/CartContext'; 
+import { ChevronLeft } from 'lucide-react';
 
 function ProductDetail({ onVolver }) {
   const { id } = useParams();
@@ -51,7 +52,7 @@ function ProductDetail({ onVolver }) {
     <>
       <div>
         <Button className="btn-volver-atras" onClick={handleVolver} type="button">
-          <i className="fa fa-arrow-left" aria-hidden="true"></i> Volver
+          <ChevronLeft size={20} /> Volver
         </Button>
       </div>
 
