@@ -1,7 +1,7 @@
 import { Button } from "../Button";
 // Ya no necesitamos importar 'useState' ni la data harcodeada acá
 
-export const Counter = ({ minValue = 1, stock = 1, value, onChange }) => {
+export const ItemCount = ({ minValue = 1, stock = 1, value, onChange }) => {
 
   const sumar = () => {
     // Si ya llegamos al límite del stock, no hace nada

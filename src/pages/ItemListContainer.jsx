@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { useProducts } from "../hooks/useProducts";
-import Card from "../components/Cards/Card";
 import { Tabs } from "../components/Tabs/Tabs";
-import Loader from '../components/Loader/Loader'
-
+import Loader from '../components/Loader/Loader';
+import ItemList from "../components/ItemList/ItemList"; // Importamos el nuevo componente
 
 const categoriasTabs = [
   { id: "todas", label: "Todos los productos" },
@@ -19,8 +17,7 @@ const categoriasTabs = [
   { id: "cat-otros", label: "Otros" },
 ];
 
-function Products() {
-  const navigate = useNavigate();
+function ItemListContainer() {
   const { productos, cargando, error } = useProducts();
   const [categoriaActiva, setCategoriaActiva] = useState("todas");
 
@@ -29,29 +26,18 @@ function Products() {
     ? productos
     : productos.filter((prod) => prod.categoriasIds?.includes(categoriaActiva));
 
-  if (cargando) return <Loader/>;
+  if (cargando) return <Loader />;
   if (error) return <h2>{error}</h2>;
 
   return (
     <>
-
       {/* Pasamos la función que actualiza el estado de esta página */}
       <Tabs categories={categoriasTabs} onCategoryChange={setCategoriaActiva}>
-        <section className="contenedor-cards">
-          {productosFiltrados.map((prod) => (
-            <Card
-              key={prod.id}
-              id={prod.id}
-              imagenes={prod.imagenes}
-              nombre={prod.nombre}
-              precioLista={prod.precioLista}
-              verFichaTecnica={() => navigate(`/producto/${prod.id}`)}
-            />
-          ))}
-        </section>
+        {/* Le pasamos la lista de productos filtrados al componente de presentación */}
+        <ItemList productos={productosFiltrados} />
       </Tabs>
     </>
   );
 }
 
-export default Products;
+export default ItemListContainer;

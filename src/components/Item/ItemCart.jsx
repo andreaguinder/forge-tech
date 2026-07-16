@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Counter } from "../Cards/Counter";
+import { ItemCount } from "./ItemCount";
 import { CartContext } from "../../context/CartContext";
 
 function CardCart({ product }) { 
@@ -30,7 +30,7 @@ function CardCart({ product }) {
 
 
       <div className="cardCart__controles">
-        <Counter 
+        <ItemCount
           stock={stock} 
           minValue={1} 
           value={quantity} 

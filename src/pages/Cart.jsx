@@ -1,6 +1,6 @@
 import { CartContext } from '../context/CartContext'
 import { useContext } from 'react'
-import CardCart from '../components/Cards/CardCart'
+import ItemCart from '../components/Item/ItemCart'
 import { Button } from '../components/Button'
 
 function Cart() {
@@ -25,8 +25,8 @@ function Cart() {
         <div className="contenedor-carrito">
           <div className="carrito-items">
             {cart.map(prod => (
-              // Le pasamos el objeto entero del producto al CardCart
-              <CardCart key={prod.id} product={prod} />
+              // Le pasamos el objeto entero del producto al ItemCart
+              <ItemCart key={prod.id} product={prod} />
             ))}
           </div>
         </div>

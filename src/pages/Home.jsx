@@ -1,6 +1,6 @@
 import { Navigation, Autoplay } from 'swiper/modules';
 import SwiperCarrusel from '../components/SwiperCarrusel/SwiperCarrusel';
-import Card from '../components/Cards/Card';
+import Card from '../components/Item/Item';
 import { useProducts } from '../hooks/useProducts'
 import { Banners } from '../components/Banners';
 
