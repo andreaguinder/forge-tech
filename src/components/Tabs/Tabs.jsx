@@ -3,16 +3,15 @@ import React, { useState } from "react";
 import { Button } from "../Button";
 import { ChevronUp, ChevronDown } from 'lucide-react';
 
-export const Tabs = ({ categories, onCategoryChange, children }) => {
-  const [activeTab, setActiveTab] = useState("todas");
+// Recibimos 'activeCategory' desde afuera (inyectada desde la URL por el padre)
+export const Tabs = ({ categories, activeCategory = "todas", onCategoryChange, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Buscamos el label activo de forma segura
-  const activeLabel = categories.find((cat) => cat.id === activeTab)?.label || "Seleccione una opción";
+  // Ahora buscamos el label usando la propiedad que viene del padre
+  const activeLabel = categories.find((cat) => cat.id === activeCategory)?.label || "Seleccione una opción";
 
   const handleTabClick = (catId) => {
-    setActiveTab(catId);
-    onCategoryChange(catId);
+    onCategoryChange(catId); // Le avisamos al contenedor que empuje la nueva URL
     setIsOpen(false);
   };
 
@@ -24,7 +23,8 @@ export const Tabs = ({ categories, onCategoryChange, children }) => {
         {categories.map(({ id, label }) => (
           <Button
             key={id}
-            className={`tab-button ${activeTab === id ? "active" : ""}`}
+            // Comparamos con activeCategory
+            className={`tab-button ${activeCategory === id ? "active" : ""}`}
             onClick={() => handleTabClick(id)}
           >
             {label}
@@ -46,7 +46,8 @@ export const Tabs = ({ categories, onCategoryChange, children }) => {
               {categories.map(({ id, label }) => (
                 <span
                   key={id}
-                  className={`custom-option ${activeTab === id ? "selected" : ""}`}
+                  // Comparamos con activeCategory
+                  className={`custom-option ${activeCategory === id ? "selected" : ""}`}
                   onClick={() => handleTabClick(id)}
                 >
                   {label}
@@ -60,7 +61,7 @@ export const Tabs = ({ categories, onCategoryChange, children }) => {
         {/* Select nativo oculto corregido para JSX */}
         <select
           name="categoriaSolicitada"
-          value={activeTab}
+          value={activeCategory} // Controlado por la URL ahora
           onChange={(e) => handleTabClick(e.target.value)}
           className="formulario__input"
           style={{ opacity: 0, position: "absolute", zIndex: -1 }}

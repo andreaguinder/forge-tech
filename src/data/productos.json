@@ -1,38 +1,38 @@
 {
   "categorias": [{
-      "id": "cat-monitores",
+      "id": "monitores",
       "nombre": "Monitores"
     },
     {
-      "id": "cat-pc-armadas",
+      "id": "pc-armadas",
       "nombre": "PC Armadas"
     },
     {
-      "id": "cat-placas",
+      "id": "placas-de-video",
       "nombre": "Placas de Video"
     },
     {
-      "id": "cat-memorias-ram",
+      "id": "memorias-ram",
       "nombre": "Memorias RAM"
     },
     {
-      "id": "cat-procesadores",
+      "id": "procesadores",
       "nombre": "Procesadores"
     },
     {
-      "id": "cat-notebooks",
+      "id": "notebooks",
       "nombre": "Notebooks"
     },
     {
-      "id": "cat-motherboards",
+      "id": "motherboards",
       "nombre": "Motherboards"
     },
     {
-      "id": "cat-otros",
+      "id": "perifericos-y-mas",
       "nombre": "Otros"
     },
     {
-      "id": "cat-sillas",
+      "id": "sillas-gamer",
       "nombre": "Sillas Gamer"
     }
   ],
@@ -52,11 +52,11 @@
         "cantidad": 12,
         "precioPorCuota": 22440.00
       },
-      "categoriasIds": ["cat-monitores"],
+      "categoriasIds": ["monitores"],
       "imagenes": [
-        "../assets/images/products/cat-monitores/monitor-samsung-24-curvo-1.jpeg",
-        "../assets/images/products/cat-monitores/monitor-samsung-24-curvo-2.jpeg",
-        "../assets/images/products/cat-monitores/monitor-samsung-24-curvo-3.jpeg"
+        "../assets/images/products/monitores/monitor-samsung-24-curvo-1.jpeg",
+        "../assets/images/products/monitores/monitor-samsung-24-curvo-2.jpeg",
+        "../assets/images/products/monitores/monitor-samsung-24-curvo-3.jpeg"
       ],
       "especificaciones": [
   "Pantalla de 24 pulgadas Full HD (1920x1080)",
@@ -77,11 +77,11 @@
       "cantidad": 12,
       "precioPorCuota": 22042.66
     },
-    "categoriasIds": ["cat-monitores"],
+    "categoriasIds": ["monitores"],
     "imagenes": [
-      "../assets/images/products/cat-monitores/monitor-ms-hdmi-x25f-1.jpeg",
-      "../assets/images/products/cat-monitores/monitor-ms-hdmi-x25f-2.jpeg",
-      "../assets/images/products/cat-monitores/monitor-ms-hdmi-x25f-3.jpeg"
+      "../assets/images/products/monitores/monitor-ms-hdmi-x25f-1.jpeg",
+      "../assets/images/products/monitores/monitor-ms-hdmi-x25f-2.jpeg",
+      "../assets/images/products/monitores/monitor-ms-hdmi-x25f-3.jpeg"
     ],
     "especificaciones": [
       "Pantalla de 25 pulgadas con tecnología IPS para colores más vivos",
@@ -103,11 +103,11 @@
       "cantidad": 3,
       "precioPorCuota": 366666.00
     },
-    "categoriasIds": ["cat-monitores"],
+    "categoriasIds": ["monitores"],
     "imagenes": [
-      "../assets/images/products/cat-monitores/monitor-lg-ultrawide-1.jpeg",
-      "../assets/images/products/cat-monitores/monitor-lg-ultrawide-2.jpeg",
-      "../assets/images/products/cat-monitores/monitor-lg-ultrawide-3.jpeg"
+      "../assets/images/products/monitores/monitor-lg-ultrawide-1.jpeg",
+      "../assets/images/products/monitores/monitor-lg-ultrawide-2.jpeg",
+      "../assets/images/products/monitores/monitor-lg-ultrawide-3.jpeg"
     ],
     "especificaciones": [
       "Pantalla expansiva UltraWide de 34 pulgadas (relación de aspecto 21:9)",
@@ -128,11 +128,11 @@
       "cantidad": 3,
       "precioPorCuota": 1038600.00
     },
-    "categoriasIds": ["cat-monitores"],
+    "categoriasIds": ["monitores"],
     "imagenes": [
-      "../assets/images/products/cat-monitores/monitor-ls55cg97-1.jpeg",
-      "../assets/images/products/cat-monitores/monitor-ls55cg97-2.jpeg",
-      "../assets/images/products/cat-monitores/monitor-ls55cg97-3.jpeg"
+      "../assets/images/products/monitores/monitor-ls55cg97-1.jpeg",
+      "../assets/images/products/monitores/monitor-ls55cg97-2.jpeg",
+      "../assets/images/products/monitores/monitor-ls55cg97-3.jpeg"
     ],
     "especificaciones": [
       "Pantalla gigante de 55 pulgadas con curvatura extrema de 1000R",
@@ -153,11 +153,11 @@
       "cantidad": 3,
       "precioPorCuota": 47400.00
     },
-    "categoriasIds": ["cat-monitores"],
+    "categoriasIds": ["monitores"],
     "imagenes": [
-      "../assets/images/products/cat-monitores/monitor-vga-49731-1.jpeg",
-      "../assets/images/products/cat-monitores/monitor-vga-49731-2.jpeg",
-      "../assets/images/products/cat-monitores/monitor-vga-49731-3.jpeg"
+      "../assets/images/products/monitores/monitor-vga-49731-1.jpeg",
+      "../assets/images/products/monitores/monitor-vga-49731-2.jpeg",
+      "../assets/images/products/monitores/monitor-vga-49731-3.jpeg"
     ],
     "especificaciones": [
       "Pantalla compacta de 19 pulgadas con retroiluminación LED",
@@ -178,11 +178,11 @@
       "cantidad": 3,
       "precioPorCuota": 59400.00
     },
-    "categoriasIds": ["cat-monitores"],
+    "categoriasIds": ["monitores"],
     "imagenes": [
-      "../assets/images/products/cat-monitores/monitor-lg-22u401a-1.jpeg",
-      "../assets/images/products/cat-monitores/monitor-lg-22u401a-2.jpeg",
-      "../assets/images/products/cat-monitores/monitor-lg-22u401a-3.jpeg"
+      "../assets/images/products/monitores/monitor-lg-22u401a-1.jpeg",
+      "../assets/images/products/monitores/monitor-lg-22u401a-2.jpeg",
+      "../assets/images/products/monitores/monitor-lg-22u401a-3.jpeg"
     ],
     "especificaciones": [
       "Pantalla versátil de 22 pulgadas con panel LED",
@@ -203,9 +203,9 @@
       "cantidad": 3,
       "precioPorCuota": 272000
     },
-    "categoriasIds": ["cat-pc-armadas"],
+    "categoriasIds": ["pc-armadas"],
     "imagenes": [
-      "../assets/images/products/cat-pc-armadas/pc-ryzen7-a520-32gb-1.jpeg"
+      "../assets/images/products/pc-armadas/pc-ryzen7-a520-32gb-1.jpeg"
     ],
     "especificaciones": [
       "Procesador potente AMD Ryzen 7 5700G con gráficos integrados Radeon Vega",
@@ -226,9 +226,9 @@
       "cantidad": 3,
       "precioPorCuota": 356000
     },
-    "categoriasIds": ["cat-pc-armadas"],
+    "categoriasIds": ["pc-armadas"],
     "imagenes": [
-      "../assets/images/products/cat-pc-armadas/pc-ryzen5-rtx3050-1.jpeg"
+      "../assets/images/products/pc-armadas/pc-ryzen5-rtx3050-1.jpeg"
     ],
     "especificaciones": [
       "Procesador ágil AMD Ryzen 5 5600GT",
@@ -249,9 +249,9 @@
       "cantidad": 3,
       "precioPorCuota": 380000
     },
-    "categoriasIds": ["cat-pc-armadas"],
+    "categoriasIds": ["pc-armadas"],
     "imagenes": [
-      "../assets/images/products/cat-pc-armadas/pc-ryzen5-rx5600-1.jpeg"
+      "../assets/images/products/pc-armadas/pc-ryzen5-rx5600-1.jpeg"
     ],
     "especificaciones": [
       "Procesador para gaming y diseño AMD Ryzen 5 5600GT",
@@ -272,9 +272,9 @@
       "cantidad": 3,
       "precioPorCuota": 460000
     },
-    "categoriasIds": ["cat-pc-armadas"],
+    "categoriasIds": ["pc-armadas"],
     "imagenes": [
-      "../assets/images/products/cat-pc-armadas/pc-intel-i7-b760-1.jpeg"
+      "../assets/images/products/pc-armadas/pc-intel-i7-b760-1.jpeg"
     ],
     "especificaciones": [
       "Procesador de alto rendimiento Intel Core i7 12700 (12ª generación)",
@@ -295,9 +295,9 @@
       "cantidad": 3,
       "precioPorCuota": 208000
     },
-    "categoriasIds": ["cat-pc-armadas"],
+    "categoriasIds": ["pc-armadas"],
     "imagenes": [
-      "../assets/images/products/cat-pc-armadas/pc-ryzen7-a520-8gb-1.jpeg"
+      "../assets/images/products/pc-armadas/pc-ryzen7-a520-8gb-1.jpeg"
     ],
     "especificaciones": [
       "Procesador potente AMD Ryzen 7 5700G con gráfica Radeon integrada",
@@ -318,9 +318,9 @@
       "cantidad": 3,
       "precioPorCuota": 296000
     },
-    "categoriasIds": ["cat-pc-armadas"],
+    "categoriasIds": ["pc-armadas"],
     "imagenes": [
-      "../assets/images/products/cat-pc-armadas/pc-ryzen7-b450-16gb-1.jpeg"
+      "../assets/images/products/pc-armadas/pc-ryzen7-b450-16gb-1.jpeg"
     ],
     "especificaciones": [
       "Microprocesador de 8 núcleos AMD Ryzen 7 5700G",
@@ -341,11 +341,11 @@
       "cantidad": 3,
       "precioPorCuota": 58000
     },
-    "categoriasIds": ["cat-motherboards"],
+    "categoriasIds": ["motherboards"],
     "imagenes": [
-      "../assets/images/products/cat-motherboards/mother-msi-b840m-1.jpeg",
-      "../assets/images/products/cat-motherboards/mother-msi-b840m-2.jpeg",
-      "../assets/images/products/cat-motherboards/mother-msi-b840m-3.jpeg"
+      "../assets/images/products/motherboards/mother-msi-b840m-1.jpeg",
+      "../assets/images/products/motherboards/mother-msi-b840m-2.jpeg",
+      "../assets/images/products/motherboards/mother-msi-b840m-3.jpeg"
     ],
     "especificaciones": [
       "Zócalo Socket AM5 compatible con la serie de procesadores AMD Ryzen",
@@ -366,11 +366,11 @@
       "cantidad": 3,
       "precioPorCuota": 88000
     },
-    "categoriasIds": ["cat-motherboards"],
+    "categoriasIds": ["motherboards"],
     "imagenes": [
-      "../assets/images/products/cat-motherboards/mother-msi-b850-gaming-1.jpeg",
-      "../assets/images/products/cat-motherboards/mother-msi-b850-gaming-2.jpeg",
-      "../assets/images/products/cat-motherboards/mother-msi-b850-gaming-3.jpeg"
+      "../assets/images/products/motherboards/mother-msi-b850-gaming-1.jpeg",
+      "../assets/images/products/motherboards/mother-msi-b850-gaming-2.jpeg",
+      "../assets/images/products/motherboards/mother-msi-b850-gaming-3.jpeg"
     ],
     "especificaciones": [
       "Zócalo de última generación Socket AM5 para procesadores AMD",
@@ -391,11 +391,11 @@
       "cantidad": 3,
       "precioPorCuota": 78000
     },
-    "categoriasIds": ["cat-motherboards"],
+    "categoriasIds": ["motherboards"],
     "imagenes": [
-      "../assets/images/products/cat-motherboards/mother-msi-b850m-pro-1.jpeg",
-      "../assets/images/products/cat-motherboards/mother-msi-b850m-pro-2.jpeg",
-      "../assets/images/products/cat-motherboards/mother-msi-b850m-pro-3.jpeg"
+      "../assets/images/products/motherboards/mother-msi-b850m-pro-1.jpeg",
+      "../assets/images/products/motherboards/mother-msi-b850m-pro-2.jpeg",
+      "../assets/images/products/motherboards/mother-msi-b850m-pro-3.jpeg"
     ],
     "especificaciones": [
       "Socket AM5 compatible con arquitectura AMD Ryzen",
@@ -416,11 +416,11 @@
       "cantidad": 3,
       "precioPorCuota": 84000
     },
-    "categoriasIds": ["cat-motherboards"],
+    "categoriasIds": ["motherboards"],
     "imagenes": [
-      "../assets/images/products/cat-motherboards/mother-giga-b850m-eagle-1.jpeg",
-      "../assets/images/products/cat-motherboards/mother-giga-b850m-eagle-2.jpeg",
-      "../assets/images/products/cat-motherboards/mother-giga-b850m-eagle-3.jpeg"
+      "../assets/images/products/motherboards/mother-giga-b850m-eagle-1.jpeg",
+      "../assets/images/products/motherboards/mother-giga-b850m-eagle-2.jpeg",
+      "../assets/images/products/motherboards/mother-giga-b850m-eagle-3.jpeg"
     ],
     "especificaciones": [
       "Zócalo AM5 compatible con los procesadores más recientes de AMD",
@@ -442,11 +442,11 @@
       "cantidad": 3,
       "precioPorCuota": 74000
     },
-    "categoriasIds": ["cat-motherboards"],
+    "categoriasIds": ["motherboards"],
     "imagenes": [
-      "../assets/images/products/cat-motherboards/mother-asus-tuf-a620-1.jpeg",
-      "../assets/images/products/cat-motherboards/mother-asus-tuf-a620-2.jpeg",
-      "../assets/images/products/cat-motherboards/mother-asus-tuf-a620-3.jpeg"
+      "../assets/images/products/motherboards/mother-asus-tuf-a620-1.jpeg",
+      "../assets/images/products/motherboards/mother-asus-tuf-a620-2.jpeg",
+      "../assets/images/products/motherboards/mother-asus-tuf-a620-3.jpeg"
     ],
     "especificaciones": [
       "Socket AM5 compatible con procesadores Ryzen serie 7000/8000/9000",
@@ -467,11 +467,11 @@
       "cantidad": 3,
       "precioPorCuota": 128000
     },
-    "categoriasIds": ["cat-motherboards"],
+    "categoriasIds": ["motherboards"],
     "imagenes": [
-      "../assets/images/products/cat-motherboards/mother-giga-z790m-aorus-1.jpeg",
-      "../assets/images/products/cat-motherboards/mother-giga-z790m-aorus-2.jpeg",
-      "../assets/images/products/cat-motherboards/mother-giga-z790m-aorus-3.jpeg"
+      "../assets/images/products/motherboards/mother-giga-z790m-aorus-1.jpeg",
+      "../assets/images/products/motherboards/mother-giga-z790m-aorus-2.jpeg",
+      "../assets/images/products/motherboards/mother-giga-z790m-aorus-3.jpeg"
     ],
     "especificaciones": [
       "Socket Intel LGA 1700 nativo para procesadores de 12ª, 13ª y 14ª Generación",
@@ -492,9 +492,9 @@
       "cantidad": 3,
       "precioPorCuota": 8800
     },
-    "categoriasIds": ["cat-memorias-ram"],
+    "categoriasIds": ["memorias-ram"],
     "imagenes": [
-      "../assets/images/products/cat-memorias-ram/ram-aimerican-8gb-1.jpeg"
+      "../assets/images/products/memorias-ram/ram-aimerican-8gb-1.jpeg"
     ],
     "especificaciones": [
       "Capacidad de almacenamiento: módulo individual de 8GB",
@@ -515,9 +515,9 @@
       "cantidad": 3,
       "precioPorCuota": 11600
     },
-    "categoriasIds": ["cat-memorias-ram"],
+    "categoriasIds": ["memorias-ram"],
     "imagenes": [
-      "../assets/images/products/cat-memorias-ram/ram-fury-8gb-rgb-1.jpeg"
+      "../assets/images/products/memorias-ram/ram-fury-8gb-rgb-1.jpeg"
     ],
     "especificaciones": [
       "Capacidad del componente: 8GB",
@@ -539,9 +539,9 @@
       "cantidad": 3,
       "precioPorCuota": 13600
     },
-    "categoriasIds": ["cat-memorias-ram"],
+    "categoriasIds": ["memorias-ram"],
     "imagenes": [
-      "../assets/images/products/cat-memorias-ram/ram-corsair-8gb-black-1.jpeg"
+      "../assets/images/products/memorias-ram/ram-corsair-8gb-black-1.jpeg"
     ],
     "especificaciones": [
       "Capacidad del módulo: 8GB DDR4",
@@ -562,9 +562,9 @@
       "cantidad": 3,
       "precioPorCuota": 16800
     },
-    "categoriasIds": ["cat-memorias-ram"],
+    "categoriasIds": ["memorias-ram"],
     "imagenes": [
-      "../assets/images/products/cat-memorias-ram/ram-hiksemi-16gb-1.jpeg"
+      "../assets/images/products/memorias-ram/ram-hiksemi-16gb-1.jpeg"
     ],
     "especificaciones": [
       "Gran capacidad en un solo slot: módulo de 16GB",
@@ -585,9 +585,9 @@
       "cantidad": 3,
       "precioPorCuota": 31200
     },
-    "categoriasIds": ["cat-memorias-ram"],
+    "categoriasIds": ["memorias-ram"],
     "imagenes": [
-      "../assets/images/products/cat-memorias-ram/ram-fury-ddr5-16gb-1.jpeg"
+      "../assets/images/products/memorias-ram/ram-fury-ddr5-16gb-1.jpeg"
     ],
     "especificaciones": [
       "Módulo de arquitectura avanzada de nueva generación DDR5",
@@ -608,9 +608,9 @@
       "cantidad": 6,
       "precioPorCuota": 26000
     },
-    "categoriasIds": ["cat-memorias-ram"],
+    "categoriasIds": ["memorias-ram"],
     "imagenes": [
-      "../assets/images/products/cat-memorias-ram/ram-kingston-ddr5-value-1.jpeg"
+      "../assets/images/products/memorias-ram/ram-kingston-ddr5-value-1.jpeg"
     ],
     "especificaciones": [
       "Módulo individual de 16GB con tecnología DDR5",
@@ -632,10 +632,10 @@
       "cantidad": 3,
       "precioPorCuota": 74000
     },
-    "categoriasIds": ["cat-procesadores"],
+    "categoriasIds": ["procesadores"],
     "imagenes": [
-      "../assets/images/products/cat-procesadores/proc-ryzen5-5600gt-1.jpeg",
-      "../assets/images/products/cat-procesadores/proc-ryzen5-5600gt-2.jpeg"
+      "../assets/images/products/procesadores/proc-ryzen5-5600gt-1.jpeg",
+      "../assets/images/products/procesadores/proc-ryzen5-5600gt-2.jpeg"
     ],
     "especificaciones": [
       "Socket AM4 con arquitectura Zen 3 optimizada",
@@ -656,9 +656,9 @@
       "cantidad": 3,
       "precioPorCuota": 144000
     },
-    "categoriasIds": ["cat-procesadores"],
+    "categoriasIds": ["procesadores"],
     "imagenes": [
-      "../assets/images/products/cat-procesadores/proc-ryzen5-9600x-1.jpeg"
+      "../assets/images/products/procesadores/proc-ryzen5-9600x-1.jpeg"
     ],
     "especificaciones": [
       "Socket AM5 de última generación con soporte para memorias DDR5 y PCIe 5.0",
@@ -679,9 +679,9 @@
       "cantidad": 3,
       "precioPorCuota": 276000
     },
-    "categoriasIds": ["cat-procesadores"],
+    "categoriasIds": ["procesadores"],
     "imagenes": [
-      "../assets/images/products/cat-procesadores/proc-ryzen9-9900x3d-1.jpeg"
+      "../assets/images/products/procesadores/proc-ryzen9-9900x3d-1.jpeg"
     ],
     "especificaciones": [
       "Zócalo Socket AM5 diseñado para plataformas gaming tope de gama",
@@ -702,10 +702,10 @@
       "cantidad": 3,
       "precioPorCuota": 216000
     },
-    "categoriasIds": ["cat-procesadores"],
+    "categoriasIds": ["procesadores"],
     "imagenes": [
-      "../assets/images/products/cat-procesadores/proc-ryzen9-7900x-1.jpeg",
-      "../assets/images/products/cat-procesadores/proc-ryzen9-7900x-2.jpeg"
+      "../assets/images/products/procesadores/proc-ryzen9-7900x-1.jpeg",
+      "../assets/images/products/procesadores/proc-ryzen9-7900x-2.jpeg"
     ],
     "especificaciones": [
       "Socket AM5 de alto rendimiento multicapa",
@@ -727,9 +727,9 @@
       "cantidad": 3,
       "precioPorCuota": 84000
     },
-    "categoriasIds": ["cat-procesadores"],
+    "categoriasIds": ["procesadores"],
     "imagenes": [
-      "../assets/images/products/cat-procesadores/proc-intel-i5-12400-1.jpeg"
+      "../assets/images/products/procesadores/proc-intel-i5-12400-1.jpeg"
     ],
     "especificaciones": [
       "Socket LGA 1700 compatible con placas madre Intel series 600 y 700",
@@ -750,9 +750,9 @@
       "cantidad": 3,
       "precioPorCuota": 196000
     },
-    "categoriasIds": ["cat-procesadores"],
+    "categoriasIds": ["procesadores"],
     "imagenes": [
-      "../assets/images/products/cat-procesadores/proc-intel-i7-14700-1.jpeg"
+      "../assets/images/products/procesadores/proc-intel-i7-14700-1.jpeg"
     ],
     "especificaciones": [
       "Socket LGA 1700 de gran versatilidad para arquitectura híbrida",
@@ -774,9 +774,9 @@
       "cantidad": 3,
       "precioPorCuota": 244000
     },
-    "categoriasIds": ["cat-procesadores"],
+    "categoriasIds": ["procesadores"],
     "imagenes": [
-      "../assets/images/products/cat-procesadores/proc-intel-i9-12900k-1.jpeg"
+      "../assets/images/products/procesadores/proc-intel-i9-12900k-1.jpeg"
     ],
     "especificaciones": [
       "Socket LGA 1700 de nivel entusiasta",
@@ -798,9 +798,9 @@
       "cantidad": 3,
       "precioPorCuota": 232000
     },
-    "categoriasIds": ["cat-procesadores"],
+    "categoriasIds": ["procesadores"],
     "imagenes": [
-      "../assets/images/products/cat-procesadores/proc-intel-ultra7-265k-1.jpeg",
+      "../assets/images/products/procesadores/proc-intel-ultra7-265k-1.jpeg",
       "../assets/images/products/cat-intel-ultra7-265k-2.jpeg"
     ],
     "especificaciones": [
@@ -822,10 +822,10 @@
       "cantidad": 3,
       "precioPorCuota": 248000
     },
-    "categoriasIds": ["cat-notebooks"],
+    "categoriasIds": ["notebooks"],
     "imagenes": [
-      "../assets/images/products/cat-notebooks/note-nsx-alkon-1.jpeg",
-      "../assets/images/products/cat-notebooks/note-nsx-alkon-2.jpeg"
+      "../assets/images/products/notebooks/note-nsx-alkon-1.jpeg",
+      "../assets/images/products/notebooks/note-nsx-alkon-2.jpeg"
     ],
     "especificaciones": [
       "Pantalla compacta y portable de 14 pulgadas con resolución nítida",
@@ -846,10 +846,10 @@
       "cantidad": 3,
       "precioPorCuota": 276000
     },
-    "categoriasIds": ["cat-notebooks"],
+    "categoriasIds": ["notebooks"],
     "imagenes": [
-      "../assets/images/products/cat-notebooks/note-cx-i5-1.jpeg",
-      "../assets/images/products/cat-notebooks/note-cx-i5-2.jpeg"
+      "../assets/images/products/notebooks/note-cx-i5-1.jpeg",
+      "../assets/images/products/notebooks/note-cx-i5-2.jpeg"
     ],
     "especificaciones": [
       "Pantalla amplia de 15.6 pulgadas ideal para hojas de cálculo y películas",
@@ -870,11 +870,11 @@
       "cantidad": 3,
       "precioPorCuota": 152000
     },
-    "categoriasIds": ["cat-notebooks"],
+    "categoriasIds": ["notebooks"],
     "imagenes": [
-      "../assets/images/products/cat-notebooks/note-xview-novabook-1.jpeg",
-      "../assets/images/products/cat-notebooks/note-xview-novabook-2.jpeg",
-      "../assets/images/products/cat-notebooks/note-xview-novabook-3.jpeg"
+      "../assets/images/products/notebooks/note-xview-novabook-1.jpeg",
+      "../assets/images/products/notebooks/note-xview-novabook-2.jpeg",
+      "../assets/images/products/notebooks/note-xview-novabook-3.jpeg"
     ],
     "especificaciones": [
       "Pantalla de 14 pulgadas ideal para llevar a todos lados sin esfuerzo",
@@ -895,11 +895,11 @@
       "cantidad": 3,
       "precioPorCuota": 540000
     },
-    "categoriasIds": ["cat-notebooks"],
+    "categoriasIds": ["notebooks"],
     "imagenes": [
-      "../assets/images/products/cat-notebooks/note-hp-victus-1.jpeg",
-      "../assets/images/products/cat-notebooks/note-hp-victus-2.jpeg",
-      "../assets/images/products/cat-notebooks/note-hp-victus-3.jpeg"
+      "../assets/images/products/notebooks/note-hp-victus-1.jpeg",
+      "../assets/images/products/notebooks/note-hp-victus-2.jpeg",
+      "../assets/images/products/notebooks/note-hp-victus-3.jpeg"
     ],
     "especificaciones": [
       "Pantalla Gamer de 15.6 pulgadas con alta tasa de refresco fluida",
@@ -920,11 +920,11 @@
       "cantidad": 3,
       "precioPorCuota": 392000
     },
-    "categoriasIds": ["cat-notebooks"],
+    "categoriasIds": ["notebooks"],
     "imagenes": [
-      "../assets/images/products/cat-notebooks/note-lenovo-slim3-1.jpeg",
-      "../assets/images/products/cat-notebooks/note-lenovo-slim3-2.jpeg",
-      "../assets/images/products/cat-notebooks/note-lenovo-slim3-3.jpeg"
+      "../assets/images/products/notebooks/note-lenovo-slim3-1.jpeg",
+      "../assets/images/products/notebooks/note-lenovo-slim3-2.jpeg",
+      "../assets/images/products/notebooks/note-lenovo-slim3-3.jpeg"
     ],
     "especificaciones": [
       "Pantalla antirreflejo de 15 pulgadas para máxima comodidad visual",
@@ -946,11 +946,11 @@
       "cantidad": 3,
       "precioPorCuota": 356000
     },
-    "categoriasIds": ["cat-notebooks"],
+    "categoriasIds": ["notebooks"],
     "imagenes": [
-      "../assets/images/products/cat-notebooks/note-acer-aspire-1.jpeg",
-      "../assets/images/products/cat-notebooks/note-acer-aspire-2.jpeg",
-      "../assets/images/products/cat-notebooks/note-acer-aspire-3.jpeg"
+      "../assets/images/products/notebooks/note-acer-aspire-1.jpeg",
+      "../assets/images/products/notebooks/note-acer-aspire-2.jpeg",
+      "../assets/images/products/notebooks/note-acer-aspire-3.jpeg"
     ],
     "especificaciones": [
       "Pantalla de marco fino de 15.6 pulgadas con resolución Full HD",
@@ -971,10 +971,10 @@
       "cantidad": 3,
       "precioPorCuota": 46000
     },
-    "categoriasIds": ["cat-placas"],
+    "categoriasIds": ["placas-de-video"],
     "imagenes": [
-      "../assets/images/products/cat-placas/video-gt1030-asus-1.jpeg",
-      "../assets/images/products/cat-placas/video-gt1030-asus-2.jpeg"
+      "../assets/images/products/placas-de-video/video-gt1030-asus-1.jpeg",
+      "../assets/images/products/placas-de-video/video-gt1030-asus-2.jpeg"
     ],
     "especificaciones": [
       "Motor Gráfico dedicado NVIDIA GeForce GT 1030",
@@ -995,11 +995,11 @@
       "cantidad": 3,
       "precioPorCuota": 232000
     },
-    "categoriasIds": ["cat-placas"],
+    "categoriasIds": ["placas-de-video"],
     "imagenes": [
-      "../assets/images/products/cat-placas/video-rtx5060ti-giga-1.jpeg",
-      "../assets/images/products/cat-placas/video-rtx5060ti-giga-2.jpeg",
-      "../assets/images/products/cat-placas/video-rtx5060ti-giga-3.jpeg"
+      "../assets/images/products/placas-de-video/video-rtx5060ti-giga-1.jpeg",
+      "../assets/images/products/placas-de-video/video-rtx5060ti-giga-2.jpeg",
+      "../assets/images/products/placas-de-video/video-rtx5060ti-giga-3.jpeg"
     ],
     "especificaciones": [
       "Chipset de última arquitectura NVIDIA GeForce RTX de Serie 50 (5060 Ti)",
@@ -1021,10 +1021,10 @@
       "cantidad": 3,
       "precioPorCuota": 238000
     },
-    "categoriasIds": ["cat-placas"],
+    "categoriasIds": ["placas-de-video"],
     "imagenes": [
-      "../assets/images/products/cat-placas/video-rtx5060ti-asus-prime-1.jpeg",
-      "../assets/images/products/cat-placas/video-rtx5060ti-asus-prime-2.jpeg"
+      "../assets/images/products/placas-de-video/video-rtx5060ti-asus-prime-1.jpeg",
+      "../assets/images/products/placas-de-video/video-rtx5060ti-asus-prime-2.jpeg"
     ],
     "especificaciones": [
       "GPU de alto impacto competitivo NVIDIA GeForce RTX 5060 Ti",
@@ -1048,10 +1048,10 @@
       "cantidad": 3,
       "precioPorCuota": 256000
     },
-    "categoriasIds": ["cat-placas"],
+    "categoriasIds": ["placas-de-video"],
     "imagenes": [
-      "../assets/images/products/cat-placas/video-rtx5060ti-asus-tuf-1.jpeg",
-      "../assets/images/products/cat-placas/video-rtx5060ti-asus-tuf-2.jpeg"
+      "../assets/images/products/placas-de-video/video-rtx5060ti-asus-tuf-1.jpeg",
+      "../assets/images/products/placas-de-video/video-rtx5060ti-asus-tuf-2.jpeg"
     ],
     "especificaciones": [
       "GPU NVIDIA GeForce RTX 5060 Ti de última generación",
@@ -1072,10 +1072,10 @@
       "cantidad": 3,
       "precioPorCuota": 356000
     },
-    "categoriasIds": ["cat-placas"],
+    "categoriasIds": ["placas-de-video"],
     "imagenes": [
-      "../assets/images/products/cat-placas/video-rtx5070-giga-aero-1.jpeg",
-      "../assets/images/products/cat-placas/video-rtx5070-giga-aero-2.jpeg"
+      "../assets/images/products/placas-de-video/video-rtx5070-giga-aero-1.jpeg",
+      "../assets/images/products/placas-de-video/video-rtx5070-giga-aero-2.jpeg"
     ],
     "especificaciones": [
       "Poderosa arquitectura NVIDIA GeForce RTX 5070",
@@ -1096,9 +1096,9 @@
       "cantidad": 3,
       "precioPorCuota": 380000
     },
-    "categoriasIds": ["cat-placas"],
+    "categoriasIds": ["placas-de-video"],
     "imagenes": [
-      "../assets/images/products/cat-placas/video-radeon-rx9070-powercolor-1.jpeg"
+      "../assets/images/products/placas-de-video/video-radeon-rx9070-powercolor-1.jpeg"
     ],
     "especificaciones": [
       "Chipset de gama alta AMD Radeon RX 9070 XT",
@@ -1119,11 +1119,11 @@
       "cantidad": 3,
       "precioPorCuota": 18000
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/teclado-pebble-blanco-1.jpeg",
-      "../assets/images/products/cat-otros/teclado-pebble-blanco-2.jpeg",
-      "../assets/images/products/cat-otros/teclado-pebble-blanco-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/teclado-pebble-blanco-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/teclado-pebble-blanco-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/teclado-pebble-blanco-3.jpeg"
     ],
     "especificaciones": [
       "Diseño ultra delgado, ligero y portátil en color blanco puro",
@@ -1145,11 +1145,11 @@
       "cantidad": 3,
       "precioPorCuota": 50000
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/teclado-k860-ergo-1.jpeg",
-      "../assets/images/products/cat-otros/teclado-k860-ergo-2.jpeg",
-      "../assets/images/products/cat-otros/teclado-k860-ergo-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/teclado-k860-ergo-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/teclado-k860-ergo-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/teclado-k860-ergo-3.jpeg"
     ],
     "especificaciones": [
       "Estructura curva ergonómica partida que reduce la tensión muscular",
@@ -1170,10 +1170,10 @@
       "cantidad": 3,
       "precioPorCuota": 39200
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/teclado-k950-negro-1.jpeg",
-      "../assets/images/products/cat-otros/teclado-k950-negro-2.jpeg"
+      "../assets/images/products/perifericos-y-mas/teclado-k950-negro-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/teclado-k950-negro-2.jpeg"
     ],
     "especificaciones": [
       "Línea Ergo Slim que combina ergonomía avanzada y perfil elegante",
@@ -1194,10 +1194,10 @@
       "cantidad": 3,
       "precioPorCuota": 44000
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/teclado-mxmini-rosa-1.jpeg",
-      "../assets/images/products/cat-otros/teclado-mxmini-rosa-2.jpeg"
+      "../assets/images/products/perifericos-y-mas/teclado-mxmini-rosa-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/teclado-mxmini-rosa-2.jpeg"
     ],
     "especificaciones": [
       "Formato compacto minimalista (sin pad numérico) en color rosa pastel",
@@ -1218,11 +1218,11 @@
       "cantidad": 3,
       "precioPorCuota": 58000
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/mouse-razer-cobra-1.jpeg",
-      "../assets/images/products/cat-otros/mouse-razer-cobra-2.jpeg",
-      "../assets/images/products/cat-otros/mouse-razer-cobra-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/mouse-razer-cobra-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/mouse-razer-cobra-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/mouse-razer-cobra-3.jpeg"
     ],
     "especificaciones": [
       "Diseño ultraligero (Lightweight) optimizado para movimientos rápidos y precisos",
@@ -1244,11 +1244,11 @@
       "cantidad": 3,
       "precioPorCuota": 7800
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/mouse-m170-azul-1.jpeg",
-      "../assets/images/products/cat-otros/mouse-m170-azul-2.jpeg",
-      "../assets/images/products/cat-otros/mouse-m170-azul-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/mouse-m170-azul-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/mouse-m170-azul-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/mouse-m170-azul-3.jpeg"
     ],
     "especificaciones": [
       "Conexión inalámbrica estable de 2.4 GHz mediante nano receptor USB",
@@ -1269,11 +1269,11 @@
       "cantidad": 3,
       "precioPorCuota": 64000
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/mouse-mxmaster4-1.jpeg",
-      "../assets/images/products/cat-otros/mouse-mxmaster4-2.jpeg",
-      "../assets/images/products/cat-otros/mouse-mxmaster4-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/mouse-mxmaster4-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/mouse-mxmaster4-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/mouse-mxmaster4-3.jpeg"
     ],
     "especificaciones": [
       "Mouse premium ergonómico para productividad avanzada en color negro",
@@ -1294,11 +1294,11 @@
       "cantidad": 3,
       "precioPorCuota": 54000
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/mouse-mxvertical-1.jpeg",
-      "../assets/images/products/cat-otros/mouse-mxvertical-2.jpeg",
-      "../assets/images/products/cat-otros/mouse-mxvertical-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/mouse-mxvertical-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/mouse-mxvertical-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/mouse-mxvertical-3.jpeg"
     ],
     "especificaciones": [
       "Ángulo vertical único de 57° que reduce la presión en la muñeca y antebrazo",
@@ -1319,10 +1319,10 @@
       "cantidad": 3,
       "precioPorCuota": 6000
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/pad-kunlun-1.jpeg",
-      "../assets/images/products/cat-otros/pad-kunlun-2.jpeg"
+      "../assets/images/products/perifericos-y-mas/pad-kunlun-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/pad-kunlun-2.jpeg"
     ],
     "especificaciones": [
       "Tamaño extendido Large ideal para mouse y teclado juntos",
@@ -1344,10 +1344,10 @@
       "cantidad": 3,
       "precioPorCuota": 9600
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/pad-logitech-rosa-1.jpeg",
-      "../assets/images/products/cat-otros/pad-logitech-rosa-2.jpeg"
+      "../assets/images/products/perifericos-y-mas/pad-logitech-rosa-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/pad-logitech-rosa-2.jpeg"
     ],
     "especificaciones": [
       "Diseño estilizado de la línea Studio Series en un hermoso acabado rosa",
@@ -1368,11 +1368,11 @@
       "cantidad": 3,
       "precioPorCuota": 54000
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/auri-quantum-jbl-1.jpeg",
-      "../assets/images/products/cat-otros/auri-quantum-jbl-2.jpeg",
-      "../assets/images/products/cat-otros/auri-quantum-jbl-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/auri-quantum-jbl-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-quantum-jbl-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-quantum-jbl-3.jpeg"
     ],
     "especificaciones": [
       "Formato True Wireless Stereo (TWS) ultra compacto para gaming móvil y PC",
@@ -1393,11 +1393,11 @@
       "cantidad": 3,
       "precioPorCuota": 67200
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/auri-logitech-zone-1.jpeg",
-      "../assets/images/products/cat-otros/auri-logitech-zone-2.jpeg",
-      "../assets/images/products/cat-otros/auri-logitech-zone-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/auri-logitech-zone-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-logitech-zone-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-logitech-zone-3.jpeg"
     ],
     "especificaciones": [
       "Diseño de diadema Over-ear ultra ligero con almohadillas de tejido transpirable",
@@ -1418,11 +1418,11 @@
       "cantidad": 3,
       "precioPorCuota": 21600
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/auri-levelup-anubis-1.jpeg",
-      "../assets/images/products/cat-otros/auri-levelup-anubis-2.jpeg",
-      "../assets/images/products/cat-otros/auri-levelup-anubis-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/auri-levelup-anubis-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-levelup-anubis-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-levelup-anubis-3.jpeg"
     ],
     "especificaciones": [
       "Conectividad versátil 3 en 1 (Inalámbrico 2.4 GHz, Bluetooth y Cable Jack 3.5mm)",
@@ -1443,11 +1443,11 @@
       "cantidad": 3,
       "precioPorCuota": 7800
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/auri-redragon-hylas-1.jpeg",
-      "../assets/images/products/cat-otros/auri-redragon-hylas-2.jpeg",
-      "../assets/images/products/cat-otros/auri-redragon-hylas-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/auri-redragon-hylas-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-redragon-hylas-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-redragon-hylas-3.jpeg"
     ],
     "especificaciones": [
       "Sonido estéreo de alta calidad con diafragmas de neodimio de 50mm",
@@ -1468,11 +1468,11 @@
       "cantidad": 3,
       "precioPorCuota": 14400
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/auri-redragon-lamia-1.jpeg",
-      "../assets/images/products/cat-otros/auri-redragon-lamia-2.jpeg",
-      "../assets/images/products/cat-otros/auri-redragon-lamia-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/auri-redragon-lamia-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-redragon-lamia-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-redragon-lamia-3.jpeg"
     ],
     "especificaciones": [
       "Sonido envolvente virtual envolvente de 7.1 canales mediante conexión USB nítida",
@@ -1494,11 +1494,11 @@
       "cantidad": 3,
       "precioPorCuota": 26000
     },
-    "categoriasIds": ["cat-otros"],
+    "categoriasIds": ["perifericos-y-mas"],
     "imagenes": [
-      "../assets/images/products/cat-otros/auri-redragon-zeus-rosa-1.jpeg",
-      "../assets/images/products/cat-otros/auri-redragon-zeus-rosa-2.jpeg",
-      "../assets/images/products/cat-otros/auri-redragon-zeus-rosa-3.jpeg"
+      "../assets/images/products/perifericos-y-mas/auri-redragon-zeus-rosa-1.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-redragon-zeus-rosa-2.jpeg",
+      "../assets/images/products/perifericos-y-mas/auri-redragon-zeus-rosa-3.jpeg"
     ],
     "especificaciones": [
       "Sonido envolvente 7.1 de nivel profesional con controladores de 53mm",
@@ -1519,11 +1519,11 @@
       "cantidad": 3,
       "precioPorCuota": 94000
     },
-    "categoriasIds": ["cat-sillas"],
+    "categoriasIds": ["sillas-gamer"],
     "imagenes": [
-      "../assets/images/products/cat-sillas/silla-formula-azul-1.jpeg",
-      "../assets/images/products/cat-sillas/silla-formula-azul-2.jpeg",
-      "../assets/images/products/cat-sillas/silla-formula-azul-3.jpeg"
+      "../assets/images/products/sillas-gamer/silla-formula-azul-1.jpeg",
+      "../assets/images/products/sillas-gamer/silla-formula-azul-2.jpeg",
+      "../assets/images/products/sillas-gamer/silla-formula-azul-3.jpeg"
     ],
     "especificaciones": [
       "Tapizado elegante en cuero sintético Racer PU de alta resistencia con detalles azules",
@@ -1544,11 +1544,11 @@
       "cantidad": 3,
       "precioPorCuota": 124000
     },
-    "categoriasIds": ["cat-sillas"],
+    "categoriasIds": ["sillas-gamer"],
     "imagenes": [
-      "../assets/images/products/cat-sillas/silla-formula-blanco-1.jpeg",
-      "../assets/images/products/cat-sillas/silla-formula-blanco-2.jpeg",
-      "../assets/images/products/cat-sillas/silla-formula-blanco-3.jpeg"
+      "../assets/images/products/sillas-gamer/silla-formula-blanco-1.jpeg",
+      "../assets/images/products/sillas-gamer/silla-formula-blanco-2.jpeg",
+      "../assets/images/products/sillas-gamer/silla-formula-blanco-3.jpeg"
     ],
     "especificaciones": [
       "Diseño deportivo de alta gama tapizado en cuero sintético premium blanco y negro",
@@ -1569,11 +1569,11 @@
       "cantidad": 3,
       "precioPorCuota": 178000
     },
-    "categoriasIds": ["cat-sillas"],
+    "categoriasIds": ["sillas-gamer"],
     "imagenes": [
-      "../assets/images/products/cat-sillas/silla-xmicro-azul-1.jpeg",
-      "../assets/images/products/cat-sillas/silla-xmicro-azul-2.jpeg",
-      "../assets/images/products/cat-sillas/silla-xmicro-azul-3.jpeg"
+      "../assets/images/products/sillas-gamer/silla-xmicro-azul-1.jpeg",
+      "../assets/images/products/sillas-gamer/silla-xmicro-azul-2.jpeg",
+      "../assets/images/products/sillas-gamer/silla-xmicro-azul-3.jpeg"
     ],
     "especificaciones": [
       "Estructura metálica interna de alta resistencia para máxima estabilidad",
@@ -1594,11 +1594,11 @@
       "cantidad": 3,
       "precioPorCuota": 232000
     },
-    "categoriasIds": ["cat-sillas"],
+    "categoriasIds": ["sillas-gamer"],
     "imagenes": [
-      "../assets/images/products/cat-sillas/silla-xmicro-blanco-1.jpeg",
-      "../assets/images/products/cat-sillas/silla-xmicro-blanco-2.jpeg",
-      "../assets/images/products/cat-sillas/silla-xmicro-blanco-3.jpeg"
+      "../assets/images/products/sillas-gamer/silla-xmicro-blanco-1.jpeg",
+      "../assets/images/products/sillas-gamer/silla-xmicro-blanco-2.jpeg",
+      "../assets/images/products/sillas-gamer/silla-xmicro-blanco-3.jpeg"
     ],
     "especificaciones": [
       "Diseño premium de vanguardia en la clásica combinación simétrica blanco y negro",

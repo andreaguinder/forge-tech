@@ -41,13 +41,17 @@ function ItemDetail({
             </div>
 
             <div className="contador">
-              <ItemCount 
-                stock={stockDisponible} 
-                minValue={stockDisponible > 0 ? 1 : 0} 
-                value={cantidad} 
-                onChange={setCantidad} 
-              />
-              <span>Stock disponible: {stockDisponible}</span>
+{stockDisponible > 0 && (
+    <>
+      <ItemCount
+        stock={stockDisponible}
+        minValue={1} // Si ya validaste que es > 0, el mínimo arranca en 1
+        value={cantidad}
+        onChange={setCantidad}
+      />
+      <span>Stock disponible: {stockDisponible}</span>
+    </>
+  )}
             </div>
 
             <Button

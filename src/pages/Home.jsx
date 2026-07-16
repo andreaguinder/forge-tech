@@ -1,8 +1,9 @@
 import { Navigation, Autoplay } from 'swiper/modules';
 import SwiperCarrusel from '../components/SwiperCarrusel/SwiperCarrusel';
-import Card from '../components/Item/Item';
+import Item from '../components/Item/Item';
 import { useProducts } from '../hooks/useProducts'
 import { Banners } from '../components/Banners';
+import { useNavigate } from 'react-router-dom';
 
 //Banners swiper
 import banner1Desktop from '../assets/images/banners/banner1-forge-tech.png';
@@ -28,9 +29,10 @@ import  Loader  from '../components/Loader/Loader';
 
 function Home() {
 
+  const navigate = useNavigate();
   const { productos, cargando } = useProducts();
   const productosDestacados = productos.filter(p => p.esDestacado);
-  const pcArmadas = productos.filter(p => p.categoriasIds.includes('cat-pc-armadas'));
+  const pcArmadas = productos.filter(p => p.categoriasIds.includes('pc-armadas'));
 
 
   const bannersSwiper = [
@@ -92,14 +94,21 @@ function Home() {
                 padding: "20px 5px"
               },
             }}
-            renderItem={(prod) => (
-              <Card
-                id={prod.id}
-                nombre={prod.nombre}
-                imagenes={prod.imagenes}
-                precioLista={prod.precioLista}
-              />
-            )}
+renderItem={(prod) => {
+  const categoriaUrl = Array.isArray(prod.categoriasIds) && prod.categoriasIds.length > 0 && prod.categoriasIds[0]
+    ? prod.categoriasIds[0] 
+    : "otros";
+
+  return (
+    <Item
+      id={prod.id}
+      nombre={prod.nombre}
+      imagenes={prod.imagenes}
+      precioLista={prod.precioLista}
+      verFichaTecnica={() => navigate(`/producto/${categoriaUrl}/${prod.id}`)} // <-- Prop clave
+    />
+  );
+}}
           />)}
       </section>
 
@@ -153,14 +162,21 @@ onInit: (swiper) => {
   }, 1500);
 },
             }}
-            renderItem={(prod) => (
-              <Card
-                id={prod.id}
-                nombre={prod.nombre}
-                imagenes={prod.imagenes}
-                precioLista={prod.precioLista}
-              />
-            )}
+renderItem={(prod) => {
+  const categoriaUrl = Array.isArray(prod.categoriasIds) && prod.categoriasIds.length > 0 && prod.categoriasIds[0]
+    ? prod.categoriasIds[0] 
+    : "otros";
+
+  return (
+    <Item
+      id={prod.id}
+      nombre={prod.nombre}
+      imagenes={prod.imagenes}
+      precioLista={prod.precioLista}
+      verFichaTecnica={() => navigate(`/producto/${categoriaUrl}/${prod.id}`)} // <-- Prop clave
+    />
+  );
+}}
           />)}
       </section>
 

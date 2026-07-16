@@ -6,7 +6,7 @@ import Loader from '../components/Loader/Loader';
 import ItemDetail from '../components/ItemDetail/ItemDetail'; // Importamos el de presentación
 
 function ItemDetailContainer({ onVolver }) {
-  const { id } = useParams();
+  const { categoryId, id } = useParams();
   const { productos, cargando, error } = useProductsContext();
   const navigate = useNavigate();
 

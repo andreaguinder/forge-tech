@@ -1,12 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { Button } from "../Button";
 
-function Card({ id, imagenes, nombre, precioLista }) { 
+// Usamos la prop verFichaTecnica que viene desde afuera
+function Item({ id, imagenes, nombre, precioLista, verFichaTecnica }) { 
 
   console.log("Card renderizada. ID recibido:", id);
-  
-  const navigate = useNavigate();
   
   // Manejo seguro de imágenes
   const rutaRelativa = imagenes && imagenes.length > 0 ? imagenes[0] : "";
@@ -22,19 +20,11 @@ function Card({ id, imagenes, nombre, precioLista }) {
     currency: "ARS",
   });
 
-  const handleNavegarAlDetalle = () => {
-    // Validación: si el id no existe, no hacemos nada o avisamos
-    if (!id) {
-      console.warn("Card: Intentaste navegar sin un ID válido");
-      return;
-    }
-    navigate(`/producto/${id}`);
-  };
-
   return (
     <div 
       className="card" 
-      onClick={handleNavegarAlDetalle} 
+      // Si hacen clic en la tarjeta, ejecuta la navegación controlada por el padre
+      onClick={verFichaTecnica} 
       style={{ cursor: 'pointer', position: 'relative' }}
     >
       <img src={srcFinal} alt={nombre} />
@@ -46,7 +36,7 @@ function Card({ id, imagenes, nombre, precioLista }) {
         text='Ver Ficha Técnica' 
         onClick={(e) => {
            e.stopPropagation(); // Evita que se dispare el click del div padre
-           handleNavegarAlDetalle();
+           verFichaTecnica();   // Ejecuta la navegación controlada
         }} 
         type="button"
       >
@@ -56,4 +46,4 @@ function Card({ id, imagenes, nombre, precioLista }) {
   );
 }
 
-export default Card;
+export default Item;
