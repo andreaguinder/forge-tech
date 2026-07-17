@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useProducts } from "../hooks/useProducts";
 import { Tabs } from "../components/Tabs/Tabs";
 import Loader from '../components/Loader/Loader';
-import ItemList from "../components/ItemList/ItemList"; // Importamos el nuevo componente
+import ItemList from "../components/ItemList/ItemList";
 
 const categoriasTabs = [
   { id: "todas", label: "Todos los productos" },
@@ -20,20 +20,20 @@ const categoriasTabs = [
 
 function ItemListContainer() {
   const { productos, cargando, error } = useProducts();
-  const { categoryId } = useParams(); // Leemos el parámetro de la URL
+  const { categoryId } = useParams();
   const navigate = useNavigate();
 
   const categoriaActiva = categoryId || "todas";
 
   const handleCategoryChange = (newCategoryId) => {
     if (newCategoryId === "todas") {
-      navigate("/productos"); // Limpiamos la URL volviendo a la base
+      navigate("/productos");
     } else {
-      navigate(`/productos/${newCategoryId}`); // Actualizamos la URL con la categoría elegida
+      navigate(`/productos/${newCategoryId}`);
     }
   };
 
-  // Filtramos los productos según la categoría seleccionada
+
   const productosFiltrados = categoriaActiva === "todas"
     ? productos
     : productos.filter((prod) => prod.categoriasIds?.includes(categoriaActiva));
@@ -43,9 +43,7 @@ function ItemListContainer() {
 
   return (
     <>
-      {/* Pasamos la función que actualiza el estado de esta página */}
       <Tabs categories={categoriasTabs} activeCategory={categoriaActiva} onCategoryChange={handleCategoryChange}>
-        {/* Le pasamos la lista de productos filtrados al componente de presentación */}
         <ItemList productos={productosFiltrados} />
       </Tabs>
     </>

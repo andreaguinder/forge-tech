@@ -7,7 +7,6 @@
 
     .tabs-buttons-bar {
         display: none;
-        /* Escondemos los botones de escritorio en celulares */
     }
 
 }
@@ -16,12 +15,11 @@
 
 .tabs-mobile-select-wrapper {
     display: block;
-    /* Mostramos el select en celulares */
     position: relative;
     margin-bottom: 20px;
 }
 
-/* Estilos para tu Custom Select (Imitando tu diseño) */
+
 .custom-select-wrapper {
     position: relative;
     user-select: none;
@@ -76,7 +74,6 @@
 
     .tabs-mobile-select-wrapper {
         display: none;
-        /* Escondemos el select en pantallas grandes */
     }
 
     .tabs-container {
@@ -89,12 +86,12 @@
 
         .tabs-buttons-bar {
             @include flexCenter(row);
-                    justify-content: flex-start;
-        flex-direction: column;
+            justify-content: flex-start;
+            flex-direction: column;
             margin: auto;
             flex-wrap: wrap;
             margin-top: 0px;
-        width: 280px;
+            width: 280px;
             gap: 10px;
             margin-bottom: 20px;
             background-color: $color-surface;

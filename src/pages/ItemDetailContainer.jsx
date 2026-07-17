@@ -1,9 +1,9 @@
-import { useState, useContext } from 'react'; 
+import { useState, useContext } from 'react';
 import { useProductsContext } from '../context/ProductContext';
 import { useParams, useNavigate } from 'react-router-dom';
-import { CartContext } from '../context/CartContext'; 
+import { CartContext } from '../context/CartContext';
 import Loader from '../components/Loader/Loader';
-import ItemDetail from '../components/ItemDetail/ItemDetail'; // Importamos el de presentación
+import ItemDetail from '../components/ItemDetail/ItemDetail';
 
 function ItemDetailContainer({ onVolver }) {
   const { categoryId, id } = useParams();
@@ -14,8 +14,8 @@ function ItemDetailContainer({ onVolver }) {
   const [cantidad, setCantidad] = useState(1);
 
   if (error) return <div className="error-container"><h2>Error: {error}</h2></div>;
-  if (cargando) return <Loader/>;
-  
+  if (cargando) return <Loader />;
+
   const productoActual = productos?.find(p => String(p.id).trim() === String(id).trim());
 
   if (!productoActual) return <p>No se encontró el producto con ID: {id}. Por favor, verificá la URL.</p>;
@@ -37,7 +37,7 @@ function ItemDetailContainer({ onVolver }) {
   };
 
   return (
-    <ItemDetail 
+    <ItemDetail
       producto={productoActual}
       stockDisponible={stockDisponible}
       cantidad={cantidad}

@@ -35,7 +35,6 @@ const CartProvider = ({ children }) => {
     );
   };
 
-  // 🚀 1. AGREGAMOS LA FUNCIÓN PARA ACTUALIZAR LA CANTIDAD DESDE EL CARRITO
   const updateQuantity = (productId, newQuantity) => {
     setCart((prevCart) =>
       prevCart.map((item) =>
@@ -46,11 +45,16 @@ const CartProvider = ({ children }) => {
     );
   };
 
+  const clearCart = () => {
+    localStorage.removeItem("carrito_forge_tech");
+    setCart([]);
+
+  };
+
   const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
-    // 🚀 2. PASAMOS LA FUNCIÓN EN EL VALUE DEL PROVIDER
-    <CartContext.Provider value={{ cart, addProductToCart, totalQuantity, updateQuantity, deleteProductFromCart }}>
+    <CartContext.Provider value={{ cart, addProductToCart, totalQuantity, updateQuantity, deleteProductFromCart, clearCart }}>
       {children}
     </CartContext.Provider>
   );

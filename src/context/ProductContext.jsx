@@ -4,7 +4,7 @@ import { useProducts } from '../hooks/useProducts';
 const ProductsContext = createContext();
 
 export const ProductsProvider = ({ children }) => {
-  const value = useProducts(); // Aquí se ejecuta tu hook
+  const value = useProducts(); 
   return (
     <ProductsContext.Provider value={value}>
       {children}

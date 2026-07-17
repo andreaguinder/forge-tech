@@ -25,7 +25,7 @@ import bannerArmaDesk from '../assets/images/banners/arma-tu-pc-desk.png';
 import bannerElegiMob from '../assets/images/banners/elegi-tu-pc-mob.png';
 import bannerArmaMob from '../assets/images/banners/arma-tu-pc-mob.png';
 
-import  Loader  from '../components/Loader/Loader';
+import Loader from '../components/Loader/Loader';
 
 function Home() {
 
@@ -75,7 +75,7 @@ function Home() {
         <h2 className='titleCarrusel'>Productos Destacados</h2>
 
         {cargando ? (
-          <Loader/>
+          <Loader />
 
         ) : (
           <SwiperCarrusel
@@ -94,21 +94,21 @@ function Home() {
                 padding: "20px 5px"
               },
             }}
-renderItem={(prod) => {
-  const categoriaUrl = Array.isArray(prod.categoriasIds) && prod.categoriasIds.length > 0 && prod.categoriasIds[0]
-    ? prod.categoriasIds[0] 
-    : "otros";
+            renderItem={(prod) => {
+              const categoriaUrl = Array.isArray(prod.categoriasIds) && prod.categoriasIds.length > 0 && prod.categoriasIds[0]
+                ? prod.categoriasIds[0]
+                : "otros";
 
-  return (
-    <Item
-      id={prod.id}
-      nombre={prod.nombre}
-      imagenes={prod.imagenes}
-      precioLista={prod.precioLista}
-      verFichaTecnica={() => navigate(`/producto/${categoriaUrl}/${prod.id}`)} // <-- Prop clave
-    />
-  );
-}}
+              return (
+                <Item
+                  id={prod.id}
+                  nombre={prod.nombre}
+                  imagenes={prod.imagenes}
+                  precioLista={prod.precioLista}
+                  verFichaTecnica={() => navigate(`/producto/${categoriaUrl}/${prod.id}`)}
+                />
+              );
+            }}
           />)}
       </section>
 
@@ -134,7 +134,7 @@ renderItem={(prod) => {
         <h2 className='titleCarrusel'>PC armadas</h2>
 
         {cargando ? (
-                    <Loader/>
+          <Loader />
 
         ) : (
 
@@ -153,37 +153,35 @@ renderItem={(prod) => {
                 overflow: 'hidden',
                 padding: "20px 5px"
               },
-onInit: (swiper) => {
-  setTimeout(() => {
-    // Verificamos que swiper.autoplay exista
-    if (swiper.autoplay && typeof swiper.autoplay.start === 'function') {
-      swiper.autoplay.start();
-    }
-  }, 1500);
-},
+              onInit: (swiper) => {
+                setTimeout(() => {
+                  if (swiper.autoplay && typeof swiper.autoplay.start === 'function') {
+                    swiper.autoplay.start();
+                  }
+                }, 1500);
+              },
             }}
-renderItem={(prod) => {
-  const categoriaUrl = Array.isArray(prod.categoriasIds) && prod.categoriasIds.length > 0 && prod.categoriasIds[0]
-    ? prod.categoriasIds[0] 
-    : "otros";
+            renderItem={(prod) => {
+              const categoriaUrl = Array.isArray(prod.categoriasIds) && prod.categoriasIds.length > 0 && prod.categoriasIds[0]
+                ? prod.categoriasIds[0]
+                : "otros";
 
-  return (
-    <Item
-      id={prod.id}
-      nombre={prod.nombre}
-      imagenes={prod.imagenes}
-      precioLista={prod.precioLista}
-      verFichaTecnica={() => navigate(`/producto/${categoriaUrl}/${prod.id}`)} // <-- Prop clave
-    />
-  );
-}}
+              return (
+                <Item
+                  id={prod.id}
+                  nombre={prod.nombre}
+                  imagenes={prod.imagenes}
+                  precioLista={prod.precioLista}
+                  verFichaTecnica={() => navigate(`/producto/${categoriaUrl}/${prod.id}`)}
+                />
+              );
+            }}
           />)}
       </section>
 
 
 
       {/* Banner publi Arma tu pc */}
-
       <section>
         <Banners
           containerClassName="bannerPublicitario"

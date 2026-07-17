@@ -1,12 +1,12 @@
 import React from "react";
 import { Button } from "../Button";
 
-// Usamos la prop verFichaTecnica que viene desde afuera
+
 function Item({ id, imagenes, nombre, precioLista, verFichaTecnica }) { 
 
   console.log("Card renderizada. ID recibido:", id);
   
-  // Manejo seguro de imágenes
+
   const rutaRelativa = imagenes && imagenes.length > 0 ? imagenes[0] : "";
   const obtenerRutaImagen = (path) => {
     if (!path) return "";
@@ -14,7 +14,7 @@ function Item({ id, imagenes, nombre, precioLista, verFichaTecnica }) {
   };
   const srcFinal = obtenerRutaImagen(rutaRelativa);
 
-  // Formato de moneda
+
   const formateadorPrecio = new Intl.NumberFormat("es-AR", {
     style: "currency",
     currency: "ARS",
@@ -23,7 +23,6 @@ function Item({ id, imagenes, nombre, precioLista, verFichaTecnica }) {
   return (
     <div 
       className="card" 
-      // Si hacen clic en la tarjeta, ejecuta la navegación controlada por el padre
       onClick={verFichaTecnica} 
       style={{ cursor: 'pointer', position: 'relative' }}
     >
@@ -35,8 +34,8 @@ function Item({ id, imagenes, nombre, precioLista, verFichaTecnica }) {
         className='btn-ficha-tecnica' 
         text='Ver Ficha Técnica' 
         onClick={(e) => {
-           e.stopPropagation(); // Evita que se dispare el click del div padre
-           verFichaTecnica();   // Ejecuta la navegación controlada
+           e.stopPropagation(); 
+           verFichaTecnica(); 
         }} 
         type="button"
       >

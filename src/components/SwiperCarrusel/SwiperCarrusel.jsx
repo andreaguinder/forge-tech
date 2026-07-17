@@ -6,25 +6,25 @@ import { useId } from 'react';
 
 const SwiperCarrusel = ({ items, renderItem, settings, containerClassName, showPagination = false, modules = [Navigation, Autoplay] }) => {
 
-const uniqueId = useId();
+  const uniqueId = useId();
   const prevClass = `prev-${uniqueId.replace(/:/g, '')}`;
   const nextClass = `next-${uniqueId.replace(/:/g, '')}`;
 
   return (
     <div className={`swiper-main-container ${containerClassName || ''}`}>
-      {/* Botones con refs */}
-<div className={`swiper-button-prev-custom ${prevClass}`}>
+
+      <div className={`swiper-button-prev-custom ${prevClass}`}>
         <ChevronLeft size={32} />
       </div>
       <Swiper
         className="carruselInterno"
         modules={modules}
 
-navigation={{
+        navigation={{
           prevEl: `.${prevClass}`,
           nextEl: `.${nextClass}`,
         }}
-pagination={false}
+        pagination={false}
         {...settings}
 
 
@@ -36,7 +36,7 @@ pagination={false}
         ))}
       </Swiper>
 
-<div className={`swiper-button-next-custom ${nextClass}`}>
+      <div className={`swiper-button-next-custom ${nextClass}`}>
         <ChevronRight size={32} />
       </div>
     </div>
