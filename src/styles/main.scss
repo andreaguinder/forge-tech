@@ -2,7 +2,7 @@
 @use '../components/Header/Header';
 @use '../components/Tabs/Tabs';
 
-
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 * {
   margin: 0;
@@ -464,7 +464,6 @@ a {
 
     .alerta-envio-info {
       margin: 12px 0;
-      padding: 10px;
       border-radius: 6px;
       font-size: 12px;
       line-height: 1.4;
@@ -472,7 +471,7 @@ a {
       .msg-exito {
         background-color: rgba($color-primary, 0.15);
         color: $color-legend;
-        padding: 0.25rem;
+        padding: 0.35rem;
         border: 1px solid rgba($color-primary, 0.3);
         margin: 0;
       }
@@ -482,7 +481,7 @@ a {
         color: $color-text-muted;
         border: 1px dashed rgba($color-text-muted, 0.3);
         margin: 0;
-                padding: 0.25rem;
+        padding: 0.35rem;
 
         strong {
           color: $color-text-white;
@@ -535,38 +534,77 @@ a {
       display: flex;
       flex-direction: column;
       gap: 8px;
+      width: 100%;
+
+
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      input[type="number"],
+      select,
+      textarea {
+        background-color: rgba($color-surface, 0.6) !important;
+        border: 1px solid rgba($color-text-muted, 0.3);
+        border-radius: 5px;
+        padding: 0.6rem 1rem;
+        color: $color-text-white !important;
+        font-size: 14px;
+        height: auto;
+        transition: all 0.2s ease;
+        width: 100%;
+
+        &:focus {
+          outline: none;
+          border-color: $color-accent;
+          box-shadow: 0 0 8px rgba($color-accent, 0.2);
+          background-color: rgba($color-primary, 0.05) !important;
+        }
+
+        &::placeholder {
+          color: rgba($color-text-white, 0.4);
+        }
+
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-text-fill-color: $color-text-white !important;
+
+          box-shadow: 0 0 0 1000px rgba($color-surface, 0.95) inset !important;
+          transition: background-color 5000s ease-in-out 0s;
+        }
+
+      }
 
       .form-grupo {
-        input {
-          background-color: $color-text-white;
-          padding: 2px 4px;
-          height: 32px;
-          border-radius: 4px;
-          width: 100%;
-        }
+        width: 100%;
       }
 
       .form-grupo-row {
         display: flex;
         flex-direction: row;
         gap: 8px;
-
-        input {
-          background-color: $color-text-white;
-          padding: 2px 4px;
-          height: 32px;
-          border-radius: 4px;
-          width: 100%;
-        }
+        width: 100%;
       }
     }
 
     .form-grupo-radio {
       display: flex;
+      margin: 8px 0;
 
       label {
         display: flex;
+        align-items: center;
         gap: 8px;
+        color: $color-text-white;
+        cursor: pointer;
+        font-size: 14px;
+
+        input[type="radio"] {
+          accent-color: $color-accent;
+          cursor: pointer;
+        }
       }
     }
 
@@ -575,28 +613,18 @@ a {
       padding: 15px;
       border-radius: 8px;
       border: 2px solid $color-primary;
+      background-color: rgba($color-surface, 0.4);
+      width: 100%;
 
       h4 {
-        margin-bottom: 8px;
+        margin-bottom: 12px;
+        color: $color-text-white;
       }
 
-      input {
-        background-color: $color-text-white;
-        padding: 2px 4px;
-        height: 32px;
-        border-radius: 4px;
-      }
 
       .form-grupo {
         display: flex;
         gap: 8px;
-
-        input {
-          background-color: $color-text-white;
-          padding: 2px 4px;
-          height: 32px;
-          border-radius: 4px;
-        }
       }
     }
   }
@@ -799,6 +827,143 @@ a {
   }
 }
 
+.modal-login-auth {
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9000;
+    @include flexCenter(row);
+    padding: 0 15px;
+  }
+
+  .modal-content {
+    background-color: $color-surface;
+    color: $color-text-white;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border: 1px solid rgba($color-primary, 0.2);
+    animation: fadeInModal 0.3s ease-out;
+  }
+
+  .modal-close-x {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 26px;
+    color: $color-text-muted;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  .modal-title {
+    color: $color-accent;
+    margin: 15px 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .modal-subtitle {
+    font-size: 14px;
+    color: $color-text-muted;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+
+  .formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: left;
+
+    .form-grupo {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        background-color: rgba($color-bg, 0.5);
+        border: 1px solid rgba($color-text-muted, 0.3);
+        border-radius: 5px;
+        padding: 0.8rem 1rem;
+        color: $color-text-white;
+        font-size: 14px;
+        transition: all 0.2s ease;
+
+        &:focus {
+          outline: none;
+          border-color: $color-accent;
+          box-shadow: 0 0 8px rgba($color-accent, 0.2);
+          background-color: rgba($color-primary, 0.05);
+        }
+
+        &::placeholder {
+          color: rgba($color-text-white, 0.4);
+        }
+      }
+    }
+
+    .btn-login-submit {
+      @extend %btn;
+      margin-top: 10px;
+      width: 100%;
+      background-color: $color-primary;
+      color: $color-text-white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      font-size: 14px;
+      font-weight: 500;
+
+      &:hover {
+        background-color: $color-secondary;
+      }
+    }
+  }
+}
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media only screen and (min-width: 768px) {
 
   .bannerPublicitario {
@@ -965,7 +1130,7 @@ a {
         flex-wrap: wrap;
 
         li {
-          font-size: 22px;
+          font-size: 18px;
         }
       }
     }

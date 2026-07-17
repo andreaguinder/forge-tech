@@ -1,7 +1,8 @@
-// AuthProvider.js
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
-const AuthContext = createContext();
+
+export const AuthContext = createContext();
+
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
@@ -16,4 +17,5 @@ export function AuthProvider({ children }) {
   );
 }
 
-export default AuthContext;
+
+export const useAuthContext = () => useContext(AuthContext);

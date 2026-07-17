@@ -23,7 +23,7 @@ export const CartCheckout = ({ formData, setFormData }) => {
 
                 <div className="form-grupo form-grupo-row">
                     <input type="tel" name="telefono" placeholder="Teléfono" value={formData.telefono} onChange={handleChange} required />
-                    <input type="text" name="dni" placeholder="DNI para Facturación" value={formData.dni} onChange={handleChange} required />
+                    <input type="text" name="dni" placeholder="DNI" value={formData.dni} onChange={handleChange} required />
                 </div>
 
                 <div className="form-grupo">

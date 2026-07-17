@@ -1,15 +1,48 @@
 import { CartContext } from "../context/CartContext";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext, useRef } from "react";
+import { AuthContext } from '../context/AuthContext';
 
 const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState(() => {
-    const localData = localStorage.getItem("carrito_forge_tech");
-    return localData ? JSON.parse(localData) : [];
-  });
+  const { user } = useContext(AuthContext);
+
+
+  const [cart, setCart] = useState([]);
+
+
+  const usuarioAnteriorRef = useRef(user);
+
+
+  const getStorageKey = (currentUser) => {
+    if (!currentUser) return "carrito_forge_tech_invitado";
+    const formatoNombre = currentUser.nombre.toLowerCase().replace(/\s+/g, '_');
+    const formatoApellido = currentUser.apellido.toLowerCase().replace(/\s+/g, '_');
+    return `carrito_forge_tech_${formatoNombre}_${formatoApellido}`;
+  };
+
 
   useEffect(() => {
-    localStorage.setItem("carrito_forge_tech", JSON.stringify(cart));
-  }, [cart]);
+    const key = getStorageKey(user);
+    const localData = localStorage.getItem(key);
+
+    if (localData) {
+      setCart(JSON.parse(localData));
+    } else {
+      setCart([]);
+    }
+
+
+    usuarioAnteriorRef.current = user;
+  }, [user]);
+
+
+  useEffect(() => {
+
+    if (usuarioAnteriorRef.current !== user) return;
+
+    const key = getStorageKey(user);
+    localStorage.setItem(key, JSON.stringify(cart));
+  }, [cart, user]);
+
 
   const addProductToCart = (product, quantity) => {
     setCart((prevCart) => {
@@ -46,9 +79,9 @@ const CartProvider = ({ children }) => {
   };
 
   const clearCart = () => {
-    localStorage.removeItem("carrito_forge_tech");
+    const key = getStorageKey(user);
+    localStorage.removeItem(key);
     setCart([]);
-
   };
 
   const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);

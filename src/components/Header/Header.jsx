@@ -1,11 +1,16 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { CartWidget } from '../CartWidget/CartWidget';
-import { CartContext } from '../../context/CartContext';
+import { AuthContext } from '../../context/AuthContext';
+import { ModalLogin } from '../ModalLogin/ModalLogin';
+import { Button } from '../Button';
 
 export function Header() {
   const [menuAbierto, setMenuAbierto] = useState(false);
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+
+  const { user, login, logout } = useContext(AuthContext);
 
   return (
     <header className="header">
@@ -24,7 +29,33 @@ export function Header() {
         <Link to="/carrito" className="header__link header__link--cart" onClick={() => setMenuAbierto(false)}>
           <CartWidget />
         </Link>
+
+        <div className="header__auth-container">
+          {user ? (
+            <div className="user-logged-info">
+              <span className="user-name">Hola, {user.nombre}!</span>
+              <button className="btn-logout-header" onClick={logout}>Salir</button>
+            </div>
+          ) : (
+            <Button
+              className="btn-login-header"
+              type="button"
+              onClick={() => {
+                setIsLoginOpen(true);
+                setMenuAbierto(false);
+              }}
+            >
+              Iniciar Sesión
+            </Button>
+          )}
+        </div>
       </nav>
+
+      <ModalLogin
+        isOpen={isLoginOpen}
+        onClose={() => setIsLoginOpen(false)}
+        onLoginSuccess={login}
+      />
     </header>
   );
 }
