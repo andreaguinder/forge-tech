@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../Button";
 import { ItemCount } from "../Item/ItemCount";
 import { ChevronLeft } from 'lucide-react';
+import SwiperCarrusel from "../SwiperCarrusel/SwiperCarrusel";
 
 function ItemDetail({
     producto,
@@ -11,6 +12,26 @@ function ItemDetail({
     handleAgregarAlCarrito,
     handleVolver
 }) {
+
+
+    const obtenerRutaImagen = (path) => {
+        if (!path) return "";
+        return path.replace("../assets/", "/src/assets/");
+    };
+
+
+    const imagenesFormateadas = producto.imagenes?.map(img => obtenerRutaImagen(img)) || [];
+
+    const swiperSettings = {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: imagenesFormateadas.length > 1,
+        autoplay: imagenesFormateadas.length > 1 ? {
+            delay: 1800,
+            disableOnInteraction: false,
+        } : false,
+    };
+
     return (
         <>
             <div>
@@ -21,8 +42,27 @@ function ItemDetail({
 
             <div className="contenedor-product-detail">
                 <div className="container-superior">
+
+
                     <div className="container-img">
-                        <img src={producto.imagenFormateada} alt={producto.nombre} />
+                        {imagenesFormateadas.length > 0 ? (
+                            <SwiperCarrusel
+                                items={imagenesFormateadas}
+                                containerClassName="detalle-producto-carrusel"
+                                settings={swiperSettings}
+                                showPagination={true}
+                                renderItem={(imgUrl) => (
+                                    <div className="wrapper-slide-img">
+                                        <img src={imgUrl} alt={producto.nombre} />
+                                    </div>
+                                )}
+                            />
+                        ) : (
+
+                            <div className="wrapper-slide-img">
+                                <img src={producto.imagenFormateada} alt={producto.nombre} />
+                            </div>
+                        )}
                     </div>
 
                     <div className="container-info">

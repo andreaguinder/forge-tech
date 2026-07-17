@@ -1,10 +1,17 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import 'swiper/css/bundle';
 import { useId } from 'react';
 
-const SwiperCarrusel = ({ items, renderItem, settings, containerClassName, showPagination = false, modules = [Navigation, Autoplay] }) => {
+const SwiperCarrusel = ({ 
+  items, 
+  renderItem, 
+  settings, 
+  containerClassName, 
+  showPagination = false, 
+  modules = [Navigation, Autoplay, Pagination] 
+}) => {
 
   const uniqueId = useId();
   const prevClass = `prev-${uniqueId.replace(/:/g, '')}`;
@@ -16,18 +23,17 @@ const SwiperCarrusel = ({ items, renderItem, settings, containerClassName, showP
       <div className={`swiper-button-prev-custom ${prevClass}`}>
         <ChevronLeft size={32} />
       </div>
+
       <Swiper
         className="carruselInterno"
         modules={modules}
-
         navigation={{
           prevEl: `.${prevClass}`,
           nextEl: `.${nextClass}`,
         }}
-        pagination={false}
+
+        pagination={showPagination ? { clickable: true } : false} 
         {...settings}
-
-
       >
         {items.map((item, index) => (
           <SwiperSlide key={item.id || index}>
