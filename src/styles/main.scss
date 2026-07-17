@@ -500,6 +500,22 @@ a {
     }
   }
 
+  .cardCart__btn-borrar {
+    border: none;
+    background: transparent;
+margin-left: 10px;
+
+
+    svg {
+      color: $color-text-white;
+      background-color: $color-legend;
+          padding: 0.15rem;
+              width: 24px;
+    height: 24px;
+    
+    border-radius: 2px;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -680,6 +696,18 @@ a {
     .cardCart__info {
       width: 100%;
     }
+
+      .cardCart__btn-borrar {
+margin-left: 20px;
+
+svg {
+            padding: 0.35rem;
+              width: 32px;
+    height: 32px;
+    
+    border-radius: 4px;
+}
+  }
   }
 }
 

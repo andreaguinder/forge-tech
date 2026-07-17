@@ -29,6 +29,12 @@ const CartProvider = ({ children }) => {
     });
   };
 
+  const deleteProductFromCart = (productId) => {
+    setCart((prevCart) =>
+      prevCart.filter((item) => String(item.id) !== String(productId))
+    );
+  };
+
   // 🚀 1. AGREGAMOS LA FUNCIÓN PARA ACTUALIZAR LA CANTIDAD DESDE EL CARRITO
   const updateQuantity = (productId, newQuantity) => {
     setCart((prevCart) =>
@@ -44,7 +50,7 @@ const CartProvider = ({ children }) => {
 
   return (
     // 🚀 2. PASAMOS LA FUNCIÓN EN EL VALUE DEL PROVIDER
-    <CartContext.Provider value={{ cart, addProductToCart, totalQuantity, updateQuantity }}>
+    <CartContext.Provider value={{ cart, addProductToCart, totalQuantity, updateQuantity, deleteProductFromCart }}>
       {children}
     </CartContext.Provider>
   );
