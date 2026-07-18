@@ -4,27 +4,6 @@ import Item from '../components/Item/Item';
 import { useProducts } from '../hooks/useProducts'
 import { Banners } from '../components/Banners';
 import { useNavigate } from 'react-router-dom';
-
-//Banners swiper
-import banner1Desktop from '../assets/images/banners/banner1-forge-tech.png';
-import banner2Desktop from '../assets/images/banners/banner2-forge-tech.png';
-import banner3Desktop from '../assets/images/banners/banner3-forge-tech.png';
-import banner4Desktop from '../assets/images/banners/banner4-forge-tech.png';
-import banner5Desktop from '../assets/images/banners/banner5-forge-tech.png';
-
-import banner1Mobile from '../assets/images/banners/banner1-forge-tech-mob.png';
-import banner2Mobile from '../assets/images/banners/banner2-forge-tech-mob.png';
-import banner3Mobile from '../assets/images/banners/banner3-forge-tech-mob.png';
-import banner4Mobile from '../assets/images/banners/banner4-forge-tech-mob.png';
-import banner5Mobile from '../assets/images/banners/banner5-forge-tech-mob.png';
-
-// Banners publicitarios
-import bannerElegiDesk from '../assets/images/banners/elegi-tu-pc-desk.png';
-import bannerArmaDesk from '../assets/images/banners/arma-tu-pc-desk.png';
-
-import bannerElegiMob from '../assets/images/banners/elegi-tu-pc-mob.png';
-import bannerArmaMob from '../assets/images/banners/arma-tu-pc-mob.png';
-
 import Loader from '../components/Loader/Loader';
 
 function Home() {
@@ -34,23 +13,22 @@ function Home() {
   const productosDestacados = productos.filter(p => p.esDestacado);
   const pcArmadas = productos.filter(p => p.categoriasIds.includes('pc-armadas'));
 
-
+  // Ahora son rutas absolutas directas de la carpeta public
   const bannersSwiper = [
-    { id: 'b1', desktop: banner1Desktop, mobile: banner1Mobile },
-    { id: 'b2', desktop: banner2Desktop, mobile: banner2Mobile },
-    { id: 'b3', desktop: banner3Desktop, mobile: banner3Mobile },
-    { id: 'b4', desktop: banner4Desktop, mobile: banner4Mobile },
-    { id: 'b5', desktop: banner5Desktop, mobile: banner5Mobile }
+    { id: 'b1', desktop: '/images/banners/banner1-forge-tech.png', mobile: '/images/banners/banner1-forge-tech-mob.png' },
+    { id: 'b2', desktop: '/images/banners/banner2-forge-tech.png', mobile: '/images/banners/banner2-forge-tech-mob.png' },
+    { id: 'b3', desktop: '/images/banners/banner3-forge-tech.png', mobile: '/images/banners/banner3-forge-tech-mob.png' },
+    { id: 'b4', desktop: '/images/banners/banner4-forge-tech.png', mobile: '/images/banners/banner4-forge-tech-mob.png' },
+    { id: 'b5', desktop: '/images/banners/banner5-forge-tech.png', mobile: '/images/banners/banner5-forge-tech-mob.png' }
   ];
 
   const bannersPublicidadArma = [
-    { id: 'bArma', desktop: bannerArmaDesk, mobile: bannerArmaMob }
+    { id: 'bArma', desktop: '/images/banners/arma-tu-pc-desk.png', mobile: '/images/banners/arma-tu-pc-mob.png' }
   ];
 
   const bannersPublicidadElegi = [
-    { id: 'bElegi', desktop: bannerElegiDesk, mobile: bannerElegiMob },
+    { id: 'bElegi', desktop: '/images/banners/elegi-tu-pc-desk.png', mobile: '/images/banners/elegi-tu-pc-mob.png' },
   ];
-
 
   return (
     <main>
@@ -76,7 +54,6 @@ function Home() {
 
         {cargando ? (
           <Loader />
-
         ) : (
           <SwiperCarrusel
             containerClassName="carruselProductos"
@@ -113,7 +90,6 @@ function Home() {
       </section>
 
       {/* Banner publi PC Armadas */}
-
       <section>
         <Banners
           containerClassName="bannerPublicitario"
@@ -127,17 +103,13 @@ function Home() {
         />
       </section>
 
-
-
       {/* Carrusel de PC Armadas */}
       <section className='productosEnCarrusel'>
         <h2 className='titleCarrusel'>PC armadas</h2>
 
         {cargando ? (
           <Loader />
-
         ) : (
-
           <SwiperCarrusel
             containerClassName="carruselProductos"
             modules={[Navigation, Autoplay]}
@@ -179,8 +151,6 @@ function Home() {
           />)}
       </section>
 
-
-
       {/* Banner publi Arma tu pc */}
       <section>
         <Banners
@@ -194,8 +164,6 @@ function Home() {
           )}
         />
       </section>
-
-
 
     </main>
   );

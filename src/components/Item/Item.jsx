@@ -1,19 +1,11 @@
 import React from "react";
 import { Button } from "../Button";
 
-
 function Item({ id, imagenes, nombre, precioLista, verFichaTecnica }) { 
 
   console.log("Card renderizada. ID recibido:", id);
-  
 
-  const rutaRelativa = imagenes && imagenes.length > 0 ? imagenes[0] : "";
-  const obtenerRutaImagen = (path) => {
-    if (!path) return "";
-    return path.replace("../assets/", "/src/assets/");
-  };
-  const srcFinal = obtenerRutaImagen(rutaRelativa);
-
+  const srcFinal = imagenes && imagenes.length > 0 ? imagenes[0] : "";
 
   const formateadorPrecio = new Intl.NumberFormat("es-AR", {
     style: "currency",
