@@ -100,7 +100,7 @@
     "precioSinImpuestos": 764917.00,
     "precioCuotas": 1099998.00,
     "cuotas": {
-      "cantidad": 3,
+      "cantidad": 12,
       "precioPorCuota": 366666.00
     },
     "categoriasIds": ["monitores"],
@@ -125,8 +125,8 @@
     "precioSinImpuestos": 2166602.00,
     "precioCuotas": 3115800.00,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 1038600.00
+      "cantidad": 12,
+      "precioPorCuota": 259650.00
     },
     "categoriasIds": ["monitores"],
     "imagenes": [
@@ -200,8 +200,8 @@
     "precioSinImpuestos": 561983,
     "precioCuotas": 816000,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 272000
+      "cantidad": 6,
+      "precioPorCuota": 136000
     },
     "categoriasIds": ["pc-armadas"],
     "imagenes": [
@@ -223,8 +223,8 @@
     "precioSinImpuestos": 735537,
     "precioCuotas": 1068000,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 356000
+      "cantidad": 6,
+      "precioPorCuota": 178000
     },
     "categoriasIds": ["pc-armadas"],
     "imagenes": [
@@ -246,8 +246,8 @@
     "precioSinImpuestos": 785124,
     "precioCuotas": 1140000,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 380000
+      "cantidad": 6,
+      "precioPorCuota": 190000
     },
     "categoriasIds": ["pc-armadas"],
     "imagenes": [
@@ -269,8 +269,8 @@
     "precioSinImpuestos": 950413,
     "precioCuotas": 1380000,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 460000
+      "cantidad": 6,
+      "precioPorCuota": 230000
     },
     "categoriasIds": ["pc-armadas"],
     "imagenes": [
@@ -292,8 +292,8 @@
     "precioSinImpuestos": 429752,
     "precioCuotas": 624000,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 208000
+      "cantidad": 6,
+      "precioPorCuota": 104000
     },
     "categoriasIds": ["pc-armadas"],
     "imagenes": [
@@ -315,8 +315,8 @@
     "precioSinImpuestos": 611570,
     "precioCuotas": 888000,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 296000
+      "cantidad": 6,
+      "precioPorCuota": 148000
     },
     "categoriasIds": ["pc-armadas"],
     "imagenes": [
@@ -489,8 +489,8 @@
     "precioSinImpuestos": 18182,
     "precioCuotas": 26400,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 8800
+      "cantidad": 1,
+      "precioPorCuota": 26400
     },
     "categoriasIds": ["memorias-ram"],
     "imagenes": [
@@ -512,8 +512,8 @@
     "precioSinImpuestos": 23967,
     "precioCuotas": 34800,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 11600
+      "cantidad": 1,
+      "precioPorCuota": 34800
     },
     "categoriasIds": ["memorias-ram"],
     "imagenes": [
@@ -536,8 +536,8 @@
     "precioSinImpuestos": 28099,
     "precioCuotas": 40800,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 13600
+      "cantidad": 1,
+      "precioPorCuota": 40800
     },
     "categoriasIds": ["memorias-ram"],
     "imagenes": [
@@ -559,8 +559,8 @@
     "precioSinImpuestos": 34711,
     "precioCuotas": 50400,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 16800
+      "cantidad": 1,
+      "precioPorCuota": 50400
     },
     "categoriasIds": ["memorias-ram"],
     "imagenes": [
@@ -676,8 +676,8 @@
     "precioSinImpuestos": 570248,
     "precioCuotas": 828000,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 276000
+      "cantidad": 6,
+      "precioPorCuota": 138000
     },
     "categoriasIds": ["procesadores"],
     "imagenes": [
@@ -917,8 +917,8 @@
     "precioSinImpuestos": 809917,
     "precioCuotas": 1176000,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 392000
+      "cantidad": 12,
+      "precioPorCuota": 98000
     },
     "categoriasIds": ["notebooks"],
     "imagenes": [
@@ -1018,8 +1018,8 @@
     "precioSinImpuestos": 491736,
     "precioCuotas": 714000,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 238000
+      "cantidad": 12,
+      "precioPorCuota": 59500
     },
     "categoriasIds": ["placas-de-video"],
     "imagenes": [
@@ -1045,8 +1045,8 @@
     "precioSinImpuestos": 528926,
     "precioCuotas": 768000,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 256000
+      "cantidad": 12,
+      "precioPorCuota": 64000
     },
     "categoriasIds": ["placas-de-video"],
     "imagenes": [
@@ -1069,8 +1069,8 @@
     "precioSinImpuestos": 735537,
     "precioCuotas": 1068000,
     "cuotas": {
-      "cantidad": 3,
-      "precioPorCuota": 356000
+      "cantidad": 12,
+      "precioPorCuota": 89000
     },
     "categoriasIds": ["placas-de-video"],
     "imagenes": [
