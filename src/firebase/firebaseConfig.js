@@ -2,14 +2,15 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from 'firebase/firestore';
 
+// Consumimos las variables de entorno para no dejar las claves expuestas en GitHub
 const firebaseConfig = {
-  apiKey: "AIzaSyDtmVf-scvqH2syqOkqCxm161gM53vbhvc",
-  authDomain: "forge-tech-7a44c.firebaseapp.com",
-  projectId: "forge-tech-7a44c",
-  storageBucket: "forge-tech-7a44c.firebasestorage.app",
-  messagingSenderId: "254229374943",
-  appId: "1:254229374943:web:5f16089ad039bdd454c66a",
-  measurementId: "G-Y1Z7M29VVV"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
