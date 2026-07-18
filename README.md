@@ -11,7 +11,7 @@ Este desarrollo cumple con el 100% de las consignas requeridas para el curso de 
 - **JavaScript (ES6+)** como lenguaje de programación base, utilizando lógica asíncrona (Async/Await), promesas y manipulación avanzada de arreglos y objetos.
 - **React (v18+)** como librería core para la construcción de interfaces modulares basadas en componentes funcionales, Hooks y Context API.
 - **Vite** como entorno de desarrollo rápido y empaquetador del proyecto.
-- **Firebase & Cloud Firestore** para la persistencia del catálogo de productos y almacenamiento seguro de las órdenes de compra generadas.
+- **Cloud Firestore (Firebase)** para la persistencia del catálogo de productos y el almacenamiento seguro de las órdenes de compra generadas.
 - **React Router DOM** para la gestión del enrutamiento dinámico (catálogo, categorías, detalle y checkout) sin recargas del navegador.
 - **SASS (SCSS)** como preprocesador para estructurar una arquitectura de estilos anidados.
 - **Swiper** para el diseño interactivo de banners y carruseles dinámicos de productos.
@@ -23,35 +23,36 @@ Este desarrollo cumple con el 100% de las consignas requeridas para el curso de 
 El código fuente del proyecto se organiza bajo una arquitectura limpia y basada en responsabilidades claras, siguiendo las convenciones vistas en el curso:
 
 ```text
-src/
-├── assets/         # Recursos estáticos locales (imágenes, vectores, etc.)
-├── components/     # Componentes de presentación y modulares
-│   ├── CartCheckout/
-│   ├── CartInfo/   # Desglose evolutivo de cuotas y totales
-│   ├── CartItems/
-│   ├── CartWidget/ # Indicador de unidades en tiempo real para el NavBar
-│   ├── Header/
-│   ├── Item/       # Item.jsx, ItemCart.jsx e ItemCount.jsx (manejo de stock)
-│   ├── ItemDetail/ # Vista detallada y control de UI al agregar al carrito
-│   ├── ItemList/   # Renderizado de grillas de productos
-│   ├── Loader/     # Animaciones de carga para la UX (Renderizado condicional)
-│   ├── ModalLogin/
-│   ├── ModalSuccessBuy/ # Pop-up con el ID de orden de Firestore generado
-│   └── SwiperCarrusel/  # Carrusel dinámico e interactivo
-├── context/        # Administración de estados globales del ecosistema
-│   ├── AuthContext.jsx    # Manejo de estado de la sesión de Firebase Auth
-│   ├── CartContext.jsx    # Lógica del carrito, subtotales, totales y envíos
-│   └── ProductContext.jsx # Proveedor global del estado de productos
-├── data/           # Mock data local utilizado para fases iniciales
-├── hooks/          # Custom Hooks personalizados para modularizar lógica (useProducts)
-├── pages/          # Páginas principales contenedoras (Smart Components)
-│   ├── Cart.jsx
-│   ├── Home.jsx
-│   ├── ItemDetailContainer.jsx # Contenedor lógico de carga por ID
-│   └── ItemListContainer.jsx   # Contenedor lógico filtrado por categoría
-├── providers/      # Proveedores de lógica de estados externos
-├── services/       # Módulos encargados de las peticiones directas a Firestore
-└── styles/         # Arquitectura SASS (_variables.scss y main.scss)
+forge-tech/
+├── public/         # Recursos estáticos públicos accesibles desde la raíz del navegador
+│   └── images/     # Banners de campañas y fotos de los productos organizadas por categoría
+├── src/
+│   ├── assets/     # Estilos globales, tipografías y vectores de la interfaz
+│   ├── components/ # Componentes de presentación y modulares
+│   │   ├── CartCheckout/
+│   │   ├── CartInfo/   # Desglose evolutivo de cuotas y totales
+│   │   ├── CartItems/
+│   │   ├── CartWidget/ # Indicador de unidades en tiempo real para el NavBar
+│   │   ├── Header/
+│   │   ├── Item/       # Item.jsx, ItemCart.jsx e ItemCount.jsx (manejo de stock)
+│   │   ├── ItemDetail/ # Vista detallada y control de UI al agregar al carrito
+│   │   ├── ItemList/   # Renderizado de grillas de productos
+│   │   ├── Loader/     # Animaciones de carga para la UX (Renderizado condicional)
+│   │   ├── ModalLogin/
+│   │   ├── ModalSuccessBuy/ # Pop-up con el ID de orden de Firestore generado
+│   │   └── SwiperCarrusel/  # Carrusel dinámico e interactivo
+│   ├── context/    # Administración de estados globales del ecosistema
+│   │   ├── AuthContext.jsx    # Manejo de estado de la sesión de Firebase Auth
+│   │   ├── CartContext.jsx    # Lógica del carrito, subtotales, totales y envíos
+│   │   └── ProductContext.jsx # Proveedor global del estado de productos
+│   ├── hooks/      # Custom Hooks personalizados para modularizar lógica (useProducts)
+│   ├── pages/      # Páginas principales contenedoras (Smart Components)
+│   │   ├── Cart.jsx
+│   │   ├── Home.jsx
+│   │   ├── ItemDetailContainer.jsx # Contenedor lógico de carga por ID
+│   │   └── ItemListContainer.jsx   # Contenedor lógico filtrado por categoría
+│   ├── services/   # Módulos encargados de las peticiones directas a Firestore
+│   └── styles/     # Arquitectura SASS (_variables.scss y main.scss)
 ```
 
 ##  Funcionalidades Destacadas e Implementación Técnica
