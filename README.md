@@ -61,13 +61,13 @@ El catálogo se lee directamente de forma asíncrona desde una colección de Clo
 
 Al finalizar una compra se valida el stock, impactando el inventario y generando de forma automática un documento único en la colección de órdenes que almacena la información detallada del comprador, ítems agregados, precios históricos y la fecha exacta del servidor.
 
-##  🧭 Navegación con React Router
+###  🧭 Navegación con React Router
 Flujo unificado y dinámico mediante parámetros (/:id, /category/:idCategory) que aíslan las vistas de productos, permitiendo compartir enlaces específicos de categorías de hardware sin romper el ciclo del estado global.
 
-## 🛒 Gestión de Estado Global (React Context)
+### 🛒 Gestión de Estado Global (React Context)
 Un ecosistema de contexts que sincronizan en tiempo real el contador del CartWidget, los montos acumulados por pasarelas de pago y las variaciones complejas en la financiación si el usuario selecciona compras con tarjetas de crédito.
 
-## 💎 UX / UI de Alto Impacto
+### 💎 UX / UI de Alto Impacto
 Línea de tiempo de resúmenes: El desglose del carrito calcula de forma matricial las cuotas concurrentes si hay productos mezclados de diferentes planes (ej: 3 y 6 meses), mostrándole al cliente exactamente qué paga este mes frente al total diferido.
 
 Renderizado condicional: Control estricto de loaders de carga, estados de "sin stock", validaciones numéricas en los contadores y avisos interactivos para desbloquear el umbral de Envío Gratis.
