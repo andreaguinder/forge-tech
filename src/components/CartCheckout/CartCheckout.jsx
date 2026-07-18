@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 
-export const CartCheckout = ({ formData, setFormData }) => {
+export const CartCheckout = ({ formData, setFormData, cartItems = [] }) => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
+
+    const tieneCuotasEnCarrito = cartItems.some(item => item.cuotasSeleccionadas > 1);
+
+    const plazosElegidos = [...new Set(cartItems.map(item => item.cuotasSeleccionadas || 1))].filter(q => q > 1);
 
     return (
         <div className="contenedor-checkout">
@@ -30,13 +34,11 @@ export const CartCheckout = ({ formData, setFormData }) => {
                     <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
                 </div>
 
-
                 <h4>Dirección de Entrega</h4>
                 <div className="form-grupo form-grupo-row">
                     <input type="text" name="direccion" placeholder="Calle y Altura" value={formData.direccion} onChange={handleChange} required />
                     <input type="text" name="codigoPostal" placeholder="Código Postal" value={formData.codigoPostal} onChange={handleChange} required />
                 </div>
-
 
                 <h4>Método de Pago</h4>
                 <div className="form-grupo-radio">
@@ -48,7 +50,7 @@ export const CartCheckout = ({ formData, setFormData }) => {
                             checked={formData.metodoPago === "transferencia"}
                             onChange={handleChange}
                         />
-                        Transferencia Bancaria
+                        Transferencia Bancaria {tieneCuotasEnCarrito && <span className="aviso-pago-unico">(Mantiene total en 1 pago)</span>}
                     </label>
                     <label>
                         <input
@@ -58,19 +60,26 @@ export const CartCheckout = ({ formData, setFormData }) => {
                             checked={formData.metodoPago === "tarjeta"}
                             onChange={handleChange}
                         />
-                        Tarjeta de Crédito / Débito
+                        Tarjeta de Crédito / Débito {tieneCuotasEnCarrito && <span className="aviso-cuotas">(Respeta cuotas del carrito)</span>}
                     </label>
                 </div>
-
 
                 {formData.metodoPago === "tarjeta" && (
                     <div className="datos-tarjeta-falsa">
                         <h4>Datos de la Tarjeta (Simulados)</h4>
+                        
+
+                        {plazosElegidos.length > 0 && (
+                            <div className="alerta-checkout-cuotas-info">
+                                <p>⚠️ Tu tarjeta será procesada en transacciones diferidas para respetar los planes seleccionados de: <strong>{plazosElegidos.join(', ')} cuotas</strong>.</p>
+                            </div>
+                        )}
+
                         <input 
                             type="text" 
                             name="tarjetaNumero" 
                             placeholder="0000 0000 0000 0000" 
-                            value={formData.tarjetaNumero} 
+                            value={formData.tarjetaNumero || ""} 
                             onChange={handleChange} 
                             style={{ width: "100%", marginBottom: "10px" }} 
                             required 
@@ -80,7 +89,7 @@ export const CartCheckout = ({ formData, setFormData }) => {
                                 type="text" 
                                 name="tarjetaVence" 
                                 placeholder="MM/AA" 
-                                value={formData.tarjetaVence} 
+                                value={formData.tarjetaVence || ""} 
                                 onChange={handleChange} 
                                 required 
                             />
@@ -88,7 +97,7 @@ export const CartCheckout = ({ formData, setFormData }) => {
                                 type="text" 
                                 name="tarjetaCcv" 
                                 placeholder="CCV" 
-                                value={formData.tarjetaCcv} 
+                                value={formData.tarjetaCcv || ""} 
                                 onChange={handleChange} 
                                 required 
                             />

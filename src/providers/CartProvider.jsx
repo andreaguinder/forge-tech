@@ -5,12 +5,9 @@ import { AuthContext } from '../context/AuthContext';
 const CartProvider = ({ children }) => {
   const { user } = useContext(AuthContext);
 
-
   const [cart, setCart] = useState([]);
 
-
   const usuarioAnteriorRef = useRef(user);
-
 
   const getStorageKey = (currentUser) => {
     if (!currentUser) return "carrito_forge_tech_invitado";
@@ -18,7 +15,6 @@ const CartProvider = ({ children }) => {
     const formatoApellido = currentUser.apellido.toLowerCase().replace(/\s+/g, '_');
     return `carrito_forge_tech_${formatoNombre}_${formatoApellido}`;
   };
-
 
   useEffect(() => {
     const key = getStorageKey(user);
@@ -30,13 +26,10 @@ const CartProvider = ({ children }) => {
       setCart([]);
     }
 
-
     usuarioAnteriorRef.current = user;
   }, [user]);
 
-
   useEffect(() => {
-
     if (usuarioAnteriorRef.current !== user) return;
 
     const key = getStorageKey(user);
@@ -44,7 +37,8 @@ const CartProvider = ({ children }) => {
   }, [cart, user]);
 
 
-  const addProductToCart = (product, quantity) => {
+
+  const addProductToCart = (product, quantity, cuotasSeleccionadas = 1) => {
     setCart((prevCart) => {
       const existingProductIndex = prevCart.findIndex(
         (item) => String(item.id) === String(product.id)
@@ -53,11 +47,16 @@ const CartProvider = ({ children }) => {
       if (existingProductIndex !== -1) {
         return prevCart.map((item, index) =>
           index === existingProductIndex
-            ? { ...item, quantity: item.quantity + quantity }
+            ? { 
+                ...item, 
+                quantity: item.quantity + quantity,
+                cuotasSeleccionadas: cuotasSeleccionadas 
+              }
             : item
         );
       } else {
-        return [...prevCart, { ...product, quantity }];
+
+        return [...prevCart, { ...product, quantity, cuotasSeleccionadas }];
       }
     });
   };
@@ -78,6 +77,17 @@ const CartProvider = ({ children }) => {
     );
   };
 
+
+  const updateCuotas = (productId, newCuotas) => {
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        String(item.id) === String(productId)
+          ? { ...item, cuotasSeleccionadas: newCuotas }
+          : item
+      )
+    );
+  };
+
   const clearCart = () => {
     const key = getStorageKey(user);
     localStorage.removeItem(key);
@@ -87,7 +97,16 @@ const CartProvider = ({ children }) => {
   const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
-    <CartContext.Provider value={{ cart, addProductToCart, totalQuantity, updateQuantity, deleteProductFromCart, clearCart }}>
+
+    <CartContext.Provider value={{ 
+      cart, 
+      addProductToCart, 
+      totalQuantity, 
+      updateQuantity, 
+      updateCuotas, 
+      deleteProductFromCart, 
+      clearCart 
+    }}>
       {children}
     </CartContext.Provider>
   );

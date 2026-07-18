@@ -9,15 +9,26 @@ import Loader from '../components/Loader/Loader';
 function Cart() {
   const { cart, totalQuantity, clearCart } = useContext(CartContext);
   
-
   const [step, setStep] = useState("cart"); 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false); 
   const [orderId, setOrderId] = useState("");
-  const [formData, setFormData] = useState({
-    nombre: "", apellido: "", email: "", telefono: "", dni: "",
-    direccion: "", codigoPostal: "", metodoPago: "transferencia",
-    tarjetaNumero: "", tarjetaVence: "", tarjetaCcv: ""
+
+  const [formData, setFormData] = useState(() => {
+    const tieneCuotas = cart.some(item => item.cuotasSeleccionadas > 1);
+    return {
+      nombre: "", 
+      apellido: "", 
+      email: "", 
+      telefono: "", 
+      dni: "",
+      direccion: "", 
+      codigoPostal: "", 
+      metodoPago: tieneCuotas ? "tarjeta" : "transferencia", 
+      tarjetaNumero: "", 
+      tarjetaVence: "", 
+      tarjetaCcv: ""
+    };
   });
 
   const formateadorPrecio = new Intl.NumberFormat("es-AR", {
@@ -33,7 +44,6 @@ function Cart() {
     );
   }
 
-
   const MONTO_ENVIO_GRATIS = 3000000;
   const COSTO_ENVIO_BASE = 15000;
 
@@ -42,7 +52,6 @@ function Cart() {
   const costoEnvio = esEnvioGratis ? 0 : COSTO_ENVIO_BASE;
   const totalFinal = subtotal + costoEnvio;
   
-
   const cuantoFaltaParaGratis = MONTO_ENVIO_GRATIS - subtotal;
 
   const handleNextStep = () => {
@@ -71,7 +80,6 @@ function Cart() {
     }
   };
 
-
   const handleBackStep = () => {
     if (step === "checkout") {
       setStep("cart");
@@ -82,6 +90,8 @@ function Cart() {
     setIsModalOpen(false);
     setStep("cart");
     setOrderId("");
+    
+
     setFormData({
       nombre: "", apellido: "", email: "", telefono: "", dni: "",
       direccion: "", codigoPostal: "", metodoPago: "transferencia",
@@ -103,9 +113,9 @@ function Cart() {
           {step === "cart" ? (
             <CartItems cart={cart} />
           ) : (
-            <CartCheckout formData={formData} setFormData={setFormData} />
-          )}
 
+            <CartCheckout formData={formData} setFormData={setFormData} cartItems={cart} />
+          )}
 
           <CartInfo 
             totalQuantity={totalQuantity}
@@ -119,6 +129,8 @@ function Cart() {
             esEnvioGratis={esEnvioGratis}
             cuantoFaltaParaGratis={cuantoFaltaParaGratis}
             costoEnvioBase={COSTO_ENVIO_BASE}
+            cartItems={cart}
+            metodoPagoSeleccionado={formData.metodoPago}
           />
         </>
       )}

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react"; 
 import { Button } from "../Button";
 import { ItemCount } from "../Item/ItemCount";
-import { ChevronLeft } from 'lucide-react';
+import { ChevronLeft, ChevronUp, ChevronDown } from 'lucide-react'; 
 import SwiperCarrusel from "../SwiperCarrusel/SwiperCarrusel";
 
 function ItemDetail({
@@ -12,13 +12,14 @@ function ItemDetail({
     handleAgregarAlCarrito,
     handleVolver
 }) {
+    const [cuotasElegidas, setCuotasElegidas] = useState(1);
 
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const obtenerRutaImagen = (path) => {
         if (!path) return "";
         return path.replace("../assets/", "/src/assets/");
     };
-
 
     const imagenesFormateadas = producto.imagenes?.map(img => obtenerRutaImagen(img)) || [];
 
@@ -32,6 +33,23 @@ function ItemDetail({
         } : false,
     };
 
+    const opcionesCuotas = [1, 3, 6, 12].filter(q => {
+        if (producto.cuotas?.cantidad) {
+            return q <= producto.cuotas.cantidad;
+        }
+        return q === 1; 
+    });
+
+    const handleCuotasCustomChange = (valorCuota) => {
+        setCuotasElegidas(Number(valorCuota));
+        setIsDropdownOpen(false); 
+    };
+
+
+    const cuotaActivaLabel = cuotasElegidas === 1 
+        ? "1 pago" 
+        : `${cuotasElegidas} cuotas sin interés`;
+
     return (
         <>
             <div>
@@ -42,8 +60,6 @@ function ItemDetail({
 
             <div className="contenedor-product-detail">
                 <div className="container-superior">
-
-
                     <div className="container-img">
                         {imagenesFormateadas.length > 0 ? (
                             <SwiperCarrusel
@@ -58,7 +74,6 @@ function ItemDetail({
                                 )}
                             />
                         ) : (
-
                             <div className="wrapper-slide-img">
                                 <img src={producto.imagenFormateada} alt={producto.nombre} />
                             </div>
@@ -71,14 +86,59 @@ function ItemDetail({
 
                         {producto.cuotas && (
                             <div className="cucarda">
-                                <p>¡En <span>{producto.cuotas.cantidad}</span> cuotas simples!</p>
-                                <p>De <span>{producto.precioCuotaFormateado}</span></p>
+                                <p>¡Pagalo en hasta <span>{producto.cuotas.cantidad}</span> cuotas!</p>
+                                <p>Cuotas sugeridas de: <span>{producto.precioCuotaFormateado}</span></p>
                             </div>
                         )}
 
                         <div className="sin-impuestos">
                             Precio sin impuestos: {producto.precioSinImpuestosFormateado}
                         </div>
+
+
+                        {opcionesCuotas.length > 1 && (
+                            <div className="selector-cuotas-detalle">
+                                <label htmlFor="select-cuotas">Plan de pagos:</label>
+                                
+                                <div className={`cuotas-select-wrapper ${isDropdownOpen ? "open" : ""}`}>
+                                    
+                                    <div className="cuotas-select-trigger" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                                        <span>{cuotaActivaLabel}</span>
+                                        {isDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                                    </div>
+
+                                    {isDropdownOpen && (
+                                        <div className="cuotas-options-dropdown">
+                                            {opcionesCuotas.map(q => (
+                                                <span
+                                                    key={q}
+                                                    className={`cuotas-option-item ${cuotasElegidas === q ? "selected" : ""}`}
+                                                    onClick={() => handleCuotasCustomChange(q)}
+                                                >
+                                                    {q === 1 ? "1 pago" : `${q} cuotas sin interés`}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    )}
+
+                                </div>
+
+
+                                <select 
+                                    id="select-cuotas"
+                                    value={cuotasElegidas} 
+                                    onChange={(e) => handleCuotasCustomChange(e.target.value)}
+                                    className="select-cuotas-custom"
+                                    style={{ opacity: 0, position: "absolute", zIndex: -1, pointerEvents: "none" }}
+                                >
+                                    {opcionesCuotas.map(q => (
+                                        <option key={q} value={q}>
+                                            {q === 1 ? "1 pago" : `${q} cuotas sin interés`}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+                        )}
 
                         <div className="contador">
                             {stockDisponible > 0 && (
@@ -96,7 +156,7 @@ function ItemDetail({
 
                         <Button
                             className="btn-agregar-carrito"
-                            onClick={handleAgregarAlCarrito}
+                            onClick={() => handleAgregarAlCarrito(cantidad, cuotasElegidas)}
                             type="button"
                             disabled={stockDisponible === 0 || cantidad === 0}
                         >

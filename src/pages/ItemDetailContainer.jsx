@@ -28,18 +28,20 @@ function ItemDetailContainer({ onVolver }) {
   const cantidadEnCarrito = productoEnCarrito ? productoEnCarrito.quantity : 0;
   const stockDisponible = productoActual.stock - cantidadEnCarrito;
 
-  const handleAgregarAlCarrito = () => {
+  const handleAgregarAlCarrito = (cantidadElegida, cuotasElegidas) => {
+  if (!user) {
+    setIsLoginModalOpen(true);
+    return;
+  }
 
-    if (!user) {
-      setIsLoginModalOpen(true);
-      return;
-    }
 
-    if (cantidad > 0 && cantidad <= stockDisponible) {
-      addProductToCart(productoActual, cantidad);
-      setCantidad(stockDisponible - cantidad > 0 ? 1 : 0);
-    }
-  };
+  if (cantidadElegida > 0 && cantidadElegida <= stockDisponible) {
+    addProductToCart(productoActual, cantidadElegida, cuotasElegidas);
+    
+
+    setCantidad(stockDisponible - cantidadElegida > 0 ? 1 : 0);
+  }
+};
 
   const handleVolver = () => {
     onVolver ? onVolver() : navigate(-1);
