@@ -1,16 +1,81 @@
-# React + Vite
+# Forge Tech - E-commerce de Hardware y Tecnología
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del Proyecto
+**Forge Tech** es una Single Page Application (SPA) de e-commerce robusta y de alto rendimiento orientada a la comercialización de componentes de hardware y tecnología. Desarrollada con **React** y construida sobre **Vite**, la aplicación ofrece una experiencia fluida e interactiva, implementando un flujo completo de compra: desde la exploración dinámica de productos por categorías hasta un desglose de pagos y la confirmación final de la orden.
 
-Currently, two official plugins are available:
+Este desarrollo cumple con el 100% de las consignas requeridas para el curso de **React JS en Coderhouse**, destacándose por su modularización, manejo avanzado del estado global y persistencia de datos en la nube.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ Tecnologías y Librerías Utilizadas
+- **JavaScript (ES6+)** como lenguaje de programación base, utilizando lógica asíncrona (Async/Await), promesas y manipulación avanzada de arreglos y objetos.
+- **React (v18+)** como librería core para la construcción de interfaces modulares basadas en componentes funcionales, Hooks y Context API.
+- **Vite** como entorno de desarrollo rápido y empaquetador del proyecto.
+- **Firebase & Cloud Firestore** para la persistencia del catálogo de productos y almacenamiento seguro de las órdenes de compra generadas.
+- **React Router DOM** para la gestión del enrutamiento dinámico (catálogo, categorías, detalle y checkout) sin recargas del navegador.
+- **SASS (SCSS)** como preprocesador para estructurar una arquitectura de estilos anidados.
+- **Swiper** para el diseño interactivo de banners y carruseles dinámicos de productos.
+- **Lucide React** para la implementación de un set de íconos vectoriales modernos y limpios.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Estructura de Carpetas Principal
+El código fuente del proyecto se organiza bajo una arquitectura limpia y basada en responsabilidades claras, siguiendo las convenciones vistas en el curso:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── assets/         # Recursos estáticos locales (imágenes, vectores, etc.)
+├── components/     # Componentes de presentación y modulares
+│   ├── CartCheckout/
+│   ├── CartInfo/   # Desglose evolutivo de cuotas y totales
+│   ├── CartItems/
+│   ├── CartWidget/ # Indicador de unidades en tiempo real para el NavBar
+│   ├── Header/
+│   ├── Item/       # Item.jsx, ItemCart.jsx e ItemCount.jsx (manejo de stock)
+│   ├── ItemDetail/ # Vista detallada y control de UI al agregar al carrito
+│   ├── ItemList/   # Renderizado de grillas de productos
+│   ├── Loader/     # Animaciones de carga para la UX (Renderizado condicional)
+│   ├── ModalLogin/
+│   ├── ModalSuccessBuy/ # Pop-up con el ID de orden de Firestore generado
+│   └── SwiperCarrusel/  # Carrusel dinámico e interactivo
+├── context/        # Administración de estados globales del ecosistema
+│   ├── AuthContext.jsx    # Manejo de estado de la sesión de Firebase Auth
+│   ├── CartContext.jsx    # Lógica del carrito, subtotales, totales y envíos
+│   └── ProductContext.jsx # Proveedor global del estado de productos
+├── data/           # Mock data local utilizado para fases iniciales
+├── hooks/          # Custom Hooks personalizados para modularizar lógica (useProducts)
+├── pages/          # Páginas principales contenedoras (Smart Components)
+│   ├── Cart.jsx
+│   ├── Home.jsx
+│   ├── ItemDetailContainer.jsx # Contenedor lógico de carga por ID
+│   └── ItemListContainer.jsx   # Contenedor lógico filtrado por categoría
+├── providers/      # Proveedores de lógica de estados externos
+├── services/       # Módulos encargados de las peticiones directas a Firestore
+└── styles/         # Arquitectura SASS (_variables.scss y main.scss)
+```
+
+##  Funcionalidades Destacadas e Implementación Técnica
+
+### 🌌 Firebase & Firestore
+El catálogo se lee directamente de forma asíncrona desde una colección de Cloud Firestore.
+
+Al finalizar una compra se valida el stock, impactando el inventario y generando de forma automática un documento único en la colección de órdenes que almacena la información detallada del comprador, ítems agregados, precios históricos y la fecha exacta del servidor.
+
+##  🧭 Navegación con React Router
+Flujo unificado y dinámico mediante parámetros (/:id, /category/:idCategory) que aíslan las vistas de productos, permitiendo compartir enlaces específicos de categorías de hardware sin romper el ciclo del estado global.
+
+## 🛒 Gestión de Estado Global (React Context)
+Un ecosistema de contexts que sincronizan en tiempo real el contador del CartWidget, los montos acumulados por pasarelas de pago y las variaciones complejas en la financiación si el usuario selecciona compras con tarjetas de crédito.
+
+## 💎 UX / UI de Alto Impacto
+Línea de tiempo de resúmenes: El desglose del carrito calcula de forma matricial las cuotas concurrentes si hay productos mezclados de diferentes planes (ej: 3 y 6 meses), mostrándole al cliente exactamente qué paga este mes frente al total diferido.
+
+Renderizado condicional: Control estricto de loaders de carga, estados de "sin stock", validaciones numéricas en los contadores y avisos interactivos para desbloquear el umbral de Envío Gratis.
+
+## ¿Te gustaría colaborar o tenés un desafío laboral?
+
+¡Me encantaría conectar con vos! Estoy abierta a nuevas oportunidades, proyectos desafiantes o simplemente charlar sobre tecnología.
+
+* **Email:** [andreabelen.guinder@gmail.com](mailto:andreabelen.guinder@gmail.com)
+* **LinkedIn:** [https://www.linkedin.com/in/andrea-guinder/](https://www.linkedin.com/in/andrea-guinder/)
+* **Portfolio:** [https://andreaguinder.com/](https://andreaguinder.com/)
