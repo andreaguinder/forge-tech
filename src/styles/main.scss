@@ -1,6 +1,4 @@
 @use 'variables'as *;
-@use '../components/Header/Header';
-@use '../components/Tabs/Tabs';
 
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
@@ -21,6 +19,267 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.contenedor-footer {
+@include flexCenter(column);
+gap: 16px;
+  background-color: $color-surface;
+  padding: 16px;
+  height: auto;
+
+p:first-child {
+  color: #ccc;
+  font-size: 12px;
+}
+
+p:last-child {
+    color: $color-text-white;
+  font-size: 14px;
+  text-align: center;
+a {
+    text-decoration: none;
+    color: $color-legend;
+    font-weight: 600;
+      font-size: 14px;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: $color-surface;
+  border-bottom: 2px solid rgba($color-accent, 0.1);
+  color: $color-text-white;
+  position: relative;
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    span {
+      color: $color-accent;
+    }
+  }
+
+  &__hamburguesa {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: $color-text-white;
+    z-index: 1001;
+  }
+
+  &__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: $color-surface;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    padding-top: 5rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    border-left: 2px solid $color-accent;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+
+    &--abierto {
+      right: 0;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+    color: $color-text-white;
+    margin: 1rem 0;
+
+    &:hover {
+      color: $color-legend;
+    }
+  }
+
+
+  &__auth-container {
+    margin-top: 1.5rem;
+    width: calc(100% - 2rem);
+
+    .btn-login-header {
+      background-color: $color-primary;
+      color: $color-text-white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: $color-secondary;
+      }
+    }
+
+    .user-logged-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      align-items: flex-start;
+
+      .user-name {
+        color: $color-text-muted;
+        font-size: 0.95rem;
+        font-weight: 500;
+      }
+
+      .btn-logout-header {
+        background: none;
+        border: 1px solid rgba($color-text-muted, 0.4);
+        color: $color-text-white;
+        padding: 0.4rem 0.8rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        cursor: pointer;
+        width: auto;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: rgba($color-accent, 0.1);
+          border-color: $color-accent;
+          color: $color-accent;
+        }
+      }
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    &__hamburguesa {
+      display: none;
+    }
+
+    &__nav {
+      position: static;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      flex-direction: row;
+      padding-top: 0;
+      padding-left: 0;
+      border-left: none;
+      box-shadow: none;
+      gap: 2rem;
+      right: 0;
+      align-items: center;
+    }
+
+    &__link {
+      margin: 0;
+    }
+
+
+    &__auth-container {
+      margin-top: 0;
+      width: auto;
+
+      .btn-login-header {
+        width: auto;
+      }
+
+      .user-logged-info {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        .user-name {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+.tabs-container {
+    width: 98%;
+    padding: 8px;
+    margin: 20px auto;
+
+    .tabs-buttons-bar {
+        display: none;
+    }
+
+
+
+
+
+.tabs-mobile-select-wrapper {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.custom-select-wrapper {
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.custom-select-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: $color-surface;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    .fa-angle-up,
+    .fa-angle-down {
+        color: $color-secondary;
+        font-size: 16px;
+    }
+}
+
+.custom-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: $color-surface;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 10;
+    border-radius: 0 0 6px 6px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.custom-option {
+    display: block;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.custom-option:hover,
+.custom-option.selected {
+    background-color: $color-legend;
+    color: $color-text-black;
+}
 }
 
 .contador {
@@ -436,6 +695,7 @@ a {
 
 .pagina-carrito {
   @include flexCenter(column);
+      min-height: 100vh;
 
   h2.carrito-vacio {
     margin: 30px auto;
@@ -1398,6 +1658,71 @@ a {
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .contenedor-footer {
+justify-content: space-around;
+  height: auto;
+  flex-direction: row;
+
+p:first-child {
+  width: 800px;
+}
+
+p:last-child {
+  text-align: left;
+}
+  
+}
+  
+    .tabs-container {
+        width: 98%;
+        padding: 8px;
+        margin: 80px auto;
+        display: flex;
+        gap: 2.5rem;
+        max-width: 1280px;
+
+            .tabs-mobile-select-wrapper {
+        display: none;
+    }
+
+        .tabs-buttons-bar {
+            @include flexCenter(row);
+            justify-content: flex-start;
+            flex-direction: column;
+            margin: auto;
+            flex-wrap: wrap;
+            margin-top: 0px;
+            width: 280px;
+            gap: 10px;
+            margin-bottom: 20px;
+            background-color: $color-surface;
+            height: fit-content;
+            border-radius: 4px;
+            padding: 1rem;
+        }
+
+        .tab-button {
+            text-decoration: none;
+            color: $color-legend;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 1rem 0.5rem 1rem;
+            height: auto;
+            display: inline-flex;
+            background-color: transparent;
+            border: none;
+
+            &.active {
+                background-color: $color-legend;
+                color: $color-text-white;
+                transition: none !important;
+                font-weight: 600;
+                border-radius: 4px;
+                padding: 0.5rem;
+            }
+        }
+    }
 
   .contenedor-cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;

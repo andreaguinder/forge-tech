@@ -5,6 +5,7 @@ import ItemListContainer from './pages/ItemListContainer';
 import ItemDetailContainer from './pages/ItemDetailContainer';
 import Cart from './pages/Cart';
 import { Header } from './components/Header/Header';
+import  Footer  from './components/Footer/Footer';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/carrito" element={<Cart />} />
         </Routes>
       </main>
+      <Footer />
     </BrowserRouter>
   );
 }
