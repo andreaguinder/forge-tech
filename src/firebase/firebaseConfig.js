@@ -12,11 +12,11 @@ const firebaseConfig = {
   measurementId: "G-Y1Z7M29VVV"
 };
 
-// Inicializar Firestore
-const db = getFirestore(app);
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Inicializar Firestore
+const db = getFirestore(app);
 const analytics = getAnalytics(app);
 
 // Exportar la instancia de Firestore para usar en componentes
