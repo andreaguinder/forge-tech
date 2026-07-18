@@ -1,5 +1,5 @@
 import { db } from '../firebase/firebaseConfig'; // Asegurate de que la ruta a tu config de Firebase sea la correcta
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, addDoc, serverTimestamp } from 'firebase/firestore'; // <-- Sumamos addDoc y serverTimestamp acá
 
 const formateadorPrecio = new Intl.NumberFormat("es-AR", {
     style: "currency",
@@ -45,6 +45,50 @@ export const getProducts = async () => {
         return {
             success: false,
             message: "No se pudieron obtener los productos de la base de datos."
+        };
+    }
+};
+
+// ==========================================
+// NUEVA FUNCIÓN: No altera nada de lo anterior
+// ==========================================
+export const createOrder = async (buyerData, cartItems, totalAmount) => {
+    try {
+        const order = {
+            buyer: {
+                nombre: buyerData.nombre,
+                apellido: buyerData.apellido,
+                email: buyerData.email,
+                telefono: buyerData.telefono,
+                dni: buyerData.dni,
+                direccion: buyerData.direccion,
+                codigoPostal: buyerData.codigoPostal,
+                metodoPago: buyerData.metodoPago
+            },
+            items: cartItems.map(item => ({
+                id: item.id,
+                nombre: item.nombre,
+                precio: item.precioLista || 0,
+                cantidad: item.quantity || 1,
+                cuotas: item.cuotasSeleccionadas || 1
+            })),
+            total: totalAmount,
+            date: serverTimestamp(), // Fecha oficial del servidor de Firebase
+            status: 'generada'
+        };
+
+        const ordersCollection = collection(db, 'orders');
+        const docRef = await addDoc(ordersCollection, order);
+        
+        return {
+            success: true,
+            orderId: docRef.id // ID único generado por Firebase para la orden
+        };
+    } catch (error) {
+        console.error("Error al crear la orden en Firestore:", error);
+        return {
+            success: false,
+            message: "No se pudo procesar la compra de la orden."
         };
     }
 };

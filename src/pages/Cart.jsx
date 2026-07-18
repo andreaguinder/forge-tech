@@ -5,6 +5,7 @@ import { CartInfo } from '../components/CartInfo/CartInfo';
 import { CartCheckout } from '../components/CartCheckout/CartCheckout';
 import { ModalSuccessBuy } from '../components/ModalSuccessBuy/ModalSuccessBuy';
 import Loader from '../components/Loader/Loader'; 
+import { createOrder } from '../services/products'; // <-- AGREGAMOS TU FUNCIÓN ACÁ
 
 function Cart() {
   const { cart, totalQuantity, clearCart } = useContext(CartContext);
@@ -54,7 +55,8 @@ function Cart() {
   
   const cuantoFaltaParaGratis = MONTO_ENVIO_GRATIS - subtotal;
 
-  const handleNextStep = () => {
+  // CAMBIAMOS ESTA FUNCIÓN A ASYNC PARA MANEJAR FIREBASE
+  const handleNextStep = async () => {
     if (step === "cart") {
       setStep("checkout");
     } else if (step === "checkout") {
@@ -68,15 +70,19 @@ function Cart() {
       }
 
       setIsProcessing(true); 
-      console.log("¡Orden enviada! Procesando Firebase...");
+      console.log("¡Enviando datos reales a Firestore!");
 
-      setTimeout(() => {
-        const idSimuladoDeFirestore = "ORDER-" + Math.random().toString(36).substr(2, 9).toUpperCase();
-        
-        setOrderId(idSimuladoDeFirestore);
-        setIsProcessing(false); 
-        setIsModalOpen(true);    
-      }, 1500); 
+      // Llamamos a Firebase pasándole la información real
+      const resultado = await createOrder(formData, cart, totalFinal);
+
+      setIsProcessing(false); 
+
+      if (resultado.success) {
+        setOrderId(resultado.orderId); // Guardamos el ID real de Firestore (ej: "jK82sKsa91...")
+        setIsModalOpen(true);       // Abrimos tu modal de éxito
+      } else {
+        alert(resultado.message);    // Por si falla la red o Firebase
+      }
     }
   };
 
@@ -113,7 +119,6 @@ function Cart() {
           {step === "cart" ? (
             <CartItems cart={cart} />
           ) : (
-
             <CartCheckout formData={formData} setFormData={setFormData} cartItems={cart} />
           )}
 
