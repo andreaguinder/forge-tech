@@ -13,7 +13,7 @@ function Home() {
   const productosDestacados = productos.filter(p => p.esDestacado);
   const pcArmadas = productos.filter(p => p.categoriasIds.includes('pc-armadas'));
 
-  // Ahora son rutas absolutas directas de la carpeta public
+
   const bannersSwiper = [
     { id: 'b1', desktop: '/images/banners/banner1-forge-tech.png', mobile: '/images/banners/banner1-forge-tech-mob.png' },
     { id: 'b2', desktop: '/images/banners/banner2-forge-tech.png', mobile: '/images/banners/banner2-forge-tech-mob.png' },
@@ -32,7 +32,7 @@ function Home() {
 
   return (
     <main>
-      {/* Carrusel de Banners */}
+
       <section>
         <SwiperCarrusel
           containerClassName="carruselBanners"
@@ -48,7 +48,7 @@ function Home() {
         />
       </section>
 
-      {/* Carrusel de Destacados */}
+
       <section className='productosEnCarrusel'>
         <h2 className='titleCarrusel'>Productos Destacados</h2>
 
@@ -89,7 +89,7 @@ function Home() {
           />)}
       </section>
 
-      {/* Banner publi PC Armadas */}
+
       <section>
         <Banners
           containerClassName="bannerPublicitario"
@@ -103,7 +103,7 @@ function Home() {
         />
       </section>
 
-      {/* Carrusel de PC Armadas */}
+
       <section className='productosEnCarrusel'>
         <h2 className='titleCarrusel'>PC armadas</h2>
 
@@ -151,7 +151,7 @@ function Home() {
           />)}
       </section>
 
-      {/* Banner publi Arma tu pc */}
+
       <section>
         <Banners
           containerClassName="bannerPublicitario"

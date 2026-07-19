@@ -20,5 +20,4 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const analytics = getAnalytics(app);
 
-// Exportar la instancia de Firestore para usar en componentes
 export { db };

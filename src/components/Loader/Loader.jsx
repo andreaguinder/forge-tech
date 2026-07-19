@@ -1,9 +1,9 @@
 
-const Loader = () => {
+const Loader = ({ className = "" }) => {
 
   return (
 
-          <div className="waveLoader">
+          <div className={`waveLoader ${className}`}>
             <span></span>
             <span></span>
             <span></span>

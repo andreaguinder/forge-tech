@@ -1,5 +1,5 @@
-import { db } from '../firebase/firebaseConfig'; // Asegurate de que la ruta a tu config de Firebase sea la correcta
-import { collection, getDocs, addDoc, serverTimestamp } from 'firebase/firestore'; // <-- Sumamos addDoc y serverTimestamp acá
+import { db } from '../firebase/firebaseConfig'; 
+import { collection, getDocs, addDoc, serverTimestamp } from 'firebase/firestore'; 
 
 const formateadorPrecio = new Intl.NumberFormat("es-AR", {
     style: "currency",
@@ -8,22 +8,22 @@ const formateadorPrecio = new Intl.NumberFormat("es-AR", {
 
 export const getProducts = async () => {
     try {
-        // 1. Apuntamos a la colección 'productos' en Firestore
+
         const productosCol = collection(db, 'productos');
         
-        // 2. Traemos todos los documentos de la nube
+
         const productosSnapshot = await getDocs(productosCol);
         
-        // 3. Mapeamos los datos de Firebase y les aplicamos tus formateadores
+
         const productosFormateados = productosSnapshot.docs.map((doc) => {
-            const prod = doc.data(); // Acá está el objeto del producto
+            const prod = doc.data(); 
 
             const rutaLimpia = (prod.imagenes && prod.imagenes.length > 0) 
                 ? prod.imagenes[0].replace("../assets/", "/src/assets/") 
                 : "";
 
             return {
-                id: doc.id, // Conservamos el ID único de tu documento (PROD-001, etc.)
+                id: doc.id, 
                 ...prod,
                 imagenFormateada: rutaLimpia,
                 precioListaFormateado: formateadorPrecio.format(prod.precioLista || 0),
@@ -34,7 +34,7 @@ export const getProducts = async () => {
             };
         });
 
-        // 4. Retornamos la respuesta con la misma estructura que esperaba tu Hook
+
         return {
             success: true,
             data: productosFormateados,
@@ -49,9 +49,7 @@ export const getProducts = async () => {
     }
 };
 
-// ==========================================
-// NUEVA FUNCIÓN: No altera nada de lo anterior
-// ==========================================
+
 export const createOrder = async (buyerData, cartItems, totalAmount) => {
     try {
         const order = {
@@ -73,7 +71,7 @@ export const createOrder = async (buyerData, cartItems, totalAmount) => {
                 cuotas: item.cuotasSeleccionadas || 1
             })),
             total: totalAmount,
-            date: serverTimestamp(), // Fecha oficial del servidor de Firebase
+            date: serverTimestamp(), 
             status: 'generada'
         };
 
@@ -82,7 +80,7 @@ export const createOrder = async (buyerData, cartItems, totalAmount) => {
         
         return {
             success: true,
-            orderId: docRef.id // ID único generado por Firebase para la orden
+            orderId: docRef.id 
         };
     } catch (error) {
         console.error("Error al crear la orden en Firestore:", error);

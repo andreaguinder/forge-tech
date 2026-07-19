@@ -38,7 +38,7 @@ function ItemListContainer() {
     ? productos
     : productos.filter((prod) => prod.categoriasIds?.includes(categoriaActiva));
 
-  if (cargando) return <Loader />;
+  if (cargando) return <Loader className="loader-productos" />;
   if (error) return <h2>{error}</h2>;
 
   return (
